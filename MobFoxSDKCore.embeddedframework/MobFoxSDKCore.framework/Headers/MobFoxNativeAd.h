@@ -22,7 +22,7 @@
 
 @interface MobFoxNativeAd : NSObject<MobFoxNativeCustomEventDelegate>
 
-    @property (nonatomic, strong) id<MobFoxNativeAdDelegate> adDelegate;
+    @property (nonatomic, strong) id<MobFoxNativeAdDelegate> delegate;
     
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
