@@ -34,7 +34,7 @@
 @interface MobFoxAd : UIView<UIWebViewDelegate,MobFoxCustomEventDelegate>
 
 
-    @property (nonatomic, strong) id<MobFoxAdDelegate> adDelegate;
+    @property (nonatomic, strong) id<MobFoxAdDelegate> delegate;
 
    
     @property (nonatomic, copy) NSString* longitude;
