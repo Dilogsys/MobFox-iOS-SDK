@@ -15,7 +15,7 @@
 
 @protocol MobFoxInterstitialCustomEventDelegate <NSObject>
 
-- (void)MFInterstitialCustomEventAd:(MobFoxInterstitialCustomEvent *)event didLoad:(id) ad;
+- (void)MFInterstitialCustomEventAdDidLoad:(MobFoxInterstitialCustomEvent *)event;
 
 - (void)MFInterstitialCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -30,9 +30,7 @@
 
 @interface MobFoxInterstitialCustomEvent : NSObject
 
-- (void)requestInterstitial:(NSString*)networkId customEventInfo:(NSDictionary *)info;
-
-- (void)showInterstitialFromRootViewController:(UIViewController *)rootViewController;
+- (void)requestInterstitialWithRootController:(UIViewController *)rootViewController networkId:(NSString*)networkId customEventInfo:(NSDictionary *)info;
 
 @property (nonatomic, weak) id<MobFoxInterstitialCustomEventDelegate> delegate;
 

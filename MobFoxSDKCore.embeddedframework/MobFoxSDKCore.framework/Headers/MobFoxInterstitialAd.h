@@ -35,7 +35,7 @@
 
 
 @property (nonatomic, weak) id<MobFoxInterstitialAdDelegate> delegate;
-@property MobFoxAd* ad;
+
 
 
 -(id) init:(NSString*)invh withMainViewController:(UIViewController*)main;
