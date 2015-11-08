@@ -22,6 +22,8 @@
 
 - (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error;
 
+- (void)MobFoxInterstitialAdWillShow:(MobFoxInterstitialAd *)interstitial;
+
 - (void)MobFoxInterstitialAdClosed;
 
 - (void)MobFoxInterstitialAdClicked;
@@ -35,11 +37,13 @@
 
 
 @property (nonatomic, weak) id<MobFoxInterstitialAdDelegate> delegate;
+@property (nonatomic, weak) UIViewController* rootViewController;
+@property BOOL ready;
 
-
-
--(id) init:(NSString*)invh withMainViewController:(UIViewController*)main;
+-(id) init:(NSString*)invh;
+-(id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
 -(void) loadAd;
+-(void) show;
 
 //- (void)MFInterstitialCustomEventAd:(MobFoxInterstitialCustomEvent *)event didLoad:(id) ad;
 

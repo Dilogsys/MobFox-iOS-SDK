@@ -30,7 +30,9 @@
 
 @interface MobFoxInterstitialCustomEvent : NSObject
 
-- (void)requestInterstitialWithRootController:(UIViewController *)rootViewController networkId:(NSString*)networkId customEventInfo:(NSDictionary *)info;
+-(void)requestInterstitialWithNetworkId:(NSString*)networkId customEventInfo:(NSDictionary *)info;
+
+-(void)presentWithRootController:(UIViewController *)rootViewController;
 
 @property (nonatomic, weak) id<MobFoxInterstitialCustomEventDelegate> delegate;
 
