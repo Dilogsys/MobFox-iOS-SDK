@@ -55,6 +55,8 @@
     @property (nonatomic, assign) BOOL autoplay;
     @property (nonatomic, assign) BOOL skip;
 
+    @property (nonatomic, assign) BOOL secure;
+
     @property (nonatomic, assign) BOOL delegateCustomEvents;
 
 
