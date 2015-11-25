@@ -54,6 +54,7 @@
 
     @property (nonatomic, assign) BOOL autoplay;
     @property (nonatomic, assign) BOOL skip;
+    @property (nonatomic, assign) NSNumber* refresh;
 
     @property (nonatomic, assign) BOOL secure;
 
