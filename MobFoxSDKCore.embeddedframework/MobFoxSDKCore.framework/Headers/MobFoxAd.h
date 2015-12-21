@@ -57,11 +57,12 @@
     @property (nonatomic, assign) NSNumber* refresh;
 
     @property (nonatomic, assign) BOOL secure;
+    @property (nonatomic, assign) BOOL debug;
 
     @property (nonatomic, assign) BOOL delegateCustomEvents;
 
 
-- (NSString *)getIPAddress;
+//- (NSString *)getIPAddress;
 - (id) init:(NSString*)invh;
 - (id) init:(NSString*)invh withFrame:(CGRect)aRect;
 - (void) loadAd;
