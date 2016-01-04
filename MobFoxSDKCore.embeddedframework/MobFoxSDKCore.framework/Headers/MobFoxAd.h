@@ -56,6 +56,9 @@
     @property (nonatomic, assign) BOOL skip;
     @property (nonatomic, assign) NSNumber* refresh;
 
+    @property (nonatomic, assign) NSNumber* adspace_width;
+    @property (nonatomic, assign) NSNumber* adspace_height;
+
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
 
