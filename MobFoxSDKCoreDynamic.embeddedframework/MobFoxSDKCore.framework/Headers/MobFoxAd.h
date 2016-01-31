@@ -78,15 +78,16 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
 - (void)webViewdidFailLoadWithError:(NSError *)error;
 
+/*
 - (void)MFCustomEventAd:(MobFoxCustomEvent *)event didLoad:(UIView *)ad;
 - (void)MFCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
-
 - (void)MFCustomEventAdClosed;
-
 - (void)MFCustomEventMobFoxAdClicked;
-
 - (void)MFCustomEventMobFoxAdFinished;
+*/
 
+- (BOOL)handleATS;
+- (BOOL)handleATSTestOSVer:(float)osVer DictATS:(NSDictionary *)dictATS;
 
 @end
 
