@@ -10,12 +10,14 @@
 #define MobFoxNativeCustomEvent_h
 #import <UIKit/UIKit.h>
 
+#import "MobFoxNativeData.h"
+
 
 @class MobFoxNativeCustomEvent;
 
 @protocol MobFoxNativeCustomEventDelegate <NSObject>
 
-- (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(NSDictionary *)ad;
+- (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(MobFoxNativeData *)ad;
 
 - (void)MFNativeCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -23,6 +25,8 @@
 
 
 @interface MobFoxNativeCustomEvent : NSObject
+
+- (void)registerViewWithInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
 
 - (void)requestAdWithNetworkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
 

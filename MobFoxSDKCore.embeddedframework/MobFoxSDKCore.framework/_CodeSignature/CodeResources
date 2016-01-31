@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		QUGGvTKNsfvZmod2YenMmlR3u08=
+		3odvbQZs244pRYRfoPE7LMtG9m0=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		kaRvuR36IpXIH9ElJdlW48ta2Hg=
+		oWTQs7SKV3I0YjpdpibZRvpTV8U=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -30,11 +30,15 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		Wk5Ugz3QjeKxiSW4A1/TKl8dIrw=
+		f3LBqRmW3QtMUOqTxiGua1v4aX8=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
-		vnTve7DVPzxQJ8YY1Ee7YNBPDwY=
+		9VaOEHXM9yM2HInSmb4kxSB15Ys=
+		</data>
+		<key>Headers/MobFoxNativeData.h</key>
+		<data>
+		AHaUzGwIkmkw8/WqR2oa1aLQd/w=
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I+E3zG1hrMUkhxPUTeUhcyP62TA=
+		xNAiONZSOinTNQwoDY6vO4z2hDw=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		wzsgxBE2wkV/0vyOPUxaZ+mud4Q=
+		hlCQeSiFdYbJUW8R20qXYky2+zI=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -77,7 +81,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		QUGGvTKNsfvZmod2YenMmlR3u08=
+		3odvbQZs244pRYRfoPE7LMtG9m0=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -85,7 +89,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		kaRvuR36IpXIH9ElJdlW48ta2Hg=
+		oWTQs7SKV3I0YjpdpibZRvpTV8U=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -93,11 +97,15 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		Wk5Ugz3QjeKxiSW4A1/TKl8dIrw=
+		f3LBqRmW3QtMUOqTxiGua1v4aX8=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
-		vnTve7DVPzxQJ8YY1Ee7YNBPDwY=
+		9VaOEHXM9yM2HInSmb4kxSB15Ys=
+		</data>
+		<key>Headers/MobFoxNativeData.h</key>
+		<data>
+		AHaUzGwIkmkw8/WqR2oa1aLQd/w=
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
@@ -113,7 +121,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		wzsgxBE2wkV/0vyOPUxaZ+mud4Q=
+		hlCQeSiFdYbJUW8R20qXYky2+zI=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
