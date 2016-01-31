@@ -11,10 +11,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MobFoxNativeCustomEvent.h"
+#import "MobFoxNativeData.h"
+
 
 @protocol MobFoxNativeAdDelegate <NSObject>
 
-- (void)MobFoxNativeAdDidLoad:(NSDictionary *)ad;
+//- (void)MobFoxNativeAdDidLoad:(NSDictionary *)ad;
+
+- (void)MobFoxNativeAdDidLoad:(MobFoxNativeData *)ad;
 
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -38,10 +42,10 @@
     
     - (id) init:(NSString*)invh;
     - (void) loadAd;
+    - (void) registerViewWithInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
 
-    - (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(NSDictionary *)ad;
-
-    - (void)MFNativeCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
+    //- (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(NSDictionary *)ad;
+    //- (void)MFNativeCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
 
 @end
 

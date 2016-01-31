@@ -12,6 +12,7 @@
 #include "MobFoxAd.h"
 #import "MobFoxInterstitialCustomEvent.h"
 
+
 @class MobFoxInterstitialAd;
 
 @protocol MobFoxInterstitialAdDelegate <NSObject>
@@ -46,9 +47,6 @@
 -(void) loadAd;
 -(void) show;
 
-//- (void)MFInterstitialCustomEventAd:(MobFoxInterstitialCustomEvent *)event didLoad:(id) ad;
-
-//- (void)MFInterstitialCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
 
 
 @end
