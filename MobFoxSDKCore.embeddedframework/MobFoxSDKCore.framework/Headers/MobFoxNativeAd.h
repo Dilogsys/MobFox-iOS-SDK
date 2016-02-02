@@ -14,11 +14,12 @@
 #import "MobFoxNativeData.h"
 
 
+@class MobFoxNativeAd;
+
+
 @protocol MobFoxNativeAdDelegate <NSObject>
 
-//- (void)MobFoxNativeAdDidLoad:(NSDictionary *)ad;
-
-- (void)MobFoxNativeAdDidLoad:(MobFoxNativeData *)ad;
+- (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd*)ad withAdData:(MobFoxNativeData *)adData;
 
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error;
 
