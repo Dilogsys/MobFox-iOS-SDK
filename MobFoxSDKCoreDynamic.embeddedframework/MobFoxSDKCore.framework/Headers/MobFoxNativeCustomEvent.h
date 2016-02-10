@@ -17,7 +17,7 @@
 
 @protocol MobFoxNativeCustomEventDelegate <NSObject>
 
-- (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(MobFoxNativeData *)ad;
+- (void)MFNativeCustomEventAd:(MobFoxNativeCustomEvent *)event didLoad:(MobFoxNativeData *)adData;
 
 - (void)MFNativeCustomEventAdDidFailToReceiveAdWithError:(NSError *)error;
 
