@@ -51,6 +51,8 @@
 
     @property (nonatomic, copy) NSString* type; //"waterfall" / "video"
     @property (nonatomic, copy) NSString* adFormat;
+    @property (nonatomic, strong) NSString* invh;
+
 
     @property (nonatomic, assign) BOOL autoplay;
     @property (nonatomic, assign) BOOL skip;

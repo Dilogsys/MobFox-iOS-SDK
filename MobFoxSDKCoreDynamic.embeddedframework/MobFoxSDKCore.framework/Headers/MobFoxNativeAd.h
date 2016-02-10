@@ -14,11 +14,12 @@
 #import "MobFoxNativeData.h"
 
 
+@class MobFoxNativeAd;
+
+
 @protocol MobFoxNativeAdDelegate <NSObject>
 
-//- (void)MobFoxNativeAdDidLoad:(NSDictionary *)ad;
-
-- (void)MobFoxNativeAdDidLoad:(MobFoxNativeData *)ad;
+- (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd*)ad withAdData:(MobFoxNativeData *)adData;
 
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -39,6 +40,8 @@
     @property (nonatomic, copy) NSString* v_dur_min;
     @property (nonatomic, copy) NSString* v_dur_max;
     @property (nonatomic, copy) NSString* r_floor;
+    @property (nonatomic, strong) NSString* invh;
+
     
     - (id) init:(NSString*)invh;
     - (void) loadAd;
