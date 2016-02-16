@@ -51,13 +51,16 @@
 
     @property (nonatomic, copy) NSString* type; //"waterfall" / "video"
     @property (nonatomic, copy) NSString* adFormat;
+    @property (nonatomic, strong) NSString* invh;
 
     @property (nonatomic, assign) BOOL autoplay;
     @property (nonatomic, assign) BOOL skip;
-    @property (nonatomic, assign) NSNumber* refresh;
+    @property (nonatomic, assign) BOOL no_markup;
 
-    @property (nonatomic, assign) NSNumber* adspace_width;
-    @property (nonatomic, assign) NSNumber* adspace_height;
+
+    @property (nonatomic, copy) NSNumber* refresh;
+    @property (nonatomic, copy) NSNumber* adspace_width;
+    @property (nonatomic, copy) NSNumber* adspace_height;
 
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
@@ -88,6 +91,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (BOOL)handleATS;
 - (BOOL)handleATSTestOSVer:(float)osVer DictATS:(NSDictionary *)dictATS;
+- (void)stopPlayback;
 
 @end
 
