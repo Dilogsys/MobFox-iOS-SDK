@@ -42,11 +42,19 @@
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
+<<<<<<< HEAD
 		JY2g+XgynN0U1FFG/L/ZnAx+fo4=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		oJVs649cA66OQbofK3NVsFOcReg=
+=======
+		04zpoUjafzvgmxbNNANL9F/CnSA=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		0zfYv19z/nGGoxsRUt+LXD/OVj8=
+>>>>>>> DemoApp
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -109,7 +117,11 @@
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
+<<<<<<< HEAD
 		JY2g+XgynN0U1FFG/L/ZnAx+fo4=
+=======
+		04zpoUjafzvgmxbNNANL9F/CnSA=
+>>>>>>> DemoApp
 		</data>
 		<key>LICENSE</key>
 		<data>
