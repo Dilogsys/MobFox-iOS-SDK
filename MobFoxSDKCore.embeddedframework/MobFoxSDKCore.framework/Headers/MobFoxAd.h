@@ -93,6 +93,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (BOOL)handleATSTestOSVer:(float)osVer DictATS:(NSDictionary *)dictATS;
 - (void)stopPlayback;
 
+- (void)play;
+- (void)pause;
+
 @end
 
 
