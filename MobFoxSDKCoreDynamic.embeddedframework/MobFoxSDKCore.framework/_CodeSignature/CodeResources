@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		Ft8B1gocyayyMd3SDPXx3+wyZHU=
+		/xFbG6TNWmWUovO+6ob/lQZR+xE=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4zWMaqMz9gUH6onC2MFyYnhh/Xg=
+		EvEM3CG5RRkNRir/JOdNj7FeqF4=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		o3Q2A2px/U20gdS0EJCbTWNuzhU=
+		2QXZH2y/S8F3Hr+O4NzlJyyjydU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -67,6 +67,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+		</data>
+		<key>ad.ks</key>
+		<data>
+		ZS0RBfky4BTOHQHrZyTNqzg7ZkM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +85,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		Ft8B1gocyayyMd3SDPXx3+wyZHU=
+		/xFbG6TNWmWUovO+6ob/lQZR+xE=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -121,7 +125,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		o3Q2A2px/U20gdS0EJCbTWNuzhU=
+		2QXZH2y/S8F3Hr+O4NzlJyyjydU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -130,6 +134,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+		</data>
+		<key>ad.ks</key>
+		<data>
+		ZS0RBfky4BTOHQHrZyTNqzg7ZkM=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -26,7 +26,7 @@
 
 - (void)MobFoxAdFinished;
 
-- (void) MobFoxDelegateCustomEvents:(NSArray*) events;
+- (void)MobFoxDelegateCustomEvents:(NSArray*)events withAdDict:(NSDictionary *)adDict;
 
 @end
 
@@ -45,8 +45,6 @@
     @property (nonatomic, copy) NSString* sub_name;
     @property (nonatomic, copy) NSString* sub_domain;
     @property (nonatomic, copy) NSString* sub_storeurl;
-    @property (nonatomic, copy) NSString* v_dur_min;
-    @property (nonatomic, copy) NSString* v_dur_max;
     @property (nonatomic, copy) NSString* r_floor;
 
     @property (nonatomic, copy) NSString* type; //"waterfall" / "video"
@@ -61,6 +59,8 @@
     @property (nonatomic, copy) NSNumber* refresh;
     @property (nonatomic, copy) NSNumber* adspace_width;
     @property (nonatomic, copy) NSNumber* adspace_height;
+    @property (nonatomic, copy) NSNumber* v_dur_min;
+    @property (nonatomic, copy) NSNumber* v_dur_max;
 
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
@@ -80,6 +80,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)webViewDidStartLoad:(UIWebView *)webView;
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
 - (void)webViewdidFailLoadWithError:(NSError *)error;
+- (void)renderBannerAd:(NSDictionary *)adDict;
 
 /*
 - (void)MFCustomEventAd:(MobFoxCustomEvent *)event didLoad:(UIView *)ad;
