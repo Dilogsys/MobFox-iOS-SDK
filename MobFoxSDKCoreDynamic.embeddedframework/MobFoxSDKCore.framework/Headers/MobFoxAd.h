@@ -64,7 +64,6 @@
 
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
-
     @property (nonatomic, assign) BOOL delegateCustomEvents;
 
 
@@ -90,8 +89,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)MFCustomEventMobFoxAdFinished;
 */
 
-- (BOOL)handleATS;
-- (BOOL)handleATSTestOSVer:(float)osVer DictATS:(NSDictionary *)dictATS;
 - (void)stopPlayback;
 
 - (void)play;
