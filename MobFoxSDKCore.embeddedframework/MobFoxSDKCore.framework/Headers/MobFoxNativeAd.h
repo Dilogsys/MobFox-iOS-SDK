@@ -41,8 +41,10 @@
     @property (nonatomic, copy) NSString* v_dur_max;
     @property (nonatomic, copy) NSString* r_floor;
     @property (nonatomic, strong) NSString* invh;
+    @property (nonatomic, strong) NSString* serverURL;;
 
-    
+
+
     - (id) init:(NSString*)invh;
     - (void) loadAd;
     - (void) registerViewWithInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
