@@ -31,7 +31,7 @@
 @end
 
 
-@interface MobFoxAd : UIView<UIWebViewDelegate,MobFoxCustomEventDelegate>
+@interface MobFoxAd : UIView <UIWebViewDelegate,MobFoxCustomEventDelegate>
 
 
     @property (nonatomic, strong) id<MobFoxAdDelegate> delegate;
