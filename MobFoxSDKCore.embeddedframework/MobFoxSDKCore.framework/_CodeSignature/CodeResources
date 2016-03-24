@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		46RZBTDoY96edMIHMUNgIHPCb+8=
+		rky1HaxgOna13mN34oFDIHvfKjI=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		2QXZH2y/S8F3Hr+O4NzlJyyjydU=
+		iAuhe8J3FOoeVaeCbanpLlM5Lzo=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -67,10 +67,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
-		</data>
-		<key>ad.ks</key>
-		<data>
-		ZS0RBfky4BTOHQHrZyTNqzg7ZkM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -125,7 +121,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		2QXZH2y/S8F3Hr+O4NzlJyyjydU=
+		iAuhe8J3FOoeVaeCbanpLlM5Lzo=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -134,10 +130,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
-		</data>
-		<key>ad.ks</key>
-		<data>
-		ZS0RBfky4BTOHQHrZyTNqzg7ZkM=
 		</data>
 	</dict>
 	<key>rules</key>
