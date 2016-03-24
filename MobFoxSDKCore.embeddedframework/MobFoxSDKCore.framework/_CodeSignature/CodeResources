@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rky1HaxgOna13mN34oFDIHvfKjI=
+		NMbnlRiQucQLyZ+bKZ2mi9PfB7o=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		iAuhe8J3FOoeVaeCbanpLlM5Lzo=
+		rjMSFgM+MzB4mCqzDCtWmiSTiKU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -72,65 +72,170 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/MFWebViewJavascriptBridge.h</key>
-		<data>
-		nqWw5gQ/4v9pArAnNdG3PK/UTuA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			nqWw5gQ/4v9pArAnNdG3PK/UTuA=
+			</data>
+			<key>hash2</key>
+			<data>
+			V6rUgW9PVxFAuI4Rn9PB12DzmkONel9lbAWTLbrF0PY=
+			</data>
+		</dict>
 		<key>Headers/MFWebViewJavascriptBridgeBase.h</key>
-		<data>
-		wKXZemm3R8qVO7oNGa68N9oZkBM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			wKXZemm3R8qVO7oNGa68N9oZkBM=
+			</data>
+			<key>hash2</key>
+			<data>
+			RLavSms/ft2fkodoWaoA9OG18HitycMUltNRHLMjhG0=
+			</data>
+		</dict>
 		<key>Headers/MobFoxAd.h</key>
-		<data>
-		aFc6+1jMSwr6RUhIyClfJ09pOP8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			aFc6+1jMSwr6RUhIyClfJ09pOP8=
+			</data>
+			<key>hash2</key>
+			<data>
+			pXyS5mI+QGs+bWYoXDo2KQ2GfsCrabafAqDWppDY8KA=
+			</data>
+		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
-		<data>
-		iHV0klQAv1JHLrbxFuE+idjUS0c=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iHV0klQAv1JHLrbxFuE+idjUS0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			BRL/KsORp0N9jEoGQ2rGm2VHtrqsiVw1WzKXBYzSFk0=
+			</data>
+		</dict>
 		<key>Headers/MobFoxInterstitialAd.h</key>
-		<data>
-		lqlwHyk2dUGTudRhTJnubgjS14Q=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			lqlwHyk2dUGTudRhTJnubgjS14Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			1HoUHxgQfYtLg/LRj7EY8s9NeQFv6PbcpSZaV2uVV60=
+			</data>
+		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
-		<data>
-		BsrmPfKg9F0CTSLWbGGRQCdgmP4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			BsrmPfKg9F0CTSLWbGGRQCdgmP4=
+			</data>
+			<key>hash2</key>
+			<data>
+			Fkie1WTeLXIBH3bgX48SKWrzFBKptG8+h1EdODHUBvE=
+			</data>
+		</dict>
 		<key>Headers/MobFoxNativeAd.h</key>
-		<data>
-		9pAFSO1Jtl92l5BrWJM5BrgTm7U=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			9pAFSO1Jtl92l5BrWJM5BrgTm7U=
+			</data>
+			<key>hash2</key>
+			<data>
+			jT7TUZAQ/+BRy70ByUjkQfzjYkXpnxQAFANYlc8IyHA=
+			</data>
+		</dict>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
-		<data>
-		r0Ur2lSud5gkPEioxUHV1rmbsvE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			r0Ur2lSud5gkPEioxUHV1rmbsvE=
+			</data>
+			<key>hash2</key>
+			<data>
+			seLbM+WR56qDh8TpplOHwZw9A4Z7Hzj7GFtmvBhOzbk=
+			</data>
+		</dict>
 		<key>Headers/MobFoxNativeData.h</key>
-		<data>
-		AHaUzGwIkmkw8/WqR2oa1aLQd/w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			AHaUzGwIkmkw8/WqR2oa1aLQd/w=
+			</data>
+			<key>hash2</key>
+			<data>
+			dbQ5afJLcl93GlVjYli/UFGvufpQK8tzkJ567KMm/pk=
+			</data>
+		</dict>
 		<key>Headers/MobFoxSDKCore.h</key>
-		<data>
-		JY2g+XgynN0U1FFG/L/ZnAx+fo4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JY2g+XgynN0U1FFG/L/ZnAx+fo4=
+			</data>
+			<key>hash2</key>
+			<data>
+			DUI/Qdgp5aWi4F6bfGlzOfXPljCkSgS6VAWBcFyUqNQ=
+			</data>
+		</dict>
 		<key>LICENSE</key>
-		<data>
-		elPVPBh242+nVwnMWkG+l1fbYAA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			elPVPBh242+nVwnMWkG+l1fbYAA=
+			</data>
+			<key>hash2</key>
+			<data>
+			vbeMKDz9X6qoCYHYzt9gMdRvfcnLXxn1idX1AmkbK7U=
+			</data>
+		</dict>
 		<key>MobFoxSDKCore.bundle/MFWebViewJavascriptBridge.js.txt</key>
-		<data>
-		/m97cRGgXUPzOzp6x9F4LXW7Y94=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/m97cRGgXUPzOzp6x9F4LXW7Y94=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bt00kw+NjGr8ibO+mfu873d2gjVVw4BXTnwJX38iXXQ=
+			</data>
+		</dict>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
-		<data>
-		iAuhe8J3FOoeVaeCbanpLlM5Lzo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			rjMSFgM+MzB4mCqzDCtWmiSTiKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			lEBlVz2povCwYeP504L1L0C6z9WkhdePQMTQ4wjKLyA=
+			</data>
+		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
-		<data>
-		9AGMpEmQnszc2TjCXtCKKuNI/xU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			9AGMpEmQnszc2TjCXtCKKuNI/xU=
+			</data>
+			<key>hash2</key>
+			<data>
+			0unve5V2xqzvFCnX0JeP798jwzii5g9mTOUDm0h0nDQ=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q13pl2Y+SZ5IRIIalVQAEeCxYNA8qe7v8rsHNwkBgCg=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
