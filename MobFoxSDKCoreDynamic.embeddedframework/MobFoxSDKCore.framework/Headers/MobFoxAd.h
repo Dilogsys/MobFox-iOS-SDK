@@ -31,7 +31,7 @@
 @end
 
 
-@interface MobFoxAd : UIView <UIWebViewDelegate,MobFoxCustomEventDelegate>
+@interface MobFoxAd : UIView <UIWebViewDelegate,MobFoxCustomEventDelegate, UIGestureRecognizerDelegate>
 
 
     @property (nonatomic, strong) id<MobFoxAdDelegate> delegate;
@@ -65,6 +65,9 @@
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
     @property (nonatomic, assign) BOOL delegateCustomEvents;
+
+    @property (nonatomic, assign) BOOL isAdTouched;
+    @property (nonatomic, assign) BOOL isWebPageOpen;
 
 
 //- (NSString *)getIPAddress;
