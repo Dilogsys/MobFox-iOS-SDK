@@ -31,14 +31,18 @@
 @end
 
 
-@interface MobFoxAd : UIView <UIWebViewDelegate,MobFoxCustomEventDelegate, UIGestureRecognizerDelegate>
+@interface MobFoxAd : UIView <UIWebViewDelegate, MobFoxCustomEventDelegate, UIGestureRecognizerDelegate>
 
 
     @property (nonatomic, strong) id<MobFoxAdDelegate> delegate;
+    @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
 
    
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
+    @property (nonatomic, copy) NSString* accuracy;
+
+
     @property (nonatomic, copy) NSString* demo_gender; //"m/f"
     @property (nonatomic, copy) NSString* demo_age;
     @property (nonatomic, copy) NSString* s_subid;
@@ -55,8 +59,7 @@
     @property (nonatomic, assign) BOOL skip;
     @property (nonatomic, assign) BOOL no_markup;
 
-
-    @property (nonatomic, copy) NSNumber* refresh;
+    @property (nonatomic, strong, setter = setRefresh:) NSNumber* refresh;
     @property (nonatomic, copy) NSNumber* adspace_width;
     @property (nonatomic, copy) NSNumber* adspace_height;
     @property (nonatomic, copy) NSNumber* v_dur_min;
@@ -65,9 +68,9 @@
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
     @property (nonatomic, assign) BOOL delegateCustomEvents;
+    @property (nonatomic, assign) BOOL auto_pilot;
 
-    @property (nonatomic, assign) BOOL isAdTouched;
-    @property (nonatomic, assign) BOOL isWebPageOpen;
+
 
 
 //- (NSString *)getIPAddress;
@@ -82,7 +85,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)webViewDidStartLoad:(UIWebView *)webView;
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
 - (void)webViewdidFailLoadWithError:(NSError *)error;
-- (void)renderBannerAd:(NSDictionary *)adDict;
 
 /*
 - (void)MFCustomEventAd:(MobFoxCustomEvent *)event didLoad:(UIView *)ad;
@@ -96,6 +98,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (void)play;
 - (void)pause;
+- (void)resume;
+- (void)renderBannerAd:(NSDictionary *)adDict;
+
 
 @end
 

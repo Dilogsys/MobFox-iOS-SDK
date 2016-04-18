@@ -84,7 +84,10 @@
 					handler(message.data, responseCallback)
 				} catch(exception) {
 					if (typeof console != 'undefined') {
-						console.log("WebViewJavascriptBridge: WARNING: javascript handler threw.", message, exception)
+console.log(message);
+console.log(exception);
+
+						console.log("WebViewJavascriptBridge: WARNING: javascript handler threw....", message, exception)
 					}
 				}
 			}
