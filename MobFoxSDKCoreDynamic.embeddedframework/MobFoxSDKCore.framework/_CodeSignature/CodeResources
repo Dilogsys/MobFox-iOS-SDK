@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/MFWebViewJavascriptBridge.h</key>
 		<data>
-		nqWw5gQ/4v9pArAnNdG3PK/UTuA=
+		XRxXl0wtE+/0yQG8F3s28z6Izzk=
 		</data>
 		<key>Headers/MFWebViewJavascriptBridgeBase.h</key>
 		<data>
-		wKXZemm3R8qVO7oNGa68N9oZkBM=
+		5yYChVrUWv4+twds/HyMyp34vA4=
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		AM8SpZpkmcBEqlGG3cRLqN2TSrQ=
+		ZrFzWvV0GUBDBmUOO1ujuU70a5Y=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		lqlwHyk2dUGTudRhTJnubgjS14Q=
+		PtBjbUr8pburA/kCZXhuGoNRPqI=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x9rybN79vVXojk+LZTl4ERZZJGI=
+		QkfdiA+qHDbHXW/TuHqNh1Eghlk=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/MFWebViewJavascriptBridge.js.txt</key>
 		<data>
-		/m97cRGgXUPzOzp6x9F4LXW7Y94=
+		rGPOGmYV9YImU5kYZdncCs0cdc0=
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		rjMSFgM+MzB4mCqzDCtWmiSTiKU=
+		FZZQFHcJR+Y8ipunIBxRDWqKfZc=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -75,33 +75,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nqWw5gQ/4v9pArAnNdG3PK/UTuA=
+			XRxXl0wtE+/0yQG8F3s28z6Izzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			V6rUgW9PVxFAuI4Rn9PB12DzmkONel9lbAWTLbrF0PY=
+			zVcHWUabrPe7/EaC/8RQelJxHXZlMUTf8CbCn1OCFGU=
 			</data>
 		</dict>
 		<key>Headers/MFWebViewJavascriptBridgeBase.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wKXZemm3R8qVO7oNGa68N9oZkBM=
+			5yYChVrUWv4+twds/HyMyp34vA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			RLavSms/ft2fkodoWaoA9OG18HitycMUltNRHLMjhG0=
+			IQjptTnRRl4CGJ7w1DqR5YEAJHfJDPq1cgjCETsANfI=
 			</data>
 		</dict>
 		<key>Headers/MobFoxAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AM8SpZpkmcBEqlGG3cRLqN2TSrQ=
+			ZrFzWvV0GUBDBmUOO1ujuU70a5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			au2rF8lcRcrABrm0J/VqP56Ify9VM2tbcH2xnXYvjzc=
+			yGJP8/yZ+wJx/FOeDehwxaVdQ0ai1A3Uq5HVIH0JZtQ=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lqlwHyk2dUGTudRhTJnubgjS14Q=
+			PtBjbUr8pburA/kCZXhuGoNRPqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			1HoUHxgQfYtLg/LRj7EY8s9NeQFv6PbcpSZaV2uVV60=
+			8fmIzgzvmTXo2x96YACTtQrbqHJHnfiGw5kRgSQ0ias=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -196,22 +196,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/m97cRGgXUPzOzp6x9F4LXW7Y94=
+			rGPOGmYV9YImU5kYZdncCs0cdc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bt00kw+NjGr8ibO+mfu873d2gjVVw4BXTnwJX38iXXQ=
+			x9T36uWKCtJv2quqTGT1Qd0a+7Fotl/l/Nllq3CLHII=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rjMSFgM+MzB4mCqzDCtWmiSTiKU=
+			FZZQFHcJR+Y8ipunIBxRDWqKfZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lEBlVz2povCwYeP504L1L0C6z9WkhdePQMTQ4wjKLyA=
+			jM2ppzNzs5tacud+qtwrvZAJSkmVqeKxPbSPtsH1zxE=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>

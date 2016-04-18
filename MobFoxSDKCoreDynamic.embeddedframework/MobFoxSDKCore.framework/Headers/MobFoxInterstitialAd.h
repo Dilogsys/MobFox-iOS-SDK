@@ -37,7 +37,7 @@
 @interface MobFoxInterstitialAd : NSObject<MobFoxAdDelegate,MobFoxInterstitialCustomEventDelegate>
 
 
-@property (nonatomic, weak) id<MobFoxInterstitialAdDelegate> delegate;
+@property (nonatomic, strong) id<MobFoxInterstitialAdDelegate> delegate;
 @property (nonatomic, weak) UIViewController* rootViewController;
 
 @property BOOL ready;
