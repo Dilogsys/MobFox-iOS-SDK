@@ -247,6 +247,7 @@ MobFox._initVideoPlayer = function(options){
         options.skip        = toBool(options.skip);
         options.start_muted = toBool(options.start_muted);
         options.hide_mute   = toBool(options.hide_mute);
+	options.auto_pilot  = toBool(options.auto_pilot);
 
         options.parent      = self.window.document.body;
 

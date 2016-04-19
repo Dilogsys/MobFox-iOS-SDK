@@ -34,7 +34,7 @@
 @interface MobFoxAd : UIView <UIWebViewDelegate, MobFoxCustomEventDelegate, UIGestureRecognizerDelegate>
 
 
-    @property (nonatomic, strong) id<MobFoxAdDelegate> delegate;
+    @property (nonatomic, weak) id<MobFoxAdDelegate> delegate;
     @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
 
    
