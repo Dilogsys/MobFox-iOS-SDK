@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		ZrFzWvV0GUBDBmUOO1ujuU70a5Y=
+		5IQ/znaxWB/fkbraVxYBe3S/2Uo=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		PtBjbUr8pburA/kCZXhuGoNRPqI=
+		lqlwHyk2dUGTudRhTJnubgjS14Q=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		9pAFSO1Jtl92l5BrWJM5BrgTm7U=
+		gcjk7FGsG0wNdZgPG4Vp/0OOm+w=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QkfdiA+qHDbHXW/TuHqNh1Eghlk=
+		7y8nhHTMQ09PpImzeJDMtKwQL64=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		FZZQFHcJR+Y8ipunIBxRDWqKfZc=
+		sM1X+l7ZrzBcF9kzLoxNB/0YBBU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -97,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZrFzWvV0GUBDBmUOO1ujuU70a5Y=
+			5IQ/znaxWB/fkbraVxYBe3S/2Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			yGJP8/yZ+wJx/FOeDehwxaVdQ0ai1A3Uq5HVIH0JZtQ=
+			62YA11uBDdL7L2UGukoscQRRGT+/+iAMp+4WiAankzI=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PtBjbUr8pburA/kCZXhuGoNRPqI=
+			lqlwHyk2dUGTudRhTJnubgjS14Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			8fmIzgzvmTXo2x96YACTtQrbqHJHnfiGw5kRgSQ0ias=
+			1HoUHxgQfYtLg/LRj7EY8s9NeQFv6PbcpSZaV2uVV60=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -141,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9pAFSO1Jtl92l5BrWJM5BrgTm7U=
+			gcjk7FGsG0wNdZgPG4Vp/0OOm+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			jT7TUZAQ/+BRy70ByUjkQfzjYkXpnxQAFANYlc8IyHA=
+			pLakg2cVzasgAFQOCq+sua/9+S3lJuJvV0jX/bOhqNY=
 			</data>
 		</dict>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
@@ -207,11 +207,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FZZQFHcJR+Y8ipunIBxRDWqKfZc=
+			sM1X+l7ZrzBcF9kzLoxNB/0YBBU=
 			</data>
 			<key>hash2</key>
 			<data>
-			jM2ppzNzs5tacud+qtwrvZAJSkmVqeKxPbSPtsH1zxE=
+			S/J3lSJJJjrCMw5M2grkQ1ybrp22Zj5qro7eywFUwdY=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
