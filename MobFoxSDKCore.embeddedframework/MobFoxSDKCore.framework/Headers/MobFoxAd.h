@@ -10,6 +10,13 @@
 #import "MobFoxCustomEvent.h"
 #import "MFWebViewJavascriptBridge.h"
 
+//#import <CoreLocation/CoreLocation.h>
+
+//#import "LocationManager-Swift.h"
+//#import "LocationManager.swift"
+//@class LocationManager;
+
+
 @class MobFoxAd;
 
 @protocol MobFoxAdDelegate <NSObject>
@@ -34,10 +41,10 @@
 @interface MobFoxAd : UIView <UIWebViewDelegate, MobFoxCustomEventDelegate, UIGestureRecognizerDelegate>
 
 
-    @property (nonatomic, weak) id<MobFoxAdDelegate> delegate;
+    @property (nonatomic, strong) id <MobFoxAdDelegate> delegate;
     @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
 
-   
+
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
     @property (nonatomic, copy) NSString* accuracy;
@@ -94,12 +101,11 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)MFCustomEventMobFoxAdFinished;
 */
 
-- (void)stopPlayback;
-
 - (void)play;
 - (void)pause;
 - (void)resume;
-- (void)renderBannerAd:(NSDictionary *)adDict;
+- (void)renderAd:(NSDictionary *)adDict;
++ (void)locationServicesDisabled:(BOOL)disabled;
 
 
 @end

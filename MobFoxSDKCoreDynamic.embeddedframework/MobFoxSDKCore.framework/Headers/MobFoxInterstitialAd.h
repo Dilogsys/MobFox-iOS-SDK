@@ -41,7 +41,7 @@
 @property (nonatomic, weak) UIViewController* rootViewController;
 
 @property BOOL ready;
-@property MobFoxAd* ad;
+@property (weak, nonatomic) MobFoxAd* ad;
 
 -(id) init:(NSString*)invh;
 -(id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
