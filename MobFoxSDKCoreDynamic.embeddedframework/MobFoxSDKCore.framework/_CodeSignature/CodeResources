@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/Constants.h</key>
+		<data>
+		EooVvhYb9XrrrP0/l+ssHL2A0Oc=
+		</data>
+		<key>Headers/LocationServicesManager.h</key>
+		<data>
+		PBtbyfBha7aEzuOzOR4Nx0yOXFQ=
+		</data>
 		<key>Headers/MFWebViewJavascriptBridge.h</key>
 		<data>
 		XRxXl0wtE+/0yQG8F3s28z6Izzk=
@@ -14,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		5IQ/znaxWB/fkbraVxYBe3S/2Uo=
+		Bhj4pl/exB6Essblen+L9MUEAlo=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -22,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		lqlwHyk2dUGTudRhTJnubgjS14Q=
+		1sd6VUkweM5TiaENHbFWckdiqgI=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		gcjk7FGsG0wNdZgPG4Vp/0OOm+w=
+		Yh5VlMChHIympnEBg4ZZ4WN8FMk=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
@@ -42,11 +50,15 @@
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
-		JY2g+XgynN0U1FFG/L/ZnAx+fo4=
+		I83iSqaUOhH7wfAt0tns5JlwTcE=
+		</data>
+		<key>Headers/WKWebViewJavascriptBridge.h</key>
+		<data>
+		PTZNlfgbxUF+c+BHVM08+tNFOGI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7y8nhHTMQ09PpImzeJDMtKwQL64=
+		2fIx7vKC+5Lf22AD5MRx+SCDC04=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +70,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		sM1X+l7ZrzBcF9kzLoxNB/0YBBU=
+		xYbpDxpd++5IjiOBUKY7NYSOIUM=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -71,6 +83,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/Constants.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EooVvhYb9XrrrP0/l+ssHL2A0Oc=
+			</data>
+			<key>hash2</key>
+			<data>
+			KLRGFa1itN3KTvgt4x5iV4IfUgnVu/DNreQ9jZpt2Fc=
+			</data>
+		</dict>
+		<key>Headers/LocationServicesManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PBtbyfBha7aEzuOzOR4Nx0yOXFQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ziytJ4tA1uQQUFUirx/CzAygj57tDHIn7xSGY/NtHpw=
+			</data>
+		</dict>
 		<key>Headers/MFWebViewJavascriptBridge.h</key>
 		<dict>
 			<key>hash</key>
@@ -97,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5IQ/znaxWB/fkbraVxYBe3S/2Uo=
+			Bhj4pl/exB6Essblen+L9MUEAlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			62YA11uBDdL7L2UGukoscQRRGT+/+iAMp+4WiAankzI=
+			ciygImx8XzFdc67C9WHIi2PgE61KE+IbQ2EX29+Q7Bk=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -119,11 +153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lqlwHyk2dUGTudRhTJnubgjS14Q=
+			1sd6VUkweM5TiaENHbFWckdiqgI=
 			</data>
 			<key>hash2</key>
 			<data>
-			1HoUHxgQfYtLg/LRj7EY8s9NeQFv6PbcpSZaV2uVV60=
+			916tpGaflbsw1NAUQNOOaTieDk9RslUtYq3elMoITtI=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -141,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gcjk7FGsG0wNdZgPG4Vp/0OOm+w=
+			Yh5VlMChHIympnEBg4ZZ4WN8FMk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pLakg2cVzasgAFQOCq+sua/9+S3lJuJvV0jX/bOhqNY=
+			IN9xOuELAwpVpDA5PlgsJSL3fLhvRXwmOAqk1nrR5DA=
 			</data>
 		</dict>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
@@ -174,11 +208,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JY2g+XgynN0U1FFG/L/ZnAx+fo4=
+			I83iSqaUOhH7wfAt0tns5JlwTcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			DUI/Qdgp5aWi4F6bfGlzOfXPljCkSgS6VAWBcFyUqNQ=
+			DSLk5dNm62yGoVyoeqw6bsi6LYSfQgoFfdXsRW9apEs=
+			</data>
+		</dict>
+		<key>Headers/WKWebViewJavascriptBridge.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PTZNlfgbxUF+c+BHVM08+tNFOGI=
+			</data>
+			<key>hash2</key>
+			<data>
+			f5DCqJsnvqJvyrysTs0sGIJje4GCCCRYdE37PcxQ6Ao=
 			</data>
 		</dict>
 		<key>LICENSE</key>
@@ -207,11 +252,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sM1X+l7ZrzBcF9kzLoxNB/0YBBU=
+			xYbpDxpd++5IjiOBUKY7NYSOIUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			S/J3lSJJJjrCMw5M2grkQ1ybrp22Zj5qro7eywFUwdY=
+			xhqi4AtS9THoFbVMkOWekmkdakE5Yrfiyh3B9or1DzM=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
