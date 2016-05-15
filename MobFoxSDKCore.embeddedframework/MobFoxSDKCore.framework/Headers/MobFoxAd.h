@@ -9,12 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MobFoxCustomEvent.h"
 #import "MFWebViewJavascriptBridge.h"
+#import "LocationServicesManager.h"
 
-//#import <CoreLocation/CoreLocation.h>
-
-//#import "LocationManager-Swift.h"
-//#import "LocationManager.swift"
-//@class LocationManager;
 
 
 @class MobFoxAd;
@@ -43,6 +39,10 @@
 
     @property (nonatomic, strong) id <MobFoxAdDelegate> delegate;
     @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
+    @property (nonatomic, strong) LocationServicesManager *locationServicesManager;
+    @property (nonatomic, strong) UIWebView *webView;
+
+
 
 
     @property (nonatomic, copy) NSString* longitude;
@@ -85,13 +85,10 @@
 - (id) init:(NSString*)invh withFrame:(CGRect)aRect;
 - (void) loadAd;
 
-- (BOOL)webView:(UIWebView *)webView
-shouldStartLoadWithRequest:(NSURLRequest *)request
- navigationType:(UIWebViewNavigationType)navigationType;
-
 - (void)webViewDidStartLoad:(UIWebView *)webView;
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
 - (void)webViewdidFailLoadWithError:(NSError *)error;
+
 
 /*
 - (void)MFCustomEventAd:(MobFoxCustomEvent *)event didLoad:(UIView *)ad;
@@ -104,8 +101,8 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)play;
 - (void)pause;
 - (void)resume;
-- (void)renderAd:(NSDictionary *)adDict;
 + (void)locationServicesDisabled:(BOOL)disabled;
+- (void)renderAd:(NSDictionary *)adDict;
 
 
 @end
