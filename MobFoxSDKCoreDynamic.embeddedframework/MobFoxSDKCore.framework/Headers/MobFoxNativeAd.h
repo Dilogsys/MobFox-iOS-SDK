@@ -31,6 +31,8 @@
     
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
+    @property (nonatomic, copy) NSString* accuracy;
+
     @property (nonatomic, copy) NSString* demo_gender; //"m/f"
     @property (nonatomic, copy) NSString* demo_age;
     @property (nonatomic, copy) NSString* s_subid;
