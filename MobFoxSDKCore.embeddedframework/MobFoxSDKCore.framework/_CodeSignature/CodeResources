@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		IcmGMHk1TbOr/Lwd1A4+BlMY+vY=
+		DFHnI9bA5h3o2Qauu9QaNalmqN0=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		+I/SL28nyhZIoRIsFsNdXUiXBPc=
+		0xWZp8KhKuB1SXBa3noISTNsNCk=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		1sd6VUkweM5TiaENHbFWckdiqgI=
+		O/2m8YlDF1AgivwBXlizA2jk1W0=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		tRytayBHQYHu69pApWIgkn2EjpI=
+		1UB1a+o04aQ5yDwygwJ2AmeRYUc=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GoE16Dc5SXMzyiHsFCVC9Hd9w7g=
+		Re89+CNKxa6Hu+VbC4UGPIlJFok=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IcmGMHk1TbOr/Lwd1A4+BlMY+vY=
+			DFHnI9bA5h3o2Qauu9QaNalmqN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5MKBpWpw0mavMgxuRPeoy5Uvc003vqKaiSk/SpMhGG4=
+			PSD86XNoQuHN4whXygsEs/KMMvvwGFFOaAS7ge6piw0=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -131,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+I/SL28nyhZIoRIsFsNdXUiXBPc=
+			0xWZp8KhKuB1SXBa3noISTNsNCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pdAKEcRLGwwcyTlrb3FYDPqNPRtnZZpLMFqKMvNsQtY=
+			QPmJ4OBcgb+mjgQiCjDFDrpmxlY7c/mdNbpo0YmZIKM=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -153,11 +153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1sd6VUkweM5TiaENHbFWckdiqgI=
+			O/2m8YlDF1AgivwBXlizA2jk1W0=
 			</data>
 			<key>hash2</key>
 			<data>
-			916tpGaflbsw1NAUQNOOaTieDk9RslUtYq3elMoITtI=
+			CoMRwK2Hi2QzeqNLFkhCU3A1xNGzXScmhM4fah8d/qA=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -175,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tRytayBHQYHu69pApWIgkn2EjpI=
+			1UB1a+o04aQ5yDwygwJ2AmeRYUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+5yCOi2Ujw4sjdFzeQxcTLW3tYzR5fermFtzD584hrk=
+			21MyPZ5Y9gBPHBDcW/n7q7r09W/3+74RWFHRpXVKJ3M=
 			</data>
 		</dict>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
