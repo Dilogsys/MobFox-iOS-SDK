@@ -25,9 +25,9 @@
 
 @end
 
-@interface MobFoxNativeAd : NSObject<MobFoxNativeCustomEventDelegate>
+@interface MobFoxNativeAd : NSObject <MobFoxNativeCustomEventDelegate>
 
-    @property (nonatomic, weak) id<MobFoxNativeAdDelegate> delegate;
+    @property (nonatomic, weak) id <MobFoxNativeAdDelegate> delegate;
     
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;

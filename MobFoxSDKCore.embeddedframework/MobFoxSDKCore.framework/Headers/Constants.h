@@ -11,7 +11,7 @@
 //#import <Foundation/Foundation.h>
 
 
-#define SDK_VERSION @"Core_2.1.3"
+#define SDK_VERSION @"Core_2.1.4"
 #define OS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 #define FW_VERSION [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"]
 #define BUILD_VERSION [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]
