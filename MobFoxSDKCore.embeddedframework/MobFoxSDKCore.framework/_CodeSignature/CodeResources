@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		7Vpi84hoxD28Y23kEVSKTpgMtYA=
+		HjE4qZxDYJQBj+A8GbGBLJYrxmw=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		O/2m8YlDF1AgivwBXlizA2jk1W0=
+		NADH7vvXoBHVlClxzgGt08ioyns=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KHsxGVRFQtpmbx/Wuv44Tqv2Bus=
+		Emj8vC9gPJ6W8NSE4SjZzcb8iUQ=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		0pq8wsf1cdxsJ2JHnK/BoAFA6wc=
+		Rwob+hwS0u+HwndtzSdhG34pfsI=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
-		5mLD1QHToFKtuZPkJB9dLeowtlQ=
+		VH8QOm5Y/TK7JJV/eFBRUlf50P8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Vpi84hoxD28Y23kEVSKTpgMtYA=
+			HjE4qZxDYJQBj+A8GbGBLJYrxmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ow2c60p0TvjV0YyNyj++Ii0sLHVzWLCrgNfJTj8dMNk=
+			dWLhutXYUKHa0laD39KXVSsgHZGUk4lrGepLKBqXws4=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -153,11 +153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O/2m8YlDF1AgivwBXlizA2jk1W0=
+			NADH7vvXoBHVlClxzgGt08ioyns=
 			</data>
 			<key>hash2</key>
 			<data>
-			CoMRwK2Hi2QzeqNLFkhCU3A1xNGzXScmhM4fah8d/qA=
+			q55xMytdHeiescFRv7w+Qb8tc0QZxmu/HYqY7UefBr8=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -252,22 +252,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0pq8wsf1cdxsJ2JHnK/BoAFA6wc=
+			Rwob+hwS0u+HwndtzSdhG34pfsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			9M5ZOiIDpCn40Lfnu4nVXW0F9tWZcvtIIAUznyZpilw=
+			EjmXtDVtSaPzkVRH1z46uU/BEtHhBJMi0NBYKKjR/Cs=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5mLD1QHToFKtuZPkJB9dLeowtlQ=
+			VH8QOm5Y/TK7JJV/eFBRUlf50P8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tn9/fARbwJPDRStMrw4HiahTm6O7HaMuGj6Lvt0WoCI=
+			MAj9zlTLcxYPNwkIgbX1Oe9+5Oc0utaGU9br/zfQqjc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

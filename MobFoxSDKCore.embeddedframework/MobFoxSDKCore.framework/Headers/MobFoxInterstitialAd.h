@@ -34,7 +34,7 @@
 @end
 
 
-@interface MobFoxInterstitialAd : NSObject<MobFoxAdDelegate,MobFoxInterstitialCustomEventDelegate>
+@interface MobFoxInterstitialAd : NSObject<MobFoxAdDelegate,MobFoxInterstitialCustomEventDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate, NSURLSessionTaskDelegate>
 
 
 @property (nonatomic, weak) id<MobFoxInterstitialAdDelegate> delegate;
