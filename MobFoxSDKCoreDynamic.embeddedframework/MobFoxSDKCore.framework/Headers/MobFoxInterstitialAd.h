@@ -42,11 +42,14 @@
 
 @property BOOL ready;
 @property (strong, nonatomic) MobFoxAd* ad;
+@property (nonatomic, strong) LocationServicesManager *locationServicesManager;
+
 
 -(id) init:(NSString*)invh;
 -(id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
 -(void) loadAd;
 -(void) show;
++ (void)locationServicesDisabled:(BOOL)disabled;
 
 
 

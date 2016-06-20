@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		HjE4qZxDYJQBj+A8GbGBLJYrxmw=
+		IM5OqsBSlab9rLdeYUjR4KXLU48=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		NADH7vvXoBHVlClxzgGt08ioyns=
+		hY2bqkRS3kiGISa4IOZVQnRmP5w=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Emj8vC9gPJ6W8NSE4SjZzcb8iUQ=
+		Y+JIPY65UA8pvkHSw3mYp8x/f2s=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -80,6 +80,10 @@
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
 		</data>
+		<key>response_export.txt</key>
+		<data>
+		InnApf0aVakc0C3CjEkJPcHVk4I=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -87,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HjE4qZxDYJQBj+A8GbGBLJYrxmw=
+			IM5OqsBSlab9rLdeYUjR4KXLU48=
 			</data>
 			<key>hash2</key>
 			<data>
-			dWLhutXYUKHa0laD39KXVSsgHZGUk4lrGepLKBqXws4=
+			Rd2Glx+DyDUfXQ1/viLQCDW2+m8pNV+N6GqFpGyU+AA=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -153,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NADH7vvXoBHVlClxzgGt08ioyns=
+			hY2bqkRS3kiGISa4IOZVQnRmP5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			q55xMytdHeiescFRv7w+Qb8tc0QZxmu/HYqY7UefBr8=
+			qZSeYDaY57qYwmJoiornjK7TDnyMmZQKI8xAm669B7s=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -281,6 +285,17 @@
 			Q13pl2Y+SZ5IRIIalVQAEeCxYNA8qe7v8rsHNwkBgCg=
 			</data>
 		</dict>
+		<key>response_export.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			InnApf0aVakc0C3CjEkJPcHVk4I=
+			</data>
+			<key>hash2</key>
+			<data>
+			MdGANsBoGV4rymnZv25vBxUppEF4jXsg9j6m9EBmr+c=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
@@ -299,6 +314,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -344,6 +364,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
