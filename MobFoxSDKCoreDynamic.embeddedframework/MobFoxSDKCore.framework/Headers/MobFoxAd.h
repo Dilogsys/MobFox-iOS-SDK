@@ -41,7 +41,7 @@
     @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
     @property (nonatomic, strong) LocationServicesManager *locationServicesManager;
 
-
+    @property (nonatomic, copy) NSString* position;
 
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
