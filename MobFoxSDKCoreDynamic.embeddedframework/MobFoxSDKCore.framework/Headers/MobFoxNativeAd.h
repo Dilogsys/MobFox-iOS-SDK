@@ -19,7 +19,11 @@
 
 @protocol MobFoxNativeAdDelegate <NSObject>
 
+@required
+
 - (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd*)ad withAdData:(MobFoxNativeData *)adData;
+
+@optional
 
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error;
 

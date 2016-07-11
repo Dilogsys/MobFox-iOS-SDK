@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		m7yep69KsDkCfmVZrvexJVpj5X0=
+		vedqfw6XNBOieFoZIOQBsIFARPU=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		0F3yaquBLHXmY1MBasWdr0XF4HU=
+		+KkdjrkawGbwtIpz9fuWHY0zeIU=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/MobFoxInterstitialAd.h</key>
 		<data>
-		hY2bqkRS3kiGISa4IOZVQnRmP5w=
+		qxwFWOUhdxVfDIy4DcM12A3yuPU=
 		</data>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/MobFoxNativeAd.h</key>
 		<data>
-		1UB1a+o04aQ5yDwygwJ2AmeRYUc=
+		zcOwmLg/QvAU3R11QDIsgRuyyQc=
 		</data>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
 		<data>
@@ -48,9 +48,13 @@
 		<data>
 		AHaUzGwIkmkw8/WqR2oa1aLQd/w=
 		</data>
+		<key>Headers/MobFoxSDKCore-Swift.h</key>
+		<data>
+		3uRD9PKP9Zk6lVpLOkhEpdhGPoI=
+		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
-		I83iSqaUOhH7wfAt0tns5JlwTcE=
+		8DgiNXze5bHBsygtwnR67MNrZ2w=
 		</data>
 		<key>Headers/WKWebViewJavascriptBridge.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Q7k+C75AzYv/BEfwEXbWUZmIyQU=
+		APYKY669wYnIPd9aWicTaCzO3DI=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -70,15 +74,31 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		Rwob+hwS0u+HwndtzSdhG34pfsI=
+		R6p0pE+8VGvqWAzmxhLZ89PaJxU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
 		VH8QOm5Y/TK7JJV/eFBRUlf50P8=
 		</data>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm.swiftdoc</key>
+		<data>
+		nDbXR+ACGAuK6rTtWObuy5L3xyA=
+		</data>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm.swiftmodule</key>
+		<data>
+		uJyMeobwmYu6CPmDSCFf0a725g8=
+		</data>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		1A4Iby2MqV1oSLgjoJ1z84UeHMg=
+		</data>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		ZcCQfuDdXoMl1t8AEF8RChg3xWE=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+		c9Xs336VvmFXDYHxCV6Y9vhtqxc=
 		</data>
 		<key>response_export.txt</key>
 		<data>
@@ -91,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7yep69KsDkCfmVZrvexJVpj5X0=
+			vedqfw6XNBOieFoZIOQBsIFARPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			z16E7U6nmX6ZuuQK0DrXUWPk1zpF81baOOXS1IY80E8=
+			sohTgZVcVQ9+8n43/LpmLIulov+SQOJojd2uWYbmmxg=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -135,11 +155,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0F3yaquBLHXmY1MBasWdr0XF4HU=
+			+KkdjrkawGbwtIpz9fuWHY0zeIU=
 			</data>
 			<key>hash2</key>
 			<data>
-			GY7B3KzwLLcYiOqLosKFPJM0ijHSnoraoN1dzSFvIeQ=
+			TW7VZRBqZUEzBEB0sCywoB/mWjfQBFhLQ9vzAZZhw5U=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -157,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hY2bqkRS3kiGISa4IOZVQnRmP5w=
+			qxwFWOUhdxVfDIy4DcM12A3yuPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZSeYDaY57qYwmJoiornjK7TDnyMmZQKI8xAm669B7s=
+			HQV9zJKdEWwxRWyMz8rjjKCKzaCHTS+KktvHK6nYVE8=
 			</data>
 		</dict>
 		<key>Headers/MobFoxInterstitialCustomEvent.h</key>
@@ -179,11 +199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1UB1a+o04aQ5yDwygwJ2AmeRYUc=
+			zcOwmLg/QvAU3R11QDIsgRuyyQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			21MyPZ5Y9gBPHBDcW/n7q7r09W/3+74RWFHRpXVKJ3M=
+			SzyCIR42YT2XSiy9rGwXgP8VxFTEjPCo19UniIcF47k=
 			</data>
 		</dict>
 		<key>Headers/MobFoxNativeCustomEvent.h</key>
@@ -208,15 +228,26 @@
 			dbQ5afJLcl93GlVjYli/UFGvufpQK8tzkJ567KMm/pk=
 			</data>
 		</dict>
+		<key>Headers/MobFoxSDKCore-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3uRD9PKP9Zk6lVpLOkhEpdhGPoI=
+			</data>
+			<key>hash2</key>
+			<data>
+			dHPDekeOFqWyoASHkkK4lLZJLwoyRh5vtP0LgHKnvHQ=
+			</data>
+		</dict>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I83iSqaUOhH7wfAt0tns5JlwTcE=
+			8DgiNXze5bHBsygtwnR67MNrZ2w=
 			</data>
 			<key>hash2</key>
 			<data>
-			DSLk5dNm62yGoVyoeqw6bsi6LYSfQgoFfdXsRW9apEs=
+			pbA9XJ8kxc3y8cTxdYkGYf/A1E39B1o/JQTRCSFqOUQ=
 			</data>
 		</dict>
 		<key>Headers/WKWebViewJavascriptBridge.h</key>
@@ -256,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rwob+hwS0u+HwndtzSdhG34pfsI=
+			R6p0pE+8VGvqWAzmxhLZ89PaJxU=
 			</data>
 			<key>hash2</key>
 			<data>
-			EjmXtDVtSaPzkVRH1z46uU/BEtHhBJMi0NBYKKjR/Cs=
+			bClqrSkJOnsWNzkXMj814wq7RykhKpSkV4quvpY49hE=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
@@ -274,15 +305,59 @@
 			MAj9zlTLcxYPNwkIgbX1Oe9+5Oc0utaGU9br/zfQqjc=
 			</data>
 		</dict>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nDbXR+ACGAuK6rTtWObuy5L3xyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			T0M0nzaEPsFl0R/nwF3hAkVHWSeo1j9Y6wYqAIBIH6A=
+			</data>
+		</dict>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uJyMeobwmYu6CPmDSCFf0a725g8=
+			</data>
+			<key>hash2</key>
+			<data>
+			lYd/7auIe8e55QpkFbYJAYr/BZ3FTW1k5X6+HDH4TY0=
+			</data>
+		</dict>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1A4Iby2MqV1oSLgjoJ1z84UeHMg=
+			</data>
+			<key>hash2</key>
+			<data>
+			dmstbiOHUOF8p+6tJvwj2kmbilkmsHc0Ht1DwKJbK2E=
+			</data>
+		</dict>
+		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZcCQfuDdXoMl1t8AEF8RChg3xWE=
+			</data>
+			<key>hash2</key>
+			<data>
+			kA8gRe7pYOCldwPcGrq1SKMs1Gfy7YDccQRc6nIQLPE=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+			c9Xs336VvmFXDYHxCV6Y9vhtqxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q13pl2Y+SZ5IRIIalVQAEeCxYNA8qe7v8rsHNwkBgCg=
+			nRIrDa3i0XJM+EfSlO8R2T9oKd9+o5lutTTGvhBJ3pk=
 			</data>
 		</dict>
 		<key>response_export.txt</key>

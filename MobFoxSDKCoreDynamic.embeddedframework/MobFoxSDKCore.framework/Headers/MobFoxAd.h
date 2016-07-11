@@ -11,7 +11,7 @@
 #import "MFWebViewJavascriptBridge.h"
 #import "LocationServicesManager.h"
 
-
+//#import <MobFoxSDKCore/MobFoxSDKCore-Swift.h>
 
 @class MobFoxAd;
 
@@ -42,12 +42,9 @@
     @property (nonatomic, strong) LocationServicesManager *locationServicesManager;
 
     @property (nonatomic, copy) NSString* position;
-
     @property (nonatomic, copy) NSString* longitude;
     @property (nonatomic, copy) NSString* latitude;
     @property (nonatomic, copy) NSString* accuracy;
-
-
     @property (nonatomic, copy) NSString* demo_gender; //"m/f"
     @property (nonatomic, copy) NSString* demo_age;
     @property (nonatomic, copy) NSString* s_subid;
@@ -55,27 +52,22 @@
     @property (nonatomic, copy) NSString* sub_domain;
     @property (nonatomic, copy) NSString* sub_storeurl;
     @property (nonatomic, copy) NSString* r_floor;
-
     @property (nonatomic, copy) NSString* type; //"waterfall" / "video"
     @property (nonatomic, copy) NSString* adFormat;
-    @property (nonatomic, strong) NSString* invh;
-
-    @property (nonatomic, assign) BOOL autoplay;
-    @property (nonatomic, assign) BOOL skip;
-    @property (nonatomic, assign) BOOL no_markup;
-
-    @property (nonatomic, strong, setter = setRefresh:) NSNumber* refresh;
     @property (nonatomic, copy) NSNumber* adspace_width;
     @property (nonatomic, copy) NSNumber* adspace_height;
     @property (nonatomic, copy) NSNumber* v_dur_min;
     @property (nonatomic, copy) NSNumber* v_dur_max;
+    @property (nonatomic, strong) NSString* invh;
+    @property (nonatomic, strong, setter = setRefresh:) NSNumber* refresh;
 
+    @property (nonatomic, assign) BOOL autoplay;
+    @property (nonatomic, assign) BOOL skip;
+    @property (nonatomic, assign) BOOL no_markup;
     @property (nonatomic, assign) BOOL secure;
     @property (nonatomic, assign) BOOL debug;
     @property (nonatomic, assign) BOOL delegateCustomEvents;
     @property (nonatomic, assign) BOOL auto_pilot;
-
-
 
 
 //- (NSString *)getIPAddress;
@@ -101,6 +93,7 @@
 - (void)resume;
 + (void)locationServicesDisabled:(BOOL)disabled;
 - (void)renderAd:(NSDictionary *)adDict;
+- (BOOL)isViewVisible;
 
 
 @end
