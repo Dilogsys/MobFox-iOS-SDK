@@ -17,9 +17,12 @@
 
 @protocol MobFoxInterstitialAdDelegate <NSObject>
 
-@optional
+
+@required
 
 - (void)MobFoxInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial;
+
+@optional
 
 - (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -30,6 +33,8 @@
 - (void)MobFoxInterstitialAdClicked;
 
 - (void)MobFoxInterstitialAdFinished;
+
+
 
 @end
 
