@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		vedqfw6XNBOieFoZIOQBsIFARPU=
+		bLewVk9GRrPfEjrNt2HtaGgROiY=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
-		8DgiNXze5bHBsygtwnR67MNrZ2w=
+		Yo36Aae1jg+llRyyTm1ldXz92Ak=
 		</data>
 		<key>Headers/WKWebViewJavascriptBridge.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		APYKY669wYnIPd9aWicTaCzO3DI=
+		wtqL+sxNscQfcOEc9MZS6oqB+L4=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/MobFoxSDKCore.swiftmodule/arm.swiftmodule</key>
 		<data>
-		uJyMeobwmYu6CPmDSCFf0a725g8=
+		q4bOWbqe6Ru86iHE12oTOwg8GR4=
 		</data>
 		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ZcCQfuDdXoMl1t8AEF8RChg3xWE=
+		Ki5rNNbX+b07UMRdhGp0kY0HoVo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vedqfw6XNBOieFoZIOQBsIFARPU=
+			bLewVk9GRrPfEjrNt2HtaGgROiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sohTgZVcVQ9+8n43/LpmLIulov+SQOJojd2uWYbmmxg=
+			bGDBBtuAY70M/hvur/1e/44gPJTpY2gyHGG0bSJmgW0=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -243,11 +243,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8DgiNXze5bHBsygtwnR67MNrZ2w=
+			Yo36Aae1jg+llRyyTm1ldXz92Ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			pbA9XJ8kxc3y8cTxdYkGYf/A1E39B1o/JQTRCSFqOUQ=
+			AAzpghAnykwA1jwYDZ7bRwz11Ldioz7lXO1il5xMvug=
 			</data>
 		</dict>
 		<key>Headers/WKWebViewJavascriptBridge.h</key>
@@ -320,11 +320,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJyMeobwmYu6CPmDSCFf0a725g8=
+			q4bOWbqe6Ru86iHE12oTOwg8GR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			lYd/7auIe8e55QpkFbYJAYr/BZ3FTW1k5X6+HDH4TY0=
+			iublOEUF8oWjXvKLDn81DxOtXN5V6C38hqT/Mb92k/E=
 			</data>
 		</dict>
 		<key>Modules/MobFoxSDKCore.swiftmodule/arm64.swiftdoc</key>
@@ -342,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZcCQfuDdXoMl1t8AEF8RChg3xWE=
+			Ki5rNNbX+b07UMRdhGp0kY0HoVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			kA8gRe7pYOCldwPcGrq1SKMs1Gfy7YDccQRc6nIQLPE=
+			yfVtGVshbY+xW4c0tx/92HzzJSvmqRzdj/IikQxzKv4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
