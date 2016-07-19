@@ -4,9 +4,49 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		RB5MzxpkiSuYoGTyMftzD8rJml8=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		427P+SRSsUL7sdYvXfEYZ5XOqUw=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		yv/4K6xWQtCVlRbUXzIoqssfioM=
+		</data>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		D9Uz5/SNfaF+6DK8S0zhJsA+zrE=
+		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		LEK+IxmKrIHZ/I7n0QS5JHPX9WY=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		9HRLBQe4EBikibJp1/R4eoHk6Eo=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		I4KMJgqP8B/cSCLP30nnl3uArJ8=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		7vyud4DHUCA3XkmAMEPUCVHbpY0=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		EwPF8oceZoN7a0o3cz5ItlAFCEg=
+		</data>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<data>
+		EQrAGvMpey/CWefa3Ly17muTNVE=
+		</data>
 		<key>Headers/Constants.h</key>
 		<data>
-		bLewVk9GRrPfEjrNt2HtaGgROiY=
+		BPS4BCbJ1a4pML6zKCLlXnmEj04=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -62,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wtqL+sxNscQfcOEc9MZS6oqB+L4=
+		WZuDesGHTJUFTnaaiqlU/2GZp2s=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -107,15 +147,125 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RB5MzxpkiSuYoGTyMftzD8rJml8=
+			</data>
+			<key>hash2</key>
+			<data>
+			3D3HPMTrKLL5+zo0Oyx8bwjdDae9K2w5lSSNTNL4sTg=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			427P+SRSsUL7sdYvXfEYZ5XOqUw=
+			</data>
+			<key>hash2</key>
+			<data>
+			KKbwsUaGCX5z4m7Jvq2qmlH31SJJHeE2dGBDk9FcA5U=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yv/4K6xWQtCVlRbUXzIoqssfioM=
+			</data>
+			<key>hash2</key>
+			<data>
+			OOiH5+ddGa1S0qlq3Pjjxj8ezT4tnEj1yJG9VoeKJqg=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D9Uz5/SNfaF+6DK8S0zhJsA+zrE=
+			</data>
+			<key>hash2</key>
+			<data>
+			DxiMh81Z+0tRvJJuLYQuFzGYtxBqZK/JpcwFY/THCLI=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LEK+IxmKrIHZ/I7n0QS5JHPX9WY=
+			</data>
+			<key>hash2</key>
+			<data>
+			iNJJu5LN1qlpSodJN/jO0DsOki1qKFdhIPa8oUM3Bvk=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9HRLBQe4EBikibJp1/R4eoHk6Eo=
+			</data>
+			<key>hash2</key>
+			<data>
+			r4pw499dslQJhUEAluBhm4ObEY83NpfKR+idxrecO5o=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I4KMJgqP8B/cSCLP30nnl3uArJ8=
+			</data>
+			<key>hash2</key>
+			<data>
+			WEIuR0r0E0KJV6ruca8qYNsqtL2ZgplEDTyjkeUP2A4=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7vyud4DHUCA3XkmAMEPUCVHbpY0=
+			</data>
+			<key>hash2</key>
+			<data>
+			pySuC40KDHEeZHsyxFfNHXUbr2BvbXVYxA14xm8/B8o=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EwPF8oceZoN7a0o3cz5ItlAFCEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			qyvGhA9BEkVRcfcU5J/GnV8cbZf9Wgg33Q5WoBoBE6E=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EQrAGvMpey/CWefa3Ly17muTNVE=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zw/xzGg+nTXQo8aVg08OjihwzDFeAx9MvnLUBdP2V6w=
+			</data>
+		</dict>
 		<key>Headers/Constants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bLewVk9GRrPfEjrNt2HtaGgROiY=
+			BPS4BCbJ1a4pML6zKCLlXnmEj04=
 			</data>
 			<key>hash2</key>
 			<data>
-			bGDBBtuAY70M/hvur/1e/44gPJTpY2gyHGG0bSJmgW0=
+			yg96yluNSWX0d3q3rg70HPphP7iBXLD9pJRYJb4XAfw=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
