@@ -4,7 +4,3 @@ framework module MobFoxSDKCore {
   export *
   module * { export * }
 }
-
-module MobFoxSDKCore.Swift {
-    header "MobFoxSDKCore-Swift.h"
-}
