@@ -94,6 +94,8 @@
 + (void)locationServicesDisabled:(BOOL)disabled;
 - (void)renderAd:(NSDictionary *)adDict;
 - (BOOL)isViewVisible;
+- (void)exceptionHandler;
+- (void)exceptionHandler:(NSException *)exception;
 
 
 @end

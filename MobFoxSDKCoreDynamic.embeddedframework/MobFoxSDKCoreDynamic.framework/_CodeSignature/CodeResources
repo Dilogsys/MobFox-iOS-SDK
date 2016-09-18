@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		fJV0bkchLm67Q1P60kK7mWaVWjc=
+		NZcFBRzk6JqDk8xGEIPL2amh94g=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		+KkdjrkawGbwtIpz9fuWHY0zeIU=
+		xdZNotQqEwlzA6L+oQeGBeeCHiY=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -52,13 +52,9 @@
 		<data>
 		Yo36Aae1jg+llRyyTm1ldXz92Ak=
 		</data>
-		<key>Headers/WKWebViewJavascriptBridge.h</key>
-		<data>
-		PTZNlfgbxUF+c+BHVM08+tNFOGI=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		rgs/fAfEOfcYI1jNGGcaY96SAl0=
+		wpdWYazbICIC8JOowH+JdUgRwV4=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -70,11 +66,11 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		Gj4O/YXD/zcoLSZrQCph6zynlIE=
+		dFeER5fpvW9MHz++jDU+HQ6DTJ4=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
-		bvZxmIaMSgjBvlsrj86s+aq8cqI=
+		UK3x754x2ZCfl20d1r45rrre06w=
 		</data>
 		<key>response_export.txt</key>
 		<data>
@@ -87,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fJV0bkchLm67Q1P60kK7mWaVWjc=
+			NZcFBRzk6JqDk8xGEIPL2amh94g=
 			</data>
 			<key>hash2</key>
 			<data>
-			lID4IPOmcoY93bxM0avgcVWf2BAW489lBuDtZ+mGDcM=
+			MScN72iewKD8rYpe8wzUmFYxajXh906EOPSl2Lznbcw=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -131,11 +127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+KkdjrkawGbwtIpz9fuWHY0zeIU=
+			xdZNotQqEwlzA6L+oQeGBeeCHiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			TW7VZRBqZUEzBEB0sCywoB/mWjfQBFhLQ9vzAZZhw5U=
+			CP+BJioof473RnnyxyhkJBvTJT+IuVUfX2oFF+OcXVQ=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -215,17 +211,6 @@
 			AAzpghAnykwA1jwYDZ7bRwz11Ldioz7lXO1il5xMvug=
 			</data>
 		</dict>
-		<key>Headers/WKWebViewJavascriptBridge.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PTZNlfgbxUF+c+BHVM08+tNFOGI=
-			</data>
-			<key>hash2</key>
-			<data>
-			f5DCqJsnvqJvyrysTs0sGIJje4GCCCRYdE37PcxQ6Ao=
-			</data>
-		</dict>
 		<key>LICENSE</key>
 		<dict>
 			<key>hash</key>
@@ -252,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gj4O/YXD/zcoLSZrQCph6zynlIE=
+			dFeER5fpvW9MHz++jDU+HQ6DTJ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xq4ldEAkY7O5RLagCLFYLDKTJ96cKuXAEUrVZmhYmd8=
+			Dx6aFPxf2B69exUIAXNf6lQ1a1a8Via3+OgSmVRLVMQ=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bvZxmIaMSgjBvlsrj86s+aq8cqI=
+			UK3x754x2ZCfl20d1r45rrre06w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qhv3Qpq2muEMS22LXos6D3EG4EZ2+ujgvC24St24ZVk=
+			MOJcdNXzCo1KIkcS4fqnUDEmt2kHiNkioslrGLwksTs=
 			</data>
 		</dict>
 		<key>response_export.txt</key>
