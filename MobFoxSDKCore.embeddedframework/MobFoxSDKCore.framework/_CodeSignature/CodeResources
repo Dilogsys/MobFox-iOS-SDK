@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		4tfaxNfwbPdzDHsANiuNclHqxVo=
+		DWF5fst/avTLd2T0Tmm/wxanB1o=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OHF4qs1FR3Tee0bgNbSWm3Kro7Y=
+		9Fpt5ihYM6gyQVI4/geJWtfskK0=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		3Qefxv+rjIx1cZ+6W4vKAoopby8=
+		jBNyLDCheqTpOfj/WWrfM3xQn2c=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>MobFoxSDKCore.plist</key>
 		<data>
-		PZDhynysfn/7S6xh+yeQuDn79rg=
+		DW0aR+6/Owl8nBox4bSqORT6lik=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4tfaxNfwbPdzDHsANiuNclHqxVo=
+			DWF5fst/avTLd2T0Tmm/wxanB1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			hMW/Ugb3eAFcBJnQLgoHpbzAODYyk8SG6wV69yc56dI=
+			QasgYf1Qn6AQa1Q9a3FQ7ZYs2UAyHgHxyKE8gaeib1w=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -245,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Qefxv+rjIx1cZ+6W4vKAoopby8=
+			jBNyLDCheqTpOfj/WWrfM3xQn2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			TB0ZtZoxIGe7Fq/3eefiSs7X+89/IcP66g7EPaYi8jg=
+			ojP8gwg7LhrvLGYJjETHkP2KKH2yFnx9DUmmotovMTc=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
@@ -267,11 +267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PZDhynysfn/7S6xh+yeQuDn79rg=
+			DW0aR+6/Owl8nBox4bSqORT6lik=
 			</data>
 			<key>hash2</key>
 			<data>
-			iopJ4M5raIyGMgWRdVQKhUT0fkjjU6jhkqwjYIwjbC8=
+			bGmcyTUBdJDE+x01I7Onz427gYFq+V6ytO0+ACt5LMs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
