@@ -10,8 +10,7 @@
 #import "MobFoxCustomEvent.h"
 #import "MFWebViewJavascriptBridge.h"
 #import "LocationServicesManager.h"
-
-//#import <MobFoxSDKCore/MobFoxSDKCore-Swift.h>
+#import "MFExceptionHandler.h"
 
 @class MobFoxAd;
 
