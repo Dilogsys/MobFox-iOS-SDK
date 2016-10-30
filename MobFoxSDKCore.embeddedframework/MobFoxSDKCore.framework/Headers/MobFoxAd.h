@@ -96,6 +96,8 @@
 - (void)exceptionHandler;
 - (void)exceptionHandler:(NSException *)exception;
 
+- (void)_changeWidth:(float) newWidth;
+
 
 @end
 
