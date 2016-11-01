@@ -97,6 +97,7 @@
 - (void)exceptionHandler:(NSException *)exception;
 
 - (void)_changeWidth:(float) newWidth;
+- (void)_setSize:(CGSize)size withContainer:(CGSize)container;
 
 
 @end
