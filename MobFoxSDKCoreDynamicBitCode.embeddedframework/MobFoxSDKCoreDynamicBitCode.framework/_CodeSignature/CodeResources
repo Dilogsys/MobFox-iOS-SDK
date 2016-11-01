@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		MP5jo1LJYxZaUAoTnTjjuo10KjE=
+		+uC4wzkx8Mc3TdKtXz54zIWi/OM=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MobFoxAd.h</key>
 		<data>
-		sonRpQyhCnM9V4vR14fbQqRymvM=
+		CFqfVCORoq0R91IdG3jkUnnqgss=
 		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/MobFoxNativeData.h</key>
 		<data>
-		AHaUzGwIkmkw8/WqR2oa1aLQd/w=
+		ZMpn6Wf63NjMG8OK1T8XPFtBdOI=
 		</data>
 		<key>Headers/MobFoxSDKCore.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8FsRTxz6zi2woUcoyygs/gOVDOg=
+		hGEWYdQd1wUq2BDJ586Hz/Te8rE=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		jBNyLDCheqTpOfj/WWrfM3xQn2c=
+		AmhQtRDnaX+aW0rQHjppj2O6XkU=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MP5jo1LJYxZaUAoTnTjjuo10KjE=
+			+uC4wzkx8Mc3TdKtXz54zIWi/OM=
 			</data>
 			<key>hash2</key>
 			<data>
-			UcZ08Vjq97T1YaOnCTrYeuSDzh2sCwwJvVAGgElHH0c=
+			nZxhD9ECtwzEw7R2vjDXrp/pPU6BkZg1O9Peu+ny+lI=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -127,11 +127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sonRpQyhCnM9V4vR14fbQqRymvM=
+			CFqfVCORoq0R91IdG3jkUnnqgss=
 			</data>
 			<key>hash2</key>
 			<data>
-			AIKaFm0KdgGsYO7aT4lJUxEiQj/XKuzZ8EsyM1MJSOo=
+			OjZfMYGoXgN446aPRcaQLukgDwN/OARvRmcSXHzUYD4=
 			</data>
 		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
@@ -193,11 +193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AHaUzGwIkmkw8/WqR2oa1aLQd/w=
+			ZMpn6Wf63NjMG8OK1T8XPFtBdOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dbQ5afJLcl93GlVjYli/UFGvufpQK8tzkJ567KMm/pk=
+			7s0Gnu0Ax4YYWJo2TZTuU+CJ9H1Rw2YE6xZry9+f3u8=
 			</data>
 		</dict>
 		<key>Headers/MobFoxSDKCore.h</key>
@@ -237,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jBNyLDCheqTpOfj/WWrfM3xQn2c=
+			AmhQtRDnaX+aW0rQHjppj2O6XkU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ojP8gwg7LhrvLGYJjETHkP2KKH2yFnx9DUmmotovMTc=
+			RNhrZY+kEqvXjj1qtGyXB+k+2xaKg8T5jeXFsglvGUk=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
