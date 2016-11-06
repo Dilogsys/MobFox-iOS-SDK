@@ -1,3 +1,0 @@
-framework module MobFoxSDKCoreDynamicBitCode {
-    header "MobFoxSDKCoreDynamicBitCode-Swift.h"
-}
