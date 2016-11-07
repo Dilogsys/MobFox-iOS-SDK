@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		+uC4wzkx8Mc3TdKtXz54zIWi/OM=
+		ebm6P5Zy8dkERjrtmRs2jnLKZok=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c+kKB3Gdxge/PMMPR+88KBpop28=
+		KpGZ1kzKherlw0HfGwDeO1scfN4=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		AmhQtRDnaX+aW0rQHjppj2O6XkU=
+		pX9smkfT7+wJ+OZc8tXLhsJknZM=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -78,11 +78,19 @@
 		</data>
 		<key>MobFoxSDKCore.plist</key>
 		<data>
-		UB6TPzI6Cx1Bq09u0MfkDddcfaw=
+		ISzzMKXD0VO31BgdqaE25670q6I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Y3VNYyeJYxbRpSlOBUXd9AnkeMw=
+		</data>
+		<key>ad_response.strings</key>
+		<data>
+		fe6cmHp8/gJLiAGbdiX/tBnxu+k=
+		</data>
+		<key>adresponse.rtf</key>
+		<data>
+		C9HCxwueRMrlZVhjJf7xnHfxTY4=
 		</data>
 		<key>response_export.txt</key>
 		<data>
@@ -95,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+uC4wzkx8Mc3TdKtXz54zIWi/OM=
+			ebm6P5Zy8dkERjrtmRs2jnLKZok=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZxhD9ECtwzEw7R2vjDXrp/pPU6BkZg1O9Peu+ny+lI=
+			8lvZsDIhd1gVviwpnOc4HcDMhDfvnWFh4nwW6s0bTPE=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -260,11 +268,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AmhQtRDnaX+aW0rQHjppj2O6XkU=
+			pX9smkfT7+wJ+OZc8tXLhsJknZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			RNhrZY+kEqvXjj1qtGyXB+k+2xaKg8T5jeXFsglvGUk=
+			b77j9SqnR6LC70dOH6MjQBxwqp7XoCk07fJ3P+fuVCg=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
@@ -282,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UB6TPzI6Cx1Bq09u0MfkDddcfaw=
+			ISzzMKXD0VO31BgdqaE25670q6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			PmLZgjjwSOpXo3NOVrvWNnabaM4pr/t5jfvjJqBJCAs=
+			qXdiUIkpks4A6axxtVkjtb5b8To5p8aikrTTzTjylP0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -298,6 +306,28 @@
 			<key>hash2</key>
 			<data>
 			Q13pl2Y+SZ5IRIIalVQAEeCxYNA8qe7v8rsHNwkBgCg=
+			</data>
+		</dict>
+		<key>ad_response.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fe6cmHp8/gJLiAGbdiX/tBnxu+k=
+			</data>
+			<key>hash2</key>
+			<data>
+			Hsk4wRukTCJnvgkNhnf/LrQdZYD5L8sFUYEuB9cZEQA=
+			</data>
+		</dict>
+		<key>adresponse.rtf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C9HCxwueRMrlZVhjJf7xnHfxTY4=
+			</data>
+			<key>hash2</key>
+			<data>
+			LvOnq9+Xha0DOGBg6b8b7CLmxcGUTB30Z/I6LPwPTQg=
 			</data>
 		</dict>
 		<key>response_export.txt</key>
