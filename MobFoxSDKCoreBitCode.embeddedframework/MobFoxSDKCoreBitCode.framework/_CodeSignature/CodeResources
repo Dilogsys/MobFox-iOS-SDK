@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Constants.h</key>
 		<data>
-		ebm6P5Zy8dkERjrtmRs2jnLKZok=
+		0EQKAZpTGRKX2B/0K+WqEUKiPX4=
 		</data>
 		<key>Headers/LocationServicesManager.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kQ6fSTlJmrooFp/tb61RJSCobng=
+		JY34UnB5WgsDvZLcGacG3SiPnoo=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -66,7 +66,23 @@
 		</data>
 		<key>MobFoxSDKCore.bundle/ad.ks</key>
 		<data>
-		pX9smkfT7+wJ+OZc8tXLhsJknZM=
+		fMDfDPYFssfnd8xrUEQX/wJ2cEY=
+		</data>
+		<key>MobFoxSDKCore.bundle/ad_BACKUP_35993.ks</key>
+		<data>
+		rzn5E5S1kuh5gHvBDFljoRWeV7M=
+		</data>
+		<key>MobFoxSDKCore.bundle/ad_BASE_35993.ks</key>
+		<data>
+		Rwob+hwS0u+HwndtzSdhG34pfsI=
+		</data>
+		<key>MobFoxSDKCore.bundle/ad_LOCAL_35993.ks</key>
+		<data>
+		rzn5E5S1kuh5gHvBDFljoRWeV7M=
+		</data>
+		<key>MobFoxSDKCore.bundle/ad_REMOTE_35993.ks</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>MobFoxSDKCore.bundle/index.html</key>
 		<data>
@@ -74,7 +90,7 @@
 		</data>
 		<key>MobFoxSDKCore.plist</key>
 		<data>
-		ISzzMKXD0VO31BgdqaE25670q6I=
+		NH2QHhtdfCV3xxCWybXJMjwi/eY=
 		</data>
 		<key>response_export.txt</key>
 		<data>
@@ -87,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ebm6P5Zy8dkERjrtmRs2jnLKZok=
+			0EQKAZpTGRKX2B/0K+WqEUKiPX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8lvZsDIhd1gVviwpnOc4HcDMhDfvnWFh4nwW6s0bTPE=
+			wvkjvMWV8wICccsfaNPD0A5K/rs2KYbXxMtLSqX08/o=
 			</data>
 		</dict>
 		<key>Headers/LocationServicesManager.h</key>
@@ -241,11 +257,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pX9smkfT7+wJ+OZc8tXLhsJknZM=
+			fMDfDPYFssfnd8xrUEQX/wJ2cEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			b77j9SqnR6LC70dOH6MjQBxwqp7XoCk07fJ3P+fuVCg=
+			1rfIGNTirVzKKbJu4JGh3X0Wfb5wVK9ksK82Dpyyjv4=
+			</data>
+		</dict>
+		<key>MobFoxSDKCore.bundle/ad_BACKUP_35993.ks</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rzn5E5S1kuh5gHvBDFljoRWeV7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			nGKTItgqSRy9eFyoqb6m56jdIJsFKj797AwTpZENC7E=
+			</data>
+		</dict>
+		<key>MobFoxSDKCore.bundle/ad_BASE_35993.ks</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rwob+hwS0u+HwndtzSdhG34pfsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			EjmXtDVtSaPzkVRH1z46uU/BEtHhBJMi0NBYKKjR/Cs=
+			</data>
+		</dict>
+		<key>MobFoxSDKCore.bundle/ad_LOCAL_35993.ks</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rzn5E5S1kuh5gHvBDFljoRWeV7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			nGKTItgqSRy9eFyoqb6m56jdIJsFKj797AwTpZENC7E=
+			</data>
+		</dict>
+		<key>MobFoxSDKCore.bundle/ad_REMOTE_35993.ks</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>MobFoxSDKCore.bundle/index.html</key>
@@ -263,11 +323,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ISzzMKXD0VO31BgdqaE25670q6I=
+			NH2QHhtdfCV3xxCWybXJMjwi/eY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qXdiUIkpks4A6axxtVkjtb5b8To5p8aikrTTzTjylP0=
+			+D5u4N7GjFOMLAWRc9ckV1odDB2XbC68N5Slbd+9FOo=
 			</data>
 		</dict>
 		<key>response_export.txt</key>
