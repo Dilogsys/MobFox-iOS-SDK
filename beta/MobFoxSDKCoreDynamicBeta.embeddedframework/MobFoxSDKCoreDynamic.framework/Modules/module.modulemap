@@ -1,3 +1,0 @@
-framework module MobFoxSDKCoreDynamic {
-    header "MobFoxSDKCoreDynamic-Swift.h"
-}

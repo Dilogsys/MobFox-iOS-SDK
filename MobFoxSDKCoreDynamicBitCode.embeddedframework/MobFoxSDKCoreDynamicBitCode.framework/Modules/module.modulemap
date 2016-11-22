@@ -1,0 +1,6 @@
+framework module MobFoxSDKCoreDynamicBitCode {
+  umbrella header "MobFoxSDKCoreDynamicBitCode.h"
+
+  export *
+  module * { export * }
+}

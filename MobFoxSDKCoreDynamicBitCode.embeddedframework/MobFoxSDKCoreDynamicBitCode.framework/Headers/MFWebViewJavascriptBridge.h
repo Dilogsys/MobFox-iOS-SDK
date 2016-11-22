@@ -23,9 +23,7 @@
     #define WVJB_WEBVIEW_DELEGATE_INTERFACE NSObject<UIWebViewDelegate, WebViewJavascriptBridgeBaseDelegate>
 #endif
 
-@interface MFWebViewJavascriptBridge : WVJB_WEBVIEW_DELEGATE_INTERFACE
-
-@property(strong) WebViewJavascriptBridgeBase *base;
+@interface WebViewJavascriptBridge : WVJB_WEBVIEW_DELEGATE_INTERFACE
 
 + (instancetype)bridgeForWebView:(WVJB_WEBVIEW_TYPE*)webView;
 + (void)enableLogging;
@@ -36,4 +34,6 @@
 - (void)callHandler:(NSString*)handlerName data:(id)data;
 - (void)callHandler:(NSString*)handlerName data:(id)data responseCallback:(WVJBResponseCallback)responseCallback;
 - (void)setWebViewDelegate:(WVJB_WEBVIEW_DELEGATE_TYPE*)webViewDelegate;
+- (void)disableJavscriptAlertBoxSafetyTimeout;
+
 @end

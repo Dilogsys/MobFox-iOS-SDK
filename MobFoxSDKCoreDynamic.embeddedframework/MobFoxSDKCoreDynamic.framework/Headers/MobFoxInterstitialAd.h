@@ -34,8 +34,6 @@
 
 - (void)MobFoxInterstitialAdFinished;
 
-
-
 @end
 
 
@@ -47,7 +45,7 @@
 
 @property BOOL ready;
 @property (strong, nonatomic) MobFoxAd* ad;
-@property (nonatomic, strong) LocationServicesManager *locationServicesManager;
+@property (nonatomic, strong) MFLocationServicesManager *locationServicesManager;
 
 
 -(id) init:(NSString*)invh;
