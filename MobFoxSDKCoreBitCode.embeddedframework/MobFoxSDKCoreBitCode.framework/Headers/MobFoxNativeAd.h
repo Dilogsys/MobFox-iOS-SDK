@@ -12,6 +12,7 @@
 #import <UIKit/UIKit.h>
 #import "MobFoxNativeCustomEvent.h"
 #import "MobFoxNativeData.h"
+#import "MFExceptionHandler.h"
 
 
 @class MobFoxNativeAd;

@@ -1,5 +1,5 @@
 //
-//  ExceptionHandler.h
+//  MFExceptionHandler.h
 //  MobFoxSDKCore
 //
 //  Created by Shimi Sheetrit on 9/18/16.
@@ -24,7 +24,7 @@
 
 
 + (instancetype)sharedInstance;
-- (void)reportOnError:(NSException *)exception;
+- (void)reportOnException;
 
 
 @end
