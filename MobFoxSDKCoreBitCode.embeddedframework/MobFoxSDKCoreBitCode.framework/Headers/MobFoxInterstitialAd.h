@@ -53,7 +53,7 @@
 -(void) loadAd;
 -(void) show;
 + (void)locationServicesDisabled:(BOOL)disabled;
-
+- (void)dismissAd;
 
 
 @end
