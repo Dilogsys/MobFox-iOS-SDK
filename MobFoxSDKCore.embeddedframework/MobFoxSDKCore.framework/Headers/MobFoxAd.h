@@ -72,7 +72,6 @@
 //- (NSString *)getIPAddress;
 - (id) init:(NSString*)invh;
 - (id) init:(NSString*)invh withFrame:(CGRect)aRect;
-- (id) init:(NSString*)invh withSize:(CGSize)aSize origin:(CGPoint)aOrigin;
 
 - (void) loadAd;
 
