@@ -10,6 +10,7 @@
 #define MobFoxSDKSource_MobFoxInterstitialVideo_h
 
 #include "MobFoxAd.h"
+#include "MobFoxAdLegacy.h"
 #import "MobFoxInterstitialCustomEvent.h"
 
 
@@ -37,14 +38,15 @@
 @end
 
 
-@interface MobFoxInterstitialAd : NSObject<MobFoxAdDelegate,MobFoxInterstitialCustomEventDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate, NSURLSessionTaskDelegate>
+@interface MobFoxInterstitialAd : NSObject<MobFoxAdDelegate,MobFoxAdLegacyDelegate,MobFoxInterstitialCustomEventDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate, NSURLSessionTaskDelegate>
 
 
 @property (nonatomic, weak) id<MobFoxInterstitialAdDelegate> delegate;
 @property (nonatomic, weak) UIViewController* rootViewController;
 
 @property BOOL ready;
-@property (strong, nonatomic) MobFoxAd* ad;
+
+
 @property (nonatomic, strong) MFLocationServicesManager *locationServicesManager;
 
 
@@ -55,6 +57,24 @@
 + (void)locationServicesDisabled:(BOOL)disabled;
 - (void)dismissAd;
 
+@property (nonatomic, strong) NSString* invh;
+
+@property (nonatomic, copy) NSString* longitude;
+@property (nonatomic, copy) NSString* latitude;
+@property (nonatomic, copy) NSString* demo_gender; //"m/f"
+@property (nonatomic, copy) NSString* demo_age;
+@property (nonatomic, copy) NSString* s_subid;
+@property (nonatomic, copy) NSString* sub_name;
+@property (nonatomic, copy) NSString* sub_domain;
+@property (nonatomic, copy) NSString* sub_storeurl;
+@property (nonatomic, copy) NSString* r_floor;
+
+//set this (in seconds) to make the ad refresh
+@property (nonatomic, assign) NSNumber* refresh;
+@property (nonatomic, copy) NSNumber* v_dur_min;
+@property (nonatomic, copy) NSNumber* v_dur_max;
+
+@property (nonatomic, assign) BOOL autoplay;
 
 @end
 

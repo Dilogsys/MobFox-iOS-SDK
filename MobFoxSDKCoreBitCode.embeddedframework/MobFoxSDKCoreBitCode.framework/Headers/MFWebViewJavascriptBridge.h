@@ -23,7 +23,7 @@
     #define WVJB_WEBVIEW_DELEGATE_INTERFACE NSObject<UIWebViewDelegate, WebViewJavascriptBridgeBaseDelegate>
 #endif
 
-@interface WebViewJavascriptBridge : WVJB_WEBVIEW_DELEGATE_INTERFACE
+@interface MFWebViewJavascriptBridge : WVJB_WEBVIEW_DELEGATE_INTERFACE
 
 + (instancetype)bridgeForWebView:(WVJB_WEBVIEW_TYPE*)webView;
 + (void)enableLogging;
