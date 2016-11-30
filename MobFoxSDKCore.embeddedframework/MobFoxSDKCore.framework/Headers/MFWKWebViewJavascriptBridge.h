@@ -28,6 +28,8 @@
 - (void)setWebViewDelegate:(id<WKNavigationDelegate>)webViewDelegate;
 - (void)disableJavscriptAlertBoxSafetyTimeout;
 
+@property WebViewJavascriptBridgeBase *base;
+
 @end
 
 #endif
