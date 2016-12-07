@@ -22,3 +22,8 @@ FOUNDATION_EXPORT const unsigned char MobFoxSDKCoreVersionString[];
 #import "MobFoxCustomEvent.h"
 #import "MobFoxInterstitialCustomEvent.h"
 #import "MobFoxNativeCustomEvent.h"
+#import "MFConstants.h"
+
+#import "MFWebViewJavascriptBridge.h"
+#import "MFWebViewJavascriptBridge_JS.h"
+#import "MobFoxSDKCoreDynamic-Bridging-Header.h"
