@@ -63,7 +63,7 @@
 
     @property (nonatomic, assign) BOOL skip;
     @property (nonatomic, assign) BOOL no_markup;
-    @property (nonatomic, assign) BOOL secure;
+   
     @property (nonatomic, assign) BOOL debug;
     @property (nonatomic, assign) BOOL delegateCustomEvents;
     @property (nonatomic, assign) BOOL autoplay;
