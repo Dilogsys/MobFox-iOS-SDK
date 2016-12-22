@@ -16,6 +16,7 @@
 
 @class MobFoxInterstitialAd;
 
+
 @protocol MobFoxInterstitialAdDelegate <NSObject>
 
 
