@@ -54,10 +54,6 @@
     //@property (nonatomic, strong) NSString* i_ipaddress;
 
 
-
-
-
-
     - (id) init:(NSString*)invh;
     - (void) loadAd;
     - (void) registerViewWithInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
