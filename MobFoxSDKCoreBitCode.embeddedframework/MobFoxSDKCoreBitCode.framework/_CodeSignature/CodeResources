@@ -40,10 +40,6 @@
 		<data>
 		iEF7qMnJjn2/dJiIUHmC8siEnuU=
 		</data>
-		<key>Headers/MobFoxAdTest.h</key>
-		<data>
-		FjW65MipV+jJb5GAWnGvSLpq4HM=
-		</data>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<data>
 		iHV0klQAv1JHLrbxFuE+idjUS0c=
@@ -68,17 +64,17 @@
 		<data>
 		ZMpn6Wf63NjMG8OK1T8XPFtBdOI=
 		</data>
-		<key>Headers/MobFoxSDKCoreBitCode-Bridging-Header.h</key>
+		<key>Headers/MobFoxSDKCore-Bridging-Header.h</key>
 		<data>
 		kz2l+ECimRO9IRs2rJhjHarLMjs=
 		</data>
 		<key>Headers/MobFoxSDKCoreBitCode.h</key>
 		<data>
-		TV1WsKHRnTs1X41D9w0EoNISM3E=
+		5DBLBjYVDshCcpNyaIkqqddWmZk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vyDF3ototF7XsvaU67Sbci3pP04=
+		Nty5VtVsRDOZXusV4UhrquN+SLA=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -202,17 +198,6 @@
 			kd3ld7Dy9Dzg7gOXAYN0pnle6biocYQ33RSiwOcRjus=
 			</data>
 		</dict>
-		<key>Headers/MobFoxAdTest.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FjW65MipV+jJb5GAWnGvSLpq4HM=
-			</data>
-			<key>hash2</key>
-			<data>
-			kuU7+89S8aEpYaX9ZmeFu6J+S9PJf5eaU9Lb1XNsP7E=
-			</data>
-		</dict>
 		<key>Headers/MobFoxCustomEvent.h</key>
 		<dict>
 			<key>hash</key>
@@ -279,7 +264,7 @@
 			7s0Gnu0Ax4YYWJo2TZTuU+CJ9H1Rw2YE6xZry9+f3u8=
 			</data>
 		</dict>
-		<key>Headers/MobFoxSDKCoreBitCode-Bridging-Header.h</key>
+		<key>Headers/MobFoxSDKCore-Bridging-Header.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -294,11 +279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TV1WsKHRnTs1X41D9w0EoNISM3E=
+			5DBLBjYVDshCcpNyaIkqqddWmZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			wsaz6jSu2KY5sx5XmJeig6UXsfIoHKXSKYIGb6A+m54=
+			se1+nflWiesajn2g+abMx6YzF76hpGvPVBwUvM6eZhQ=
 			</data>
 		</dict>
 		<key>LICENSE</key>

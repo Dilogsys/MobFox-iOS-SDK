@@ -29,4 +29,4 @@ FOUNDATION_EXPORT const unsigned char MobFoxSDKCoreVersionString[];
 
 #import "MFWebViewJavascriptBridge.h"
 #import "MFWebViewJavascriptBridge_JS.h"
-#import "MobFoxSDKCoreDynamic-Bridging-Header.h"
+#import "MobFoxSDKCore-Bridging-Header.h"
