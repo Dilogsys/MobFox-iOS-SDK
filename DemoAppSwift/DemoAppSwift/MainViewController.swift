@@ -18,8 +18,8 @@ struct InventoryHash {
     
     static let MobFoxHashBanner = "fe96717d9875b9da4339ea5367eff1ec"
     static let MobFoxHashInter = "267d72ac3f77a3f447b32cf7ebf20673"
-    static let MobFoxHashNative = "80187188f458cfde788d961b6882fd53"
-    static let MobFoxHashVideo = "651586294dac23e245f26789c4043aa9"
+    static let MobFoxHashNative = "a764347547748896b84e0b8ccd90fd62"
+    static let MobFoxHashVideo = "80187188f458cfde788d961b6882fd53"
 }
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate {
@@ -95,7 +95,6 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.view.addSubview(bannerView)
         
      
-        
         
     }
 
@@ -176,16 +175,46 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     //MARK: MobFox Ad Native Delegate
     func mobFoxNativeAdDidLoad(_ ad: MobFoxNativeAd!, withAdData adData: MobFoxNativeData!) {
         
-        self.nativeAdIcon.image = UIImage(data: try! Data(contentsOf: adData.icon.url))
-        self.nativeAdTitle.text = adData.assetHeadline
-        self.nativeAdDescription.text = adData.assetDescription
-        self.clickURL = adData.clickURL.absoluteURL
+        print(adData)
+        print(ad)
+
+        
+        if((adData) != nil) {
+            
+            if adData.icon != nil {
                 
+                if (adData.icon.url != nil) {
+            
+                    let data = try? Data(contentsOf: (adData.icon.url)!)
+                    let image: UIImage = UIImage(data: data!)!
+            
+                    self.nativeAdIcon.image = image
+                }
+            }
+            
+            if adData.clickURL != nil {
+                
+                self.clickURL = adData.clickURL.absoluteURL
+
+            }
+            
+            if adData.assetHeadline != nil {
+                self.nativeAdTitle.text = adData.assetHeadline
+
+            }
+            
+            if adData.assetDescription != nil {
+                self.nativeAdDescription.text = adData.assetDescription
+                
+            }
+        }
+
+        
     }
     
     func mobFoxNativeAdDidFailToReceiveAdWithError(_ error: NSError!) {
         
-        print("MobFoxNativeAdDidFailToReceiveAdWithError")
+        print("MobFoxNativeAdDidFailToReceiveAdWithError: \(error.description)")
 
     }
     
