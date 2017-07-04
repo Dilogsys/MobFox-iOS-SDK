@@ -96,6 +96,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
      
         
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -177,17 +178,17 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         print(adData)
         print(ad)
-
+        
         
         if((adData) != nil) {
             
             if adData.icon != nil {
                 
                 if (adData.icon.url != nil) {
-            
+                    
                     let data = try? Data(contentsOf: (adData.icon.url)!)
                     let image: UIImage = UIImage(data: data!)!
-            
+                    
                     self.nativeAdIcon.image = image
                 }
             }
@@ -195,12 +196,12 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             if adData.clickURL != nil {
                 
                 self.clickURL = adData.clickURL.absoluteURL
-
+                
             }
             
             if adData.assetHeadline != nil {
                 self.nativeAdTitle.text = adData.assetHeadline
-
+                
             }
             
             if adData.assetDescription != nil {
@@ -208,13 +209,13 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 
             }
         }
-
+        
         
     }
     
-    func mobFoxNativeAdDidFailToReceiveAdWithError(_ error: NSError!) {
+    func mobFoxNativeAdDidFailToReceiveAdWithError(_ error: Error!) {
         
-        print("MobFoxNativeAdDidFailToReceiveAdWithError: \(error.description)")
+        print("MobFoxNativeAdDidFailToReceiveAdWithError")
 
     }
     

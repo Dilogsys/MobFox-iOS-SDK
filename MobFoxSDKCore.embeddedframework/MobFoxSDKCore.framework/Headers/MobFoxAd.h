@@ -14,7 +14,6 @@
 
 #import "MFWebViewJavascriptBridgeBase.h"
 
-//#import "MFWKWebViewJavascriptBridge.h"
 
 @class MobFoxAd;
 
@@ -40,16 +39,12 @@
 @interface MobFoxAd : UIView <UIWebViewDelegate, MobFoxCustomEventDelegate, UIGestureRecognizerDelegate, MFExceptionHandlerDelegate>
 
     
+@property (nonatomic, strong) UIWebView *webView;
 
 
 @property (nonatomic, weak) id <MobFoxAdDelegate> delegate;
 @property (nonatomic, strong) MFWebViewJavascriptBridge *bridge;
 @property (nonatomic, strong) MFLocationServicesManager *locationServicesManager;
-
-
-//@property (nonatomic) MFWebViewJavascriptBridge *brg;
-//@property (nonatomic) WebViewJavascriptBridgeBase *base;
-
 
 @property (nonatomic, copy) NSString* position;
 @property (nonatomic, copy) NSString* longitude;
@@ -69,12 +64,21 @@
 @property (nonatomic, copy) NSNumber* v_dur_min;
 @property (nonatomic, copy) NSNumber* v_dur_max;
 @property (nonatomic, strong) NSString* invh;
-@property (nonatomic, strong, setter = setRefresh:) NSNumber* refresh;
+@property (nonatomic, strong) NSNumber* refresh;
+@property (nonatomic, strong) NSString *requestID;
+
+
 
 @property (nonatomic, assign) BOOL autoplay;
 @property (nonatomic, assign) BOOL skip;
-@property (nonatomic, assign) BOOL no_markup;
+@property (nonatomic, assign) BOOL dev_js;
+@property (nonatomic, assign) BOOL isAdTouched;
+
+
 @property (nonatomic, assign, getter=isUnitTesting) BOOL unit_testing;
+
+@property (nonatomic, assign) float timeout;
+
 
 
 
@@ -87,7 +91,7 @@
 
 - (id) init:(NSString*)invh;
 - (id) init:(NSString*)invh withFrame:(CGRect)aRect;
-- (void) loadAd;
+- (void)loadAd;
 
 - (void)webViewDidStartLoad:(UIWebView *)webView;
 - (void)webViewDidFinishLoad:(UIWebView *)webView;

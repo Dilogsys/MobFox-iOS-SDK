@@ -211,6 +211,7 @@
 		865BD1551C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */; };
 		866ECF9C1E0937410069E209 /* MFTestAdapterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 866ECF9B1E0937410069E209 /* MFTestAdapterBase.m */; };
 		866ECF9F1E093BA40069E209 /* MFTestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 866ECF9E1E093BA40069E209 /* MFTestAdapter.m */; };
+		868311ED1F0BB0AE00CC367E /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BCF1C9573D50001EEF3 /* libz.1.dylib */; };
 		8684D60E1E1D59B800B82223 /* GenericAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684D60D1E1D59B800B82223 /* GenericAdapterViewController.m */; };
 		86891E131C5FA8250098C602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E121C5FA8250098C602 /* main.m */; };
 		86891E161C5FA8250098C602 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E151C5FA8250098C602 /* AppDelegate.m */; };
@@ -798,6 +799,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868311ED1F0BB0AE00CC367E /* libz.1.dylib in Frameworks */,
 				86104BA71E819BB200DC1A9E /* MobFoxSDKCore.framework in Frameworks */,
 				86514A5F1E6C5A0E003F4967 /* GoogleMobileAds.framework in Frameworks */,
 				8603F7D11CF2EFE400CAE120 /* libxml2.tbd in Frameworks */,
@@ -2180,7 +2182,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobfox.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2209,7 +2211,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobfox.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
