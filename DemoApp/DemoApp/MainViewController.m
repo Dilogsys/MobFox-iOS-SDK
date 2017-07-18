@@ -142,7 +142,6 @@ static bool perform_segue_enabled;
     
     
     /*** Banner ***/
-    [MobFoxAd locationServicesDisabled:false];
 
     self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
     self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
@@ -154,7 +153,6 @@ static bool perform_segue_enabled;
 
     /*** Interstitial ***/
     
-    [MobFoxInterstitialAd locationServicesDisabled:true];
     
     MainViewController *rootController =(MainViewController*)[[(AppDelegate*)
                                                                [[UIApplication sharedApplication]delegate] window] rootViewController];
@@ -165,7 +163,6 @@ static bool perform_segue_enabled;
     
     /*** Native ***/
     
-    [MobFoxNativeAd locationServicesDisabled:true];
     
     self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE_TEST];
     self.mobfoxNativeAd.delegate = self;
@@ -173,7 +170,6 @@ static bool perform_segue_enabled;
     
     /*** Video (Banner) ***/
     
-    [MobFoxAd locationServicesDisabled:true];
 
     float videoTopMargin = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 200.0 : 80.0;
     self.videoAdRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
@@ -187,7 +183,6 @@ static bool perform_segue_enabled;
     
     /*** Video (Inter) ***/
 
-    [MobFoxAd locationServicesDisabled:true];
     
     self.mobfoxVideoInterstitial = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_VIDEO_TEST withRootViewController:self];
     self.mobfoxVideoInterstitial.delegate = self;

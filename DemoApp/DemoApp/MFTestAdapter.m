@@ -49,7 +49,6 @@
     
     NSLog(@"MFTestAdapter >> requestAdWithSize:");
 
-    [MobFoxAd locationServicesDisabled:false];
     //CGRect rect = CGRectMake((SCREEN_WIDTH - _bannerWidth)/2, SCREEN_HEIGHT - _bannerHeight, size.width, size.height);
     self.bannerAd = [[MobFoxAd alloc] init:nid withFrame:rect];
     self.bannerAd.delegate = self;
@@ -64,7 +63,6 @@
     
     NSLog(@"MFTestAdapter >> requestInterstitialAdWithSize:");
     
-    [MobFoxInterstitialAd locationServicesDisabled:false];
     UIViewController *rootController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 
     self.interstitialAd = [[MobFoxInterstitialAd alloc] init:nid withRootViewController:rootController];
@@ -78,7 +76,6 @@
     
     NSLog(@"MFTestAdapter >> requestNativeAdWithSize:");
     
-    [MobFoxNativeAd locationServicesDisabled:false];
     self.nativeAd = [[MobFoxNativeAd alloc] init:nid];
     self.nativeAd.delegate = self;
     
