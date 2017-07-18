@@ -54,7 +54,6 @@
 - (id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
 - (void) loadAd;
 - (void) show;
-+ (void) locationServicesDisabled:(BOOL)disabled;
 - (void) dismissAd;
 
 

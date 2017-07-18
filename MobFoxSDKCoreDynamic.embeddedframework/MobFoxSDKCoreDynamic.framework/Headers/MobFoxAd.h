@@ -101,7 +101,6 @@
 - (void)play;
 - (void)pause;
 - (void)resume;
-+ (void)locationServicesDisabled:(BOOL)disabled;
 - (void)renderAd:(NSDictionary *)adDict withCB:(void (^)(id responseData)) cb;
 - (BOOL)isViewVisible;
 
