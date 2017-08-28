@@ -1,6 +1,0 @@
-framework module MobFoxSDKCoreBitCode {
-  umbrella header "MobFoxSDKCoreBitCode.h"
-
-  export *
-  module * { export * }
-}
