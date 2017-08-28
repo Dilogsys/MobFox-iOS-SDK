@@ -69,10 +69,13 @@
 
 
 
+
 @property (nonatomic, assign) BOOL autoplay;
 @property (nonatomic, assign) BOOL skip;
 @property (nonatomic, assign) BOOL dev_js;
 @property (nonatomic, assign) BOOL isAdTouched;
+@property (nonatomic, assign) BOOL imp_secure;
+
 
 
 @property (nonatomic, assign, getter=isUnitTesting) BOOL unit_testing;
