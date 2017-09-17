@@ -61,7 +61,6 @@ class SettingsViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         }
     }
     
-    
     @IBAction func startStopReading(_ sender: AnyObject) {
         
         if(!self.isScannerReading) {
