@@ -28,8 +28,6 @@ FOUNDATION_EXPORT const unsigned char MobFoxSDKCoreVersionString[];
 #import "MFEventsHandler.h"
 #import "MobFoxScriptHandler.h"
 
-
-
 #import "MFWebViewJavascriptBridge.h"
 #import "MFWebViewJavascriptBridge_JS.h"
 #import "MobFoxSDKCoreDynamic-Bridging-Header.h"

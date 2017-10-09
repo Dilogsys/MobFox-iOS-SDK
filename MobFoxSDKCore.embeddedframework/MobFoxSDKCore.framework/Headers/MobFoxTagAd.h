@@ -31,7 +31,7 @@
 @end
 
 
-@interface MobFoxTagAd : WKWebView <WKNavigationDelegate, MobFoxScriptHandlerDelegate, UIGestureRecognizerDelegate, MFExceptionHandlerDelegate, NSURLSessionDelegate>
+@interface MobFoxTagAd : WKWebView <WKNavigationDelegate, MobFoxScriptHandlerDelegate, UIGestureRecognizerDelegate>
 
 
 @property (nonatomic, weak) id <MobFoxAdTagDelegate> delegate;
