@@ -28,8 +28,9 @@
 
 @property (nonatomic, weak) id <MobFoxWebViewAdDelegate> adDelegate;
 
-+ (NSString*)tagDomain;
-+ (NSString*)tagPath;
+//+ (NSString*)tagOriginDomain;
+//+ (NSString*)tagDomain;
+//+ (NSString*)tagPath;
 
 - (id) initWithFrame:(CGRect)frame;
 

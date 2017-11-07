@@ -14,7 +14,7 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-#import "MobFoxScriptHandler.h"
+//#import "MFWaterfallManager.h"
 #import "MobFoxWebView.h"
 
 @class MobFoxTagInterstitialAd;
@@ -27,9 +27,13 @@
 
 - (void)MobFoxTagInterstitialAdDidFailToReceiveAdWithError:(NSError *)error;
 
+- (void)MobFoxTagInterstitialAdWillShow:(MobFoxTagInterstitialAd *)interstitial;
+
+- (void)MobFoxTagInterstitialAdDidShow:(MobFoxTagInterstitialAd *)interstitial;
+
 - (void)MobFoxTagInterstitialAdClicked;
 
-- (void)MobFoxTagInterstitialAdClose;
+- (void)MobFoxTagInterstitialAdClosed;
 
 @end
 
@@ -43,17 +47,25 @@
 @property (nonatomic, copy) NSString* longitude;
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* demo_gender; //"m/f"
+@property (nonatomic, copy) NSString* accuracy;
 @property (nonatomic, copy) NSString* demo_age;
 @property (nonatomic, copy) NSString* s_subid;
 @property (nonatomic, copy) NSString* sub_name;
 @property (nonatomic, copy) NSString* sub_domain;
 @property (nonatomic, copy) NSString* sub_storeurl;
 @property (nonatomic, copy) NSString* r_floor;
+@property (nonatomic, strong) NSString* v_rewarded;
+
+
+
+
 @property (nonatomic, copy) NSNumber* v_dur_min;
 @property (nonatomic, copy) NSNumber* v_dur_max;
+@property (nonatomic, assign) BOOL v_autoplay;
+@property (nonatomic, assign) BOOL v_startmute;
 
 @property (nonatomic, strong) NSString* invh;
-@property (nonatomic, strong) NSString *requestID;
+//@property (nonatomic, strong) NSString *requestID;
 
 @property (nonatomic, assign) BOOL c_mraid;
 @property (nonatomic, assign) BOOL dev_js;
