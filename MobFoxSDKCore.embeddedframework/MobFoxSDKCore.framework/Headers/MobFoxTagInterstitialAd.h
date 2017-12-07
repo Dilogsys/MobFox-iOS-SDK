@@ -72,6 +72,7 @@
 @property (nonatomic, assign) BOOL imp_secure;
 @property (nonatomic, assign) BOOL ready;
 
+
 - (id) init:(NSString*)invh;
 - (id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
 - (void) loadAd;

@@ -37,8 +37,6 @@
 @property (nonatomic, weak) id <MobFoxAdTagDelegate> delegate;
 
 
-
-
 @property (nonatomic, copy) NSString* longitude;
 @property (nonatomic, copy) NSString* latitude;
 @property (nonatomic, copy) NSString* accuracy;
@@ -49,25 +47,26 @@
 @property (nonatomic, copy) NSString* sub_domain;
 @property (nonatomic, copy) NSString* sub_storeurl;
 @property (nonatomic, copy) NSString* r_floor;
+@property (nonatomic, copy) NSString* v_rewarded;
+
 //@property (nonatomic, copy) NSString* type; //"waterfall" / "video"
 //@property (nonatomic, copy) NSString* adFormat;
+//@property (nonatomic, strong) NSNumber* refresh;
+//@property (nonatomic, assign) BOOL autoplay;
+//@property (nonatomic, assign) BOOL skip;
 
 @property (nonatomic, copy) NSNumber* v_dur_min;
 @property (nonatomic, copy) NSNumber* v_dur_max;
 
-
 @property (nonatomic, strong) NSString* invh;
-//@property (nonatomic, strong) NSNumber* refresh;
 @property (nonatomic, strong) NSString *requestID;
-
-
-//@property (nonatomic, assign) BOOL autoplay;
-//@property (nonatomic, assign) BOOL skip;
 
 @property (nonatomic, assign) BOOL c_mraid;
 @property (nonatomic, assign) BOOL dev_js;
 @property (nonatomic, assign) BOOL imp_secure;
 @property (nonatomic, assign) BOOL adspace_strict;
+
+
 
 
 - (id) init:(NSString*)invh withFrame:(CGRect)aRect;
