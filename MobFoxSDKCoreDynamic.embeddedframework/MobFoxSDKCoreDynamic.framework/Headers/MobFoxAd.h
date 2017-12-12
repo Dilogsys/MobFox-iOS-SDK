@@ -65,6 +65,8 @@
 @property (nonatomic, strong) NSString* invh;
 @property (nonatomic, strong) NSNumber* refresh;
 @property (nonatomic, strong) NSString *requestID;
+@property (nonatomic, assign) NSString* v_rewarded;
+
 
 
 @property (nonatomic, assign) BOOL autoplay;

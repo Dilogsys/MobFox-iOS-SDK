@@ -14,7 +14,7 @@ extern NSString* const CORE_TARGET;
 
 
 /* Versions */
-#define SDK_VERSION @"Core_3.1.9c"
+#define SDK_VERSION @"Core_3.3.0"
 #define OS_VERSION        [[[UIDevice currentDevice] systemVersion] floatValue]
 #define FW_VERSION        [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"]
 #define BUILD_VERSION     [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]
@@ -26,20 +26,19 @@ extern NSString* const CORE_TARGET;
 #define ERROR_DOMAIN      @""
 
 /* Screen Dimentions */
-#define SCREEN_WIDTH      [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT     [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH         [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT        [UIScreen mainScreen].bounds.size.height
 
 /* Request URLs */
-#define TAG_DOMAIN          @"sdk.starbolt.io"
-#define TAG_PATH            @"dist"
-#define AD_DOMAIN           @"my.mobfox.com"
-#define AD_PATH             @"request.php"
+#define TAG_DOMAIN           @"sdk.starbolt.io" //@"sdk-origin.starbolt.io" 
+#define TAG_PATH             @"dist"
+#define AD_DOMAIN            @"my.mobfox.com"
+#define AD_PATH              @"request.php"
 
-#define AD_REQUEST_DOMAIN   @"my.mobfox.com"
+#define AD_REQUEST_DOMAIN    @"my.mobfox.com"
 
 #define TAG_VIDEO_FILE_NAME  @"tagVideoiOS.html"
 #define TAG_BANNER_FILE_NAME @"tagBanneriOS.html"
-
 
 
 

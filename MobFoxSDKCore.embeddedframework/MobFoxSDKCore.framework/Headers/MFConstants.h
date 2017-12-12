@@ -31,7 +31,7 @@ extern NSString* const CORE_TARGET;
 
 /* Request URLs */
 #define TAG_DOMAIN           @"sdk.starbolt.io" //@"sdk-origin.starbolt.io" 
-#define TAG_PATH             @"dev2" //@"dist"
+#define TAG_PATH             @"dist"
 #define AD_DOMAIN            @"my.mobfox.com"
 #define AD_PATH              @"request.php"
 
