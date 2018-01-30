@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifdef  DemoAppDynamicTarget
+#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
+#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
+#endif
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, NSCacheDelegate>

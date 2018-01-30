@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifdef  DemoAppDynamicTarget
+#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
+#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
+#endif
 #import <iSoma/iSoma.h>
 #import "MoPub.h"
 #import "MPNativeAdConstants.h"

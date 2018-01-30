@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#ifdef  DemoAppDynamicTarget
+#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
+#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
+#endif
 
 @interface SettingsViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate, MobFoxInterstitialAdDelegate>
 

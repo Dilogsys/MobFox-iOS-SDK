@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifdef  DemoAppDynamicTarget
+#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
+#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
+#endif
 #import "MFTestAdapterBase.h"
 
 @interface MFTestAdapter : MFTestAdapterBase <MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate>

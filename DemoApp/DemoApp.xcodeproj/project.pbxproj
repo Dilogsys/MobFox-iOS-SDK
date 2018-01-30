@@ -7,6 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4654A2462020C294003B4526 /* MPURLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651490F1E6C5A0D003F4967 /* MPURLResolver.m */; };
+		4654A2472020C294003B4526 /* MPVASTCreative.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149911E6C5A0D003F4967 /* MPVASTCreative.m */; };
+		4654A2482020C294003B4526 /* MPNativeAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149F01E6C5A0D003F4967 /* MPNativeAdData.m */; };
+		4654A2492020C294003B4526 /* MOPUBAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A161E6C5A0D003F4967 /* MOPUBAVPlayer.m */; };
+		4654A24A2020C294003B4526 /* MPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149821E6C5A0D003F4967 /* MPReachability.m */; };
+		4654A24B2020C294003B4526 /* MPVASTAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651498D1E6C5A0D003F4967 /* MPVASTAd.m */; };
+		4654A24C2020C294003B4526 /* MPAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B21E6C5A0D003F4967 /* MPAdView.m */; };
+		4654A24D2020C294003B4526 /* MPURLActionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651490D1E6C5A0D003F4967 /* MPURLActionInfo.m */; };
+		4654A24E2020C294003B4526 /* MPNativeAdRendererImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D11E6C5A0D003F4967 /* MPNativeAdRendererImageHandler.m */; };
+		4654A24F2020C294003B4526 /* MPNativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149EB1E6C5A0D003F4967 /* MPNativeAd.m */; };
+		4654A2502020C294003B4526 /* MRVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149601E6C5A0D003F4967 /* MRVideoPlayerManager.m */; };
+		4654A2512020C294003B4526 /* MPLogProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149801E6C5A0D003F4967 /* MPLogProvider.m */; };
+		4654A2522020C294003B4526 /* MPAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149721E6C5A0D003F4967 /* MPAnalyticsTracker.m */; };
+		4654A2532020C294003B4526 /* MPFacebookKeywordProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149061E6C5A0D003F4967 /* MPFacebookKeywordProvider.m */; };
+		4654A2542020C294003B4526 /* MPRewardedVideoAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A4C1E6C5A0D003F4967 /* MPRewardedVideoAdManager.m */; };
+		4654A2552020C294003B4526 /* MRNativeCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651495C1E6C5A0D003F4967 /* MRNativeCommandHandler.m */; };
+		4654A2562020C294003B4526 /* MOPUBActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A141E6C5A0D003F4967 /* MOPUBActivityIndicatorView.m */; };
+		4654A2572020C294003B4526 /* MOPUBReplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A2A1E6C5A0D003F4967 /* MOPUBReplayView.m */; };
+		4654A2582020C294003B4526 /* MPStaticNativeAdImpressionTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149DF1E6C5A0D003F4967 /* MPStaticNativeAdImpressionTimer.m */; };
+		4654A2592020C294003B4526 /* MPNativeAdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D51E6C5A0D003F4967 /* MPNativeAdUtils.m */; };
+		4654A25A2020C294003B4526 /* MPEnhancedDeeplinkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149041E6C5A0D003F4967 /* MPEnhancedDeeplinkRequest.m */; };
+		4654A25B2020C294003B4526 /* MPTableViewAdPlacerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E11E6C5A0D003F4967 /* MPTableViewAdPlacerCell.m */; };
+		4654A25C2020C294003B4526 /* MPServerAdPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A061E6C5A0D003F4967 /* MPServerAdPositioning.m */; };
+		4654A25D2020C294003B4526 /* MPNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651491E1E6C5A0D003F4967 /* MPNetworkManager.m */; };
+		4654A25E2020C294003B4526 /* MPInterstitialAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149371E6C5A0D003F4967 /* MPInterstitialAdManager.m */; };
+		4654A25F2020C294003B4526 /* MOPUBFullscreenPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A1A1E6C5A0D003F4967 /* MOPUBFullscreenPlayerViewController.m */; };
+		4654A2602020C294003B4526 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E181C5FA8250098C602 /* MainViewController.m */; };
+		4654A2612020C294003B4526 /* MPInterstitialCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651493A1E6C5A0D003F4967 /* MPInterstitialCustomEventAdapter.m */; };
+		4654A2622020C294003B4526 /* MPNativeAdRequestTargeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149FE1E6C5A0D003F4967 /* MPNativeAdRequestTargeting.m */; };
+		4654A2632020C294003B4526 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E151C5FA8250098C602 /* AppDelegate.m */; };
+		4654A2642020C294003B4526 /* MPAdAlertGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148ED1E6C5A0D003F4967 /* MPAdAlertGestureRecognizer.m */; };
+		4654A2652020C294003B4526 /* MPRewardedVideoConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A4E1E6C5A0D003F4967 /* MPRewardedVideoConnection.m */; };
+		4654A2662020C294003B4526 /* MPVASTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A51E6C5A0D003F4967 /* MPVASTResponse.m */; };
+		4654A2672020C294003B4526 /* MPVASTLinearAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149991E6C5A0D003F4967 /* MPVASTLinearAd.m */; };
+		4654A2682020C294003B4526 /* MRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149581E6C5A0D003F4967 /* MRError.m */; };
+		4654A2692020C294003B4526 /* MPMoPubNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149CA1E6C5A0D003F4967 /* MPMoPubNativeAdAdapter.m */; };
+		4654A26A2020C294003B4526 /* MOPUBNativeVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A201E6C5A0D003F4967 /* MOPUBNativeVideoCustomEvent.m */; };
+		4654A26B2020C294003B4526 /* MOPUBNativeVideoAdRendererSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A2E1E6C5A0D003F4967 /* MOPUBNativeVideoAdRendererSettings.m */; };
+		4654A26C2020C294003B4526 /* MPAdWebViewAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651492A1E6C5A0D003F4967 /* MPAdWebViewAgent.m */; };
+		4654A26D2020C294003B4526 /* MRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149521E6C5A0D003F4967 /* MRCommand.m */; };
+		4654A26E2020C294003B4526 /* MPWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149321E6C5A0D003F4967 /* MPWebView.m */; };
+		4654A26F2020C294003B4526 /* MPClientAdPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E71E6C5A0D003F4967 /* MPClientAdPositioning.m */; };
+		4654A2702020C294003B4526 /* MPRewardedVideoError.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A551E6C5A0D003F4967 /* MPRewardedVideoError.m */; };
+		4654A2712020C294003B4526 /* MRBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651494E1E6C5A0D003F4967 /* MRBridge.m */; };
+		4654A2722020C294003B4526 /* MPStreamAdPlacementData.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A0C1E6C5A0D003F4967 /* MPStreamAdPlacementData.m */; };
+		4654A2732020C294003B4526 /* MPNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149DD1E6C5A0D003F4967 /* MPNativeView.m */; };
+		4654A2742020C294003B4526 /* SmaatoNativeAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CDC1E263EDF00BD4296 /* SmaatoNativeAdapterMobFox.m */; };
+		4654A2752020C294003B4526 /* MPVASTStringUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A71E6C5A0D003F4967 /* MPVASTStringUtilities.m */; };
+		4654A2762020C294003B4526 /* NSHTTPURLResponse+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149641E6C5A0D003F4967 /* NSHTTPURLResponse+MPAdditions.m */; };
+		4654A2772020C294003B4526 /* MPHTMLInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651492E1E6C5A0D003F4967 /* MPHTMLInterstitialCustomEvent.m */; };
+		4654A2782020C294003B4526 /* MoPubInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCD1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m */; };
+		4654A2792020C294003B4526 /* MOPUBPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A281E6C5A0D003F4967 /* MOPUBPlayerViewController.m */; };
+		4654A27A2020C294003B4526 /* MPNativeAdConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149EE1E6C5A0D003F4967 /* MPNativeAdConstants.m */; };
+		4654A27B2020C294003B4526 /* MOPUBNativeVideoAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A2C1E6C5A0D003F4967 /* MOPUBNativeVideoAdRenderer.m */; };
+		4654A27C2020C294003B4526 /* MPStaticNativeAdRendererSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A0A1E6C5A0D003F4967 /* MPStaticNativeAdRendererSettings.m */; };
+		4654A27D2020C294003B4526 /* MPVASTMediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651499F1E6C5A0D003F4967 /* MPVASTMediaFile.m */; };
+		4654A27E2020C294003B4526 /* MPAdDestinationDisplayAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148FA1E6C5A0D003F4967 /* MPAdDestinationDisplayAgent.m */; };
+		4654A27F2020C294003B4526 /* MPBannerCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148E61E6C5A0D003F4967 /* MPBannerCustomEventAdapter.m */; };
+		4654A2802020C294003B4526 /* MOPUBNativeVideoAdConfigValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A1E1E6C5A0D003F4967 /* MOPUBNativeVideoAdConfigValues.m */; };
+		4654A2812020C294003B4526 /* MPNativeAdSourceQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D31E6C5A0D003F4967 /* MPNativeAdSourceQueue.m */; };
+		4654A2822020C294003B4526 /* GenericAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684D60D1E1D59B800B82223 /* GenericAdapterViewController.m */; };
+		4654A2832020C294003B4526 /* MPMoPubNativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149CC1E6C5A0D003F4967 /* MPMoPubNativeCustomEvent.m */; };
+		4654A2842020C294003B4526 /* MPActivityViewControllerHelper+TweetShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148F11E6C5A0D003F4967 /* MPActivityViewControllerHelper+TweetShare.m */; };
+		4654A2852020C294003B4526 /* MPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149741E6C5A0D003F4967 /* MPError.m */; };
+		4654A2862020C294003B4526 /* MPMoPubRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A461E6C5A0D003F4967 /* MPMoPubRewardedVideoCustomEvent.m */; };
+		4654A2872020C294003B4526 /* MPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149881E6C5A0D003F4967 /* MPTimer.m */; };
+		4654A2882020C294003B4526 /* MPNativePositionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149DB1E6C5A0D003F4967 /* MPNativePositionSource.m */; };
+		4654A2892020C294003B4526 /* MOPUBPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A241E6C5A0D003F4967 /* MOPUBPlayerManager.m */; };
+		4654A28A2020C294003B4526 /* MPAdServerURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148FE1E6C5A0D003F4967 /* MPAdServerURLBuilder.m */; };
+		4654A28B2020C294003B4526 /* MRExpandModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651495A1E6C5A0D003F4967 /* MRExpandModalViewController.m */; };
+		4654A28C2020C294003B4526 /* MPMobFoxNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD71E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m */; };
+		4654A28D2020C294003B4526 /* MPNativeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D71E6C5A0D003F4967 /* MPNativeCache.m */; };
+		4654A28E2020C294003B4526 /* MPStaticNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A081E6C5A0D003F4967 /* MPStaticNativeAdRenderer.m */; };
+		4654A28F2020C294003B4526 /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CC41E263EDF00BD4296 /* GADMAdapterMobFox.m */; };
+		4654A2902020C294003B4526 /* MPLogEvent+NativeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149161E6C5A0D003F4967 /* MPLogEvent+NativeVideo.m */; };
+		4654A2912020C294003B4526 /* MPMobFoxNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD51E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m */; };
+		4654A2922020C294003B4526 /* MPQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149201E6C5A0D003F4967 /* MPQRunLoopOperation.m */; };
+		4654A2932020C294003B4526 /* MPVASTTrackingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A91E6C5A0D003F4967 /* MPVASTTrackingEvent.m */; };
+		4654A2942020C294003B4526 /* MPNativeAdRenderingImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149FA1E6C5A0D003F4967 /* MPNativeAdRenderingImageLoader.m */; };
+		4654A2952020C294003B4526 /* MPImageDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149C81E6C5A0D003F4967 /* MPImageDownloadQueue.m */; };
+		4654A2962020C294003B4526 /* NSJSONSerialization+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149661E6C5A0D003F4967 /* NSJSONSerialization+MPAdditions.m */; };
+		4654A2972020C294003B4526 /* MPNativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A031E6C5A0D003F4967 /* MPNativeCustomEvent.m */; };
+		4654A2982020C294003B4526 /* MPLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149181E6C5A0D003F4967 /* MPLogEvent.m */; };
+		4654A2992020C294003B4526 /* MPVASTWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149AB1E6C5A0D003F4967 /* MPVASTWrapper.m */; };
+		4654A29A2020C294003B4526 /* MPMRAIDBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149481E6C5A0D003F4967 /* MPMRAIDBannerCustomEvent.m */; };
+		4654A29B2020C294003B4526 /* MPAdAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148EF1E6C5A0D003F4967 /* MPAdAlertManager.m */; };
+		4654A29C2020C294003B4526 /* MPMRAIDInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651494C1E6C5A0D003F4967 /* MPMRAIDInterstitialViewController.m */; };
+		4654A29D2020C294003B4526 /* MPIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651497A1E6C5A0D003F4967 /* MPIdentityProvider.m */; };
+		4654A29E2020C294003B4526 /* MPAdPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E51E6C5A0D003F4967 /* MPAdPositioning.m */; };
+		4654A29F2020C294003B4526 /* MPVASTCompanionAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651498F1E6C5A0D003F4967 /* MPVASTCompanionAd.m */; };
+		4654A2A02020C294003B4526 /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148E81E6C5A0D003F4967 /* MPBaseBannerAdapter.m */; };
+		4654A2A12020C294003B4526 /* MoPubNative.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCF1E263EDF00BD4296 /* MoPubNative.m */; };
+		4654A2A22020C294003B4526 /* MPLogEventCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651491A1E6C5A0D003F4967 /* MPLogEventCommunicator.m */; };
+		4654A2A32020C294003B4526 /* MRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149561E6C5A0D003F4967 /* MRController.m */; };
+		4654A2A42020C294003B4526 /* UIColor+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651496C1E6C5A0D003F4967 /* UIColor+MPAdditions.m */; };
+		4654A2A52020C294003B4526 /* MPRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A4A1E6C5A0D003F4967 /* MPRewardedVideoAdapter.m */; };
+		4654A2A62020C294003B4526 /* MPVASTMacroProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651499B1E6C5A0D003F4967 /* MPVASTMacroProcessor.m */; };
+		4654A2A72020C294003B4526 /* MPVASTDurationOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149931E6C5A0D003F4967 /* MPVASTDurationOffset.m */; };
+		4654A2A82020C294003B4526 /* MPAdBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148F51E6C5A0D003F4967 /* MPAdBrowserController.m */; };
+		4654A2A92020C294003B4526 /* MRBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149501E6C5A0D003F4967 /* MRBundleManager.m */; };
+		4654A2AA2020C294003B4526 /* MPGeolocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149761E6C5A0D003F4967 /* MPGeolocationProvider.m */; };
+		4654A2AB2020C294003B4526 /* MPCollectionViewAdPlacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E91E6C5A0D003F4967 /* MPCollectionViewAdPlacer.m */; };
+		4654A2AC2020C294003B4526 /* MPCollectionViewAdPlacerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149C41E6C5A0D003F4967 /* MPCollectionViewAdPlacerCell.m */; };
+		4654A2AD2020C294003B4526 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891EA91C62646C0098C602 /* SettingsViewController.m */; };
+		4654A2AE2020C294003B4526 /* MPGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149781E6C5A0D003F4967 /* MPGlobal.m */; };
+		4654A2AF2020C294003B4526 /* MPRewardedVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A511E6C5A0D003F4967 /* MPRewardedVideo.m */; };
+		4654A2B02020C294003B4526 /* MPNativeAd+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149CE1E6C5A0D003F4967 /* MPNativeAd+Internal.m */; };
+		4654A2B12020C294003B4526 /* MPTableViewCellImpressionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E31E6C5A0D003F4967 /* MPTableViewCellImpressionTracker.m */; };
+		4654A2B22020C294003B4526 /* MPCoreInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651493F1E6C5A0D003F4967 /* MPCoreInstanceProvider.m */; };
+		4654A2B32020C294003B4526 /* MPRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A531E6C5A0D003F4967 /* MPRewardedVideoCustomEvent.m */; };
+		4654A2B42020C294003B4526 /* UIButton+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651496A1E6C5A0D003F4967 /* UIButton+MPAdditions.m */; };
+		4654A2B52020C294003B4526 /* MPBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B41E6C5A0D003F4967 /* MPBannerCustomEvent.m */; };
+		4654A2B62020C294003B4526 /* MPHTMLInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149301E6C5A0D003F4967 /* MPHTMLInterstitialViewController.m */; };
+		4654A2B72020C294003B4526 /* MPVASTInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149971E6C5A0D003F4967 /* MPVASTInline.m */; };
+		4654A2B82020C294003B4526 /* MPProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651490B1E6C5A0D003F4967 /* MPProgressOverlayView.m */; };
+		4654A2B92020C294003B4526 /* MOPUBPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A261E6C5A0D003F4967 /* MOPUBPlayerView.m */; };
+		4654A2BA2020C294003B4526 /* MPSessionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149841E6C5A0D003F4967 /* MPSessionTracker.m */; };
+		4654A2BB2020C294003B4526 /* MPClosableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149021E6C5A0D003F4967 /* MPClosableView.m */; };
+		4654A2BC2020C294003B4526 /* MPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B71E6C5A0D003F4967 /* MPConstants.m */; };
+		4654A2BD2020C294003B4526 /* MPNativeAdRendererConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149F61E6C5A0D003F4967 /* MPNativeAdRendererConfiguration.m */; };
+		4654A2BE2020C294003B4526 /* UIWebView+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149701E6C5A0D003F4967 /* UIWebView+MPAdditions.m */; };
+		4654A2BF2020C294003B4526 /* MRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651495E1E6C5A0D003F4967 /* MRProperty.m */; };
+		4654A2C02020C294003B4526 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E451C5FB1140098C602 /* CollectionViewCell.m */; };
+		4654A2C12020C294003B4526 /* UIView+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651496E1E6C5A0D003F4967 /* UIView+MPAdditions.m */; };
+		4654A2C22020C294003B4526 /* MPAdConversionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B01E6C5A0D003F4967 /* MPAdConversionTracker.m */; };
+		4654A2C32020C294003B4526 /* MOPUBAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A181E6C5A0D003F4967 /* MOPUBAVPlayerView.m */; };
+		4654A2C42020C294003B4526 /* MPVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149111E6C5A0D003F4967 /* MPVideoConfig.m */; };
+		4654A2C52020C294003B4526 /* MFTestAdapterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 866ECF9B1E0937410069E209 /* MFTestAdapterBase.m */; };
+		4654A2C62020C294003B4526 /* MPAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148F81E6C5A0D003F4967 /* MPAdConfiguration.m */; };
+		4654A2C72020C294003B4526 /* MPInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149BB1E6C5A0D003F4967 /* MPInterstitialCustomEvent.m */; };
+		4654A2C82020C294003B4526 /* MPTableViewAdPlacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A101E6C5A0D003F4967 /* MPTableViewAdPlacer.m */; };
+		4654A2C92020C294003B4526 /* MoPub.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149AE1E6C5A0D003F4967 /* MoPub.m */; };
+		4654A2CA2020C294003B4526 /* MPAdPlacerInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149C21E6C5A0D003F4967 /* MPAdPlacerInvocation.m */; };
+		4654A2CB2020C294003B4526 /* MPBaseInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149351E6C5A0D003F4967 /* MPBaseInterstitialAdapter.m */; };
+		4654A2CC2020C294003B4526 /* MFTestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 866ECF9E1E093BA40069E209 /* MFTestAdapter.m */; };
+		4654A2CD2020C294003B4526 /* MPInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149411E6C5A0D003F4967 /* MPInstanceProvider.m */; };
+		4654A2CE2020C294003B4526 /* MPVASTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651499D1E6C5A0D003F4967 /* MPVASTManager.m */; };
+		4654A2CF2020C294003B4526 /* MoPubNativeAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD11E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m */; };
+		4654A2D02020C294003B4526 /* MPInternalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651497C1E6C5A0D003F4967 /* MPInternalUtils.m */; };
+		4654A2D12020C294003B4526 /* MPStoreKitProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149861E6C5A0D003F4967 /* MPStoreKitProvider.m */; };
+		4654A2D22020C294003B4526 /* MPNativeAdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149FC1E6C5A0D003F4967 /* MPNativeAdRequest.m */; };
+		4654A2D32020C294003B4526 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCB1E263EDF00BD4296 /* MoPubAdapterMobFox.m */; };
+		4654A2D42020C294003B4526 /* MRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149541E6C5A0D003F4967 /* MRConstants.m */; };
+		4654A2D52020C294003B4526 /* MPXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149131E6C5A0D003F4967 /* MPXMLParser.m */; };
+		4654A2D62020C294003B4526 /* MPRetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149221E6C5A0D003F4967 /* MPRetryingHTTPOperation.m */; };
+		4654A2D72020C294003B4526 /* MPInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651493C1E6C5A0D003F4967 /* MPInterstitialViewController.m */; };
+		4654A2D82020C294003B4526 /* MPLastResortDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149091E6C5A0D003F4967 /* MPLastResortDelegate.m */; };
+		4654A2D92020C294003B4526 /* MPActivityViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148F31E6C5A0D003F4967 /* MPActivityViewControllerHelper.m */; };
+		4654A2DA2020C294003B4526 /* MPStreamAdPlacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A0E1E6C5A0D003F4967 /* MPStreamAdPlacer.m */; };
+		4654A2DB2020C294003B4526 /* MPNativeAdSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A001E6C5A0D003F4967 /* MPNativeAdSource.m */; };
+		4654A2DC2020C294003B4526 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */; };
+		4654A2DD2020C294003B4526 /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148E31E6C5A0D003F4967 /* MPBannerAdManager.m */; };
+		4654A2DE2020C294003B4526 /* MPVASTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A11E6C5A0D003F4967 /* MPVASTModel.m */; };
+		4654A2DF2020C294003B4526 /* MPUserInteractionGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651498A1E6C5A0D003F4967 /* MPUserInteractionGestureRecognizer.m */; };
+		4654A2E02020C294003B4526 /* MPVASTResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A31E6C5A0D003F4967 /* MPVASTResource.m */; };
+		4654A2E12020C294003B4526 /* MPNativeAdError.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149F31E6C5A0D003F4967 /* MPNativeAdError.m */; };
+		4654A2E22020C294003B4526 /* MPHTMLBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651492C1E6C5A0D003F4967 /* MPHTMLBannerCustomEvent.m */; };
+		4654A2E32020C294003B4526 /* MPLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651497E1E6C5A0D003F4967 /* MPLogging.m */; };
+		4654A2E42020C294003B4526 /* MPVASTIndustryIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149951E6C5A0D003F4967 /* MPVASTIndustryIcon.m */; };
+		4654A2E52020C294003B4526 /* MPNativePositionResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D91E6C5A0D003F4967 /* MPNativePositionResponseDeserializer.m */; };
+		4654A2E62020C294003B4526 /* SmaatoAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CDA1E263EDF00BD4296 /* SmaatoAdapterMobFox.m */; };
+		4654A2E72020C294003B4526 /* MPAdServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148FC1E6C5A0D003F4967 /* MPAdServerCommunicator.m */; };
+		4654A2E82020C294003B4526 /* MPAPIEndpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149001E6C5A0D003F4967 /* MPAPIEndpoints.m */; };
+		4654A2E92020C294003B4526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891E121C5FA8250098C602 /* main.m */; };
+		4654A2EA2020C294003B4526 /* MPMRAIDInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651494A1E6C5A0D003F4967 /* MPMRAIDInterstitialCustomEvent.m */; };
+		4654A2EB2020C294003B4526 /* NSURL+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149681E6C5A0D003F4967 /* NSURL+MPAdditions.m */; };
+		4654A2EC2020C294003B4526 /* MPVASTTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149431E6C5A0D003F4967 /* MPVASTTracking.m */; };
+		4654A2ED2020C294003B4526 /* MPDiskLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149C61E6C5A0D003F4967 /* MPDiskLRUCache.m */; };
+		4654A2EE2020C294003B4526 /* AdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861695EC1E2B75AC007FBC3A /* AdsViewController.m */; };
+		4654A2EF2020C294003B4526 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A571E6C5A0D003F4967 /* MPRewardedVideoReward.m */; };
+		4654A2F02020C294003B4526 /* MOPUBNativeVideoImpressionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A221E6C5A0D003F4967 /* MOPUBNativeVideoImpressionAgent.m */; };
+		4654A2F12020C294003B4526 /* AdaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861695E91E27DB66007FBC3A /* AdaptersViewController.m */; };
+		4654A2F22020C294003B4526 /* MoPubNativeAdRendererMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD31E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m */; };
+		4654A2F32020C294003B4526 /* MPInterstitialAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B91E6C5A0D003F4967 /* MPInterstitialAdController.m */; };
+		4654A2F42020C294003B4526 /* MOPUBNativeVideoAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A1C1E6C5A0D003F4967 /* MOPUBNativeVideoAdAdapter.m */; };
+		4654A2F52020C294003B4526 /* MPLogEventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651491C1E6C5A0D003F4967 /* MPLogEventRecorder.m */; };
+		4654A2F72020C294003B4526 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BCF1C9573D50001EEF3 /* libz.1.dylib */; };
+		4654A2F92020C294003B4526 /* MATMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7970DA41FE955CF005AA888 /* MATMoatMobileAppKit.framework */; };
+		4654A2FA2020C294003B4526 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D41E6C5A0D003F4967 /* GoogleMobileAds.framework */; };
+		4654A2FB2020C294003B4526 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
+		4654A2FC2020C294003B4526 /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86514A591E6C5A0E003F4967 /* StartApp.framework */; };
+		4654A2FD2020C294003B4526 /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D01E6C5A0D003F4967 /* AmazonAd.framework */; };
+		4654A2FE2020C294003B4526 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D51E6C5A0D003F4967 /* iSoma.framework */; };
+		4654A2FF2020C294003B4526 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2B61C79BBC700BDD8FD /* EventKitUI.framework */; };
+		4654A3002020C294003B4526 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2B41C79BBB300BDD8FD /* EventKit.framework */; };
+		4654A3012020C294003B4526 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D21E6C5A0D003F4967 /* Chartboost.framework */; };
+		4654A3022020C294003B4526 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2C01C79BC2700BDD8FD /* SystemConfiguration.framework */; };
+		4654A3032020C294003B4526 /* Supersonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86514A5A1E6C5A0E003F4967 /* Supersonic.framework */; };
+		4654A3042020C294003B4526 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CA1C79C1E200BDD8FD /* MessageUI.framework */; };
+		4654A3052020C294003B4526 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2BA1C79BBE700BDD8FD /* MediaPlayer.framework */; };
+		4654A3062020C294003B4526 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2B21C79BBA800BDD8FD /* CoreTelephony.framework */; };
+		4654A3072020C294003B4526 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2B01C79BB9C00BDD8FD /* CoreMedia.framework */; };
+		4654A3082020C294003B4526 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2AC1C79BB8200BDD8FD /* CoreGraphics.framework */; };
+		4654A3092020C294003B4526 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865BD0DE1C68CF3500F180D8 /* AVFoundation.framework */; };
+		4654A30A2020C294003B4526 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2C41C79BC5600BDD8FD /* AudioToolbox.framework */; };
+		4654A30B2020C294003B4526 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F16C6B1C9020B10039F8DA /* CoreMotion.framework */; };
+		4654A30C2020C294003B4526 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2D01C79C20D00BDD8FD /* Social.framework */; };
+		4654A30D2020C294003B4526 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */; };
+		4654A30E2020C294003B4526 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2C81C79BC9700BDD8FD /* CoreBluetooth.framework */; };
+		4654A30F2020C294003B4526 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2C61C79BC6900BDD8FD /* iAd.framework */; };
+		4654A3102020C294003B4526 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2BC1C79BBF400BDD8FD /* QuartzCore.framework */; };
+		4654A3112020C294003B4526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2C21C79BC3200BDD8FD /* UIKit.framework */; };
+		4654A3122020C294003B4526 /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D11E6C5A0D003F4967 /* AppLovinSDK.framework */; };
+		4654A3132020C294003B4526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2B81C79BBDC00BDD8FD /* Foundation.framework */; };
+		4654A3142020C294003B4526 /* MMAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148DE1E6C5A0D003F4967 /* MMAdSDK.framework */; };
+		4654A3152020C294003B4526 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2AE1C79BB9000BDD8FD /* CoreLocation.framework */; };
+		4654A3162020C294003B4526 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86891E521C5FBDE60098C602 /* AdSupport.framework */; };
+		4654A3172020C294003B4526 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D31E6C5A0D003F4967 /* FBAudienceNetwork.framework */; };
+		4654A3192020C294003B4526 /* test_native.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891E921C6106870098C602 /* test_native.png */; };
+		4654A31A2020C294003B4526 /* MPCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A311E6C5A0D003F4967 /* MPCloseBtn@2x.png */; };
+		4654A31B2020C294003B4526 /* title_mobfox.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891E931C6106870098C602 /* title_mobfox.png */; };
+		4654A31C2020C294003B4526 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 865149451E6C5A0D003F4967 /* LICENSE */; };
+		4654A31D2020C294003B4526 /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */; };
+		4654A31E2020C294003B4526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86891E1F1C5FA8250098C602 /* LaunchScreen.storyboard */; };
+		4654A31F2020C294003B4526 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86514A421E6C5A0D003F4967 /* MRAID.bundle */; };
+		4654A3202020C294003B4526 /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891E8C1C61067C0098C602 /* icon_info.png */; };
+		4654A3212020C294003B4526 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F16C191C8D84F50039F8DA /* response.json */; };
+		4654A3222020C294003B4526 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A341E6C5A0D003F4967 /* MPCloseButtonX@2x.png */; };
+		4654A3232020C294003B4526 /* MPDAAIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A361E6C5A0D003F4967 /* MPDAAIcon.png */; };
+		4654A3242020C294003B4526 /* img_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EC81C63998D0098C602 /* img_01.png */; };
+		4654A3252020C294003B4526 /* MPDAAIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A371E6C5A0D003F4967 /* MPDAAIcon@2x.png */; };
+		4654A3262020C294003B4526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86891E1D1C5FA8250098C602 /* Assets.xcassets */; };
+		4654A3272020C294003B4526 /* MPMutedBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3A1E6C5A0D003F4967 /* MPMutedBtn@2x.png */; };
+		4654A3282020C294003B4526 /* test_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EFF1C677EA10098C602 /* test_video.png */; };
+		4654A3292020C294003B4526 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86514A581E6C5A0D003F4967 /* StartApp.bundle */; };
+		4654A32A2020C294003B4526 /* icon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EDC1C63B1230098C602 /* icon_01.png */; };
+		4654A32B2020C294003B4526 /* MPDAAIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A381E6C5A0D003F4967 /* MPDAAIcon@3x.png */; };
+		4654A32C2020C294003B4526 /* icon_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EE01C6737EC0098C602 /* icon_02.png */; };
+		4654A32D2020C294003B4526 /* MPUnmutedBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A401E6C5A0D003F4967 /* MPUnmutedBtn@2x.png */; };
+		4654A32E2020C294003B4526 /* img_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891ED51C63AAC10098C602 /* img_05.png */; };
+		4654A32F2020C294003B4526 /* MPCloseBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A321E6C5A0D003F4967 /* MPCloseBtn@3x.png */; };
+		4654A3302020C294003B4526 /* MPPlayBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3E1E6C5A0D003F4967 /* MPPlayBtn@3x.png */; };
+		4654A3312020C294003B4526 /* MPPlayBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3D1E6C5A0D003F4967 /* MPPlayBtn@2x.png */; };
+		4654A3322020C294003B4526 /* img_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891ECC1C639A450098C602 /* img_02.png */; };
+		4654A3332020C294003B4526 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
+		4654A3342020C294003B4526 /* test_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891E901C6106870098C602 /* test_banner.png */; };
+		4654A3352020C294003B4526 /* MPCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A301E6C5A0D003F4967 /* MPCloseBtn.png */; };
+		4654A3362020C294003B4526 /* img_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891ED01C639C190098C602 /* img_03.png */; };
+		4654A3372020C294003B4526 /* test_interstitial.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891E911C6106870098C602 /* test_interstitial.png */; };
+		4654A3382020C294003B4526 /* img_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891ED41C63AAC10098C602 /* img_04.png */; };
+		4654A3392020C294003B4526 /* MPMutedBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3B1E6C5A0D003F4967 /* MPMutedBtn@3x.png */; };
+		4654A33A2020C294003B4526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8625DED71E30CB9E00827965 /* Main.storyboard */; };
+		4654A33B2020C294003B4526 /* MPMutedBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A391E6C5A0D003F4967 /* MPMutedBtn.png */; };
+		4654A33C2020C294003B4526 /* MPCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A351E6C5A0D003F4967 /* MPCloseButtonX@3x.png */; };
+		4654A33D2020C294003B4526 /* MPPlayBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3C1E6C5A0D003F4967 /* MPPlayBtn.png */; };
+		4654A33E2020C294003B4526 /* MPUnmutedBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A3F1E6C5A0D003F4967 /* MPUnmutedBtn.png */; };
+		4654A33F2020C294003B4526 /* mobfox_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EA01C6106970098C602 /* mobfox_icon.png */; };
+		4654A3402020C294003B4526 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 865148DD1E6C5A0D003F4967 /* README.txt */; };
+		4654A3412020C294003B4526 /* MPUnmutedBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A411E6C5A0D003F4967 /* MPUnmutedBtn@3x.png */; };
+		4654A3422020C294003B4526 /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865148F61E6C5A0D003F4967 /* MPAdBrowserController.xib */; };
+		4654A3432020C294003B4526 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 86514A331E6C5A0D003F4967 /* MPCloseButtonX.png */; };
+		4654A3442020C294003B4526 /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EA11C6106970098C602 /* test_bg.png */; };
+		4654A34C2020CA38003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; };
+		4654A3502020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; };
+		4654A3512020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8603F7D11CF2EFE400CAE120 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
 		86104BA71E819BB200DC1A9E /* MobFoxSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86104BA61E819B8700DC1A9E /* MobFoxSDKCore.framework */; };
 		861204F01D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
@@ -323,7 +578,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4654A3522020CCDB003B4526 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4654A3512020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4654A3482020C294003B4526 /* DemoAppDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4654A3492020C294003B4526 /* DemoApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoApp copy-Info.plist"; path = "/Users/moshe/Desktop/iOSSDK_dynamic/MobFox-iOS-SDK/DemoApp/DemoApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCoreDynamic.framework; sourceTree = "<group>"; };
 		860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
 		860C0BCF1C9573D50001EEF3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		860C0FB71C96B9B00001EEF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -797,6 +1069,47 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4654A2F62020C294003B4526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4654A2F72020C294003B4526 /* libz.1.dylib in Frameworks */,
+				4654A2F92020C294003B4526 /* MATMoatMobileAppKit.framework in Frameworks */,
+				4654A34C2020CA38003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */,
+				4654A2FA2020C294003B4526 /* GoogleMobileAds.framework in Frameworks */,
+				4654A2FB2020C294003B4526 /* libxml2.tbd in Frameworks */,
+				4654A2FC2020C294003B4526 /* StartApp.framework in Frameworks */,
+				4654A2FD2020C294003B4526 /* AmazonAd.framework in Frameworks */,
+				4654A2FE2020C294003B4526 /* iSoma.framework in Frameworks */,
+				4654A2FF2020C294003B4526 /* EventKitUI.framework in Frameworks */,
+				4654A3002020C294003B4526 /* EventKit.framework in Frameworks */,
+				4654A3012020C294003B4526 /* Chartboost.framework in Frameworks */,
+				4654A3022020C294003B4526 /* SystemConfiguration.framework in Frameworks */,
+				4654A3032020C294003B4526 /* Supersonic.framework in Frameworks */,
+				4654A3502020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */,
+				4654A3042020C294003B4526 /* MessageUI.framework in Frameworks */,
+				4654A3052020C294003B4526 /* MediaPlayer.framework in Frameworks */,
+				4654A3062020C294003B4526 /* CoreTelephony.framework in Frameworks */,
+				4654A3072020C294003B4526 /* CoreMedia.framework in Frameworks */,
+				4654A3082020C294003B4526 /* CoreGraphics.framework in Frameworks */,
+				4654A3092020C294003B4526 /* AVFoundation.framework in Frameworks */,
+				4654A30A2020C294003B4526 /* AudioToolbox.framework in Frameworks */,
+				4654A30B2020C294003B4526 /* CoreMotion.framework in Frameworks */,
+				4654A30C2020C294003B4526 /* Social.framework in Frameworks */,
+				4654A30D2020C294003B4526 /* MobileCoreServices.framework in Frameworks */,
+				4654A30E2020C294003B4526 /* CoreBluetooth.framework in Frameworks */,
+				4654A30F2020C294003B4526 /* iAd.framework in Frameworks */,
+				4654A3102020C294003B4526 /* QuartzCore.framework in Frameworks */,
+				4654A3112020C294003B4526 /* UIKit.framework in Frameworks */,
+				4654A3122020C294003B4526 /* AppLovinSDK.framework in Frameworks */,
+				4654A3132020C294003B4526 /* Foundation.framework in Frameworks */,
+				4654A3142020C294003B4526 /* MMAdSDK.framework in Frameworks */,
+				4654A3152020C294003B4526 /* CoreLocation.framework in Frameworks */,
+				4654A3162020C294003B4526 /* AdSupport.framework in Frameworks */,
+				4654A3172020C294003B4526 /* FBAudienceNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86891E0B1C5FA8250098C602 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -854,6 +1167,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4654A34A2020CA37003B4526 /* MobFoxSDKCoreDynamic.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */,
+			);
+			name = MobFoxSDKCoreDynamic.embeddedframework;
+			path = ../MobFoxSDKCoreDynamic.embeddedframework;
+			sourceTree = "<group>";
+		};
 		86104BA51E819B8700DC1A9E /* MobFoxSDKCore.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1422,6 +1744,7 @@
 		865BD0E01C68DF7D00F180D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4654A34A2020CA37003B4526 /* MobFoxSDKCoreDynamic.embeddedframework */,
 				E7970DA41FE955CF005AA888 /* MATMoatMobileAppKit.framework */,
 				86104BA51E819B8700DC1A9E /* MobFoxSDKCore.embeddedframework */,
 				860C0FB71C96B9B00001EEF3 /* libz.tbd */,
@@ -1473,6 +1796,7 @@
 				86891E2A1C5FA8250098C602 /* DemoAppTests */,
 				86891E351C5FA8250098C602 /* DemoAppUITests */,
 				86891E0F1C5FA8250098C602 /* Products */,
+				4654A3492020C294003B4526 /* DemoApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1482,6 +1806,7 @@
 				86891E0E1C5FA8250098C602 /* DemoApp.app */,
 				86891E271C5FA8250098C602 /* DemoAppTests.xctest */,
 				86891E321C5FA8250098C602 /* DemoAppUITests.xctest */,
+				4654A3482020C294003B4526 /* DemoAppDynamic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1631,6 +1956,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4654A2442020C294003B4526 /* DemoAppDynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4654A3452020C294003B4526 /* Build configuration list for PBXNativeTarget "DemoAppDynamic" */;
+			buildPhases = (
+				4654A2452020C294003B4526 /* Sources */,
+				4654A2F62020C294003B4526 /* Frameworks */,
+				4654A3182020C294003B4526 /* Resources */,
+				4654A3522020CCDB003B4526 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoAppDynamic;
+			productName = DemoApp;
+			productReference = 4654A3482020C294003B4526 /* DemoAppDynamic.app */;
+			productType = "com.apple.product-type.application";
+		};
 		86891E0D1C5FA8250098C602 /* DemoApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86891E3B1C5FA8250098C602 /* Build configuration list for PBXNativeTarget "DemoApp" */;
@@ -1693,6 +2036,9 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Matomy Media Group Ltd";
 				TargetAttributes = {
+					4654A2442020C294003B4526 = {
+						DevelopmentTeam = AV662668AP;
+					};
 					86891E0D1C5FA8250098C602 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = AV662668AP;
@@ -1735,6 +2081,7 @@
 			projectRoot = "";
 			targets = (
 				86891E0D1C5FA8250098C602 /* DemoApp */,
+				4654A2442020C294003B4526 /* DemoAppDynamic */,
 				86891E261C5FA8250098C602 /* DemoAppTests */,
 				86891E311C5FA8250098C602 /* DemoAppUITests */,
 			);
@@ -1742,6 +2089,57 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4654A3182020C294003B4526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4654A3192020C294003B4526 /* test_native.png in Resources */,
+				4654A31A2020C294003B4526 /* MPCloseBtn@2x.png in Resources */,
+				4654A31B2020C294003B4526 /* title_mobfox.png in Resources */,
+				4654A31C2020C294003B4526 /* LICENSE in Resources */,
+				4654A31D2020C294003B4526 /* NativeAdViewController.xib in Resources */,
+				4654A31E2020C294003B4526 /* LaunchScreen.storyboard in Resources */,
+				4654A31F2020C294003B4526 /* MRAID.bundle in Resources */,
+				4654A3202020C294003B4526 /* icon_info.png in Resources */,
+				4654A3212020C294003B4526 /* response.json in Resources */,
+				4654A3222020C294003B4526 /* MPCloseButtonX@2x.png in Resources */,
+				4654A3232020C294003B4526 /* MPDAAIcon.png in Resources */,
+				4654A3242020C294003B4526 /* img_01.png in Resources */,
+				4654A3252020C294003B4526 /* MPDAAIcon@2x.png in Resources */,
+				4654A3262020C294003B4526 /* Assets.xcassets in Resources */,
+				4654A3272020C294003B4526 /* MPMutedBtn@2x.png in Resources */,
+				4654A3282020C294003B4526 /* test_video.png in Resources */,
+				4654A3292020C294003B4526 /* StartApp.bundle in Resources */,
+				4654A32A2020C294003B4526 /* icon_01.png in Resources */,
+				4654A32B2020C294003B4526 /* MPDAAIcon@3x.png in Resources */,
+				4654A32C2020C294003B4526 /* icon_02.png in Resources */,
+				4654A32D2020C294003B4526 /* MPUnmutedBtn@2x.png in Resources */,
+				4654A32E2020C294003B4526 /* img_05.png in Resources */,
+				4654A32F2020C294003B4526 /* MPCloseBtn@3x.png in Resources */,
+				4654A3302020C294003B4526 /* MPPlayBtn@3x.png in Resources */,
+				4654A3312020C294003B4526 /* MPPlayBtn@2x.png in Resources */,
+				4654A3322020C294003B4526 /* img_02.png in Resources */,
+				4654A3332020C294003B4526 /* response_waterfalls.txt in Resources */,
+				4654A3342020C294003B4526 /* test_banner.png in Resources */,
+				4654A3352020C294003B4526 /* MPCloseBtn.png in Resources */,
+				4654A3362020C294003B4526 /* img_03.png in Resources */,
+				4654A3372020C294003B4526 /* test_interstitial.png in Resources */,
+				4654A3382020C294003B4526 /* img_04.png in Resources */,
+				4654A3392020C294003B4526 /* MPMutedBtn@3x.png in Resources */,
+				4654A33A2020C294003B4526 /* Main.storyboard in Resources */,
+				4654A33B2020C294003B4526 /* MPMutedBtn.png in Resources */,
+				4654A33C2020C294003B4526 /* MPCloseButtonX@3x.png in Resources */,
+				4654A33D2020C294003B4526 /* MPPlayBtn.png in Resources */,
+				4654A33E2020C294003B4526 /* MPUnmutedBtn.png in Resources */,
+				4654A33F2020C294003B4526 /* mobfox_icon.png in Resources */,
+				4654A3402020C294003B4526 /* README.txt in Resources */,
+				4654A3412020C294003B4526 /* MPUnmutedBtn@3x.png in Resources */,
+				4654A3422020C294003B4526 /* MPAdBrowserController.xib in Resources */,
+				4654A3432020C294003B4526 /* MPCloseButtonX.png in Resources */,
+				4654A3442020C294003B4526 /* test_bg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86891E0C1C5FA8250098C602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1846,6 +2244,189 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4654A2452020C294003B4526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4654A2462020C294003B4526 /* MPURLResolver.m in Sources */,
+				4654A2472020C294003B4526 /* MPVASTCreative.m in Sources */,
+				4654A2482020C294003B4526 /* MPNativeAdData.m in Sources */,
+				4654A2492020C294003B4526 /* MOPUBAVPlayer.m in Sources */,
+				4654A24A2020C294003B4526 /* MPReachability.m in Sources */,
+				4654A24B2020C294003B4526 /* MPVASTAd.m in Sources */,
+				4654A24C2020C294003B4526 /* MPAdView.m in Sources */,
+				4654A24D2020C294003B4526 /* MPURLActionInfo.m in Sources */,
+				4654A24E2020C294003B4526 /* MPNativeAdRendererImageHandler.m in Sources */,
+				4654A24F2020C294003B4526 /* MPNativeAd.m in Sources */,
+				4654A2502020C294003B4526 /* MRVideoPlayerManager.m in Sources */,
+				4654A2512020C294003B4526 /* MPLogProvider.m in Sources */,
+				4654A2522020C294003B4526 /* MPAnalyticsTracker.m in Sources */,
+				4654A2532020C294003B4526 /* MPFacebookKeywordProvider.m in Sources */,
+				4654A2542020C294003B4526 /* MPRewardedVideoAdManager.m in Sources */,
+				4654A2552020C294003B4526 /* MRNativeCommandHandler.m in Sources */,
+				4654A2562020C294003B4526 /* MOPUBActivityIndicatorView.m in Sources */,
+				4654A2572020C294003B4526 /* MOPUBReplayView.m in Sources */,
+				4654A2582020C294003B4526 /* MPStaticNativeAdImpressionTimer.m in Sources */,
+				4654A2592020C294003B4526 /* MPNativeAdUtils.m in Sources */,
+				4654A25A2020C294003B4526 /* MPEnhancedDeeplinkRequest.m in Sources */,
+				4654A25B2020C294003B4526 /* MPTableViewAdPlacerCell.m in Sources */,
+				4654A25C2020C294003B4526 /* MPServerAdPositioning.m in Sources */,
+				4654A25D2020C294003B4526 /* MPNetworkManager.m in Sources */,
+				4654A25E2020C294003B4526 /* MPInterstitialAdManager.m in Sources */,
+				4654A25F2020C294003B4526 /* MOPUBFullscreenPlayerViewController.m in Sources */,
+				4654A2602020C294003B4526 /* MainViewController.m in Sources */,
+				4654A2612020C294003B4526 /* MPInterstitialCustomEventAdapter.m in Sources */,
+				4654A2622020C294003B4526 /* MPNativeAdRequestTargeting.m in Sources */,
+				4654A2632020C294003B4526 /* AppDelegate.m in Sources */,
+				4654A2642020C294003B4526 /* MPAdAlertGestureRecognizer.m in Sources */,
+				4654A2652020C294003B4526 /* MPRewardedVideoConnection.m in Sources */,
+				4654A2662020C294003B4526 /* MPVASTResponse.m in Sources */,
+				4654A2672020C294003B4526 /* MPVASTLinearAd.m in Sources */,
+				4654A2682020C294003B4526 /* MRError.m in Sources */,
+				4654A2692020C294003B4526 /* MPMoPubNativeAdAdapter.m in Sources */,
+				4654A26A2020C294003B4526 /* MOPUBNativeVideoCustomEvent.m in Sources */,
+				4654A26B2020C294003B4526 /* MOPUBNativeVideoAdRendererSettings.m in Sources */,
+				4654A26C2020C294003B4526 /* MPAdWebViewAgent.m in Sources */,
+				4654A26D2020C294003B4526 /* MRCommand.m in Sources */,
+				4654A26E2020C294003B4526 /* MPWebView.m in Sources */,
+				4654A26F2020C294003B4526 /* MPClientAdPositioning.m in Sources */,
+				4654A2702020C294003B4526 /* MPRewardedVideoError.m in Sources */,
+				4654A2712020C294003B4526 /* MRBridge.m in Sources */,
+				4654A2722020C294003B4526 /* MPStreamAdPlacementData.m in Sources */,
+				4654A2732020C294003B4526 /* MPNativeView.m in Sources */,
+				4654A2742020C294003B4526 /* SmaatoNativeAdapterMobFox.m in Sources */,
+				4654A2752020C294003B4526 /* MPVASTStringUtilities.m in Sources */,
+				4654A2762020C294003B4526 /* NSHTTPURLResponse+MPAdditions.m in Sources */,
+				4654A2772020C294003B4526 /* MPHTMLInterstitialCustomEvent.m in Sources */,
+				4654A2782020C294003B4526 /* MoPubInterstitialAdapterMobFox.m in Sources */,
+				4654A2792020C294003B4526 /* MOPUBPlayerViewController.m in Sources */,
+				4654A27A2020C294003B4526 /* MPNativeAdConstants.m in Sources */,
+				4654A27B2020C294003B4526 /* MOPUBNativeVideoAdRenderer.m in Sources */,
+				4654A27C2020C294003B4526 /* MPStaticNativeAdRendererSettings.m in Sources */,
+				4654A27D2020C294003B4526 /* MPVASTMediaFile.m in Sources */,
+				4654A27E2020C294003B4526 /* MPAdDestinationDisplayAgent.m in Sources */,
+				4654A27F2020C294003B4526 /* MPBannerCustomEventAdapter.m in Sources */,
+				4654A2802020C294003B4526 /* MOPUBNativeVideoAdConfigValues.m in Sources */,
+				4654A2812020C294003B4526 /* MPNativeAdSourceQueue.m in Sources */,
+				4654A2822020C294003B4526 /* GenericAdapterViewController.m in Sources */,
+				4654A2832020C294003B4526 /* MPMoPubNativeCustomEvent.m in Sources */,
+				4654A2842020C294003B4526 /* MPActivityViewControllerHelper+TweetShare.m in Sources */,
+				4654A2852020C294003B4526 /* MPError.m in Sources */,
+				4654A2862020C294003B4526 /* MPMoPubRewardedVideoCustomEvent.m in Sources */,
+				4654A2872020C294003B4526 /* MPTimer.m in Sources */,
+				4654A2882020C294003B4526 /* MPNativePositionSource.m in Sources */,
+				4654A2892020C294003B4526 /* MOPUBPlayerManager.m in Sources */,
+				4654A28A2020C294003B4526 /* MPAdServerURLBuilder.m in Sources */,
+				4654A28B2020C294003B4526 /* MRExpandModalViewController.m in Sources */,
+				4654A28C2020C294003B4526 /* MPMobFoxNativeAdRenderer.m in Sources */,
+				4654A28D2020C294003B4526 /* MPNativeCache.m in Sources */,
+				4654A28E2020C294003B4526 /* MPStaticNativeAdRenderer.m in Sources */,
+				4654A28F2020C294003B4526 /* GADMAdapterMobFox.m in Sources */,
+				4654A2902020C294003B4526 /* MPLogEvent+NativeVideo.m in Sources */,
+				4654A2912020C294003B4526 /* MPMobFoxNativeAdAdapter.m in Sources */,
+				4654A2922020C294003B4526 /* MPQRunLoopOperation.m in Sources */,
+				4654A2932020C294003B4526 /* MPVASTTrackingEvent.m in Sources */,
+				4654A2942020C294003B4526 /* MPNativeAdRenderingImageLoader.m in Sources */,
+				4654A2952020C294003B4526 /* MPImageDownloadQueue.m in Sources */,
+				4654A2962020C294003B4526 /* NSJSONSerialization+MPAdditions.m in Sources */,
+				4654A2972020C294003B4526 /* MPNativeCustomEvent.m in Sources */,
+				4654A2982020C294003B4526 /* MPLogEvent.m in Sources */,
+				4654A2992020C294003B4526 /* MPVASTWrapper.m in Sources */,
+				4654A29A2020C294003B4526 /* MPMRAIDBannerCustomEvent.m in Sources */,
+				4654A29B2020C294003B4526 /* MPAdAlertManager.m in Sources */,
+				4654A29C2020C294003B4526 /* MPMRAIDInterstitialViewController.m in Sources */,
+				4654A29D2020C294003B4526 /* MPIdentityProvider.m in Sources */,
+				4654A29E2020C294003B4526 /* MPAdPositioning.m in Sources */,
+				4654A29F2020C294003B4526 /* MPVASTCompanionAd.m in Sources */,
+				4654A2A02020C294003B4526 /* MPBaseBannerAdapter.m in Sources */,
+				4654A2A12020C294003B4526 /* MoPubNative.m in Sources */,
+				4654A2A22020C294003B4526 /* MPLogEventCommunicator.m in Sources */,
+				4654A2A32020C294003B4526 /* MRController.m in Sources */,
+				4654A2A42020C294003B4526 /* UIColor+MPAdditions.m in Sources */,
+				4654A2A52020C294003B4526 /* MPRewardedVideoAdapter.m in Sources */,
+				4654A2A62020C294003B4526 /* MPVASTMacroProcessor.m in Sources */,
+				4654A2A72020C294003B4526 /* MPVASTDurationOffset.m in Sources */,
+				4654A2A82020C294003B4526 /* MPAdBrowserController.m in Sources */,
+				4654A2A92020C294003B4526 /* MRBundleManager.m in Sources */,
+				4654A2AA2020C294003B4526 /* MPGeolocationProvider.m in Sources */,
+				4654A2AB2020C294003B4526 /* MPCollectionViewAdPlacer.m in Sources */,
+				4654A2AC2020C294003B4526 /* MPCollectionViewAdPlacerCell.m in Sources */,
+				4654A2AD2020C294003B4526 /* SettingsViewController.m in Sources */,
+				4654A2AE2020C294003B4526 /* MPGlobal.m in Sources */,
+				4654A2AF2020C294003B4526 /* MPRewardedVideo.m in Sources */,
+				4654A2B02020C294003B4526 /* MPNativeAd+Internal.m in Sources */,
+				4654A2B12020C294003B4526 /* MPTableViewCellImpressionTracker.m in Sources */,
+				4654A2B22020C294003B4526 /* MPCoreInstanceProvider.m in Sources */,
+				4654A2B32020C294003B4526 /* MPRewardedVideoCustomEvent.m in Sources */,
+				4654A2B42020C294003B4526 /* UIButton+MPAdditions.m in Sources */,
+				4654A2B52020C294003B4526 /* MPBannerCustomEvent.m in Sources */,
+				4654A2B62020C294003B4526 /* MPHTMLInterstitialViewController.m in Sources */,
+				4654A2B72020C294003B4526 /* MPVASTInline.m in Sources */,
+				4654A2B82020C294003B4526 /* MPProgressOverlayView.m in Sources */,
+				4654A2B92020C294003B4526 /* MOPUBPlayerView.m in Sources */,
+				4654A2BA2020C294003B4526 /* MPSessionTracker.m in Sources */,
+				4654A2BB2020C294003B4526 /* MPClosableView.m in Sources */,
+				4654A2BC2020C294003B4526 /* MPConstants.m in Sources */,
+				4654A2BD2020C294003B4526 /* MPNativeAdRendererConfiguration.m in Sources */,
+				4654A2BE2020C294003B4526 /* UIWebView+MPAdditions.m in Sources */,
+				4654A2BF2020C294003B4526 /* MRProperty.m in Sources */,
+				4654A2C02020C294003B4526 /* CollectionViewCell.m in Sources */,
+				4654A2C12020C294003B4526 /* UIView+MPAdditions.m in Sources */,
+				4654A2C22020C294003B4526 /* MPAdConversionTracker.m in Sources */,
+				4654A2C32020C294003B4526 /* MOPUBAVPlayerView.m in Sources */,
+				4654A2C42020C294003B4526 /* MPVideoConfig.m in Sources */,
+				4654A2C52020C294003B4526 /* MFTestAdapterBase.m in Sources */,
+				4654A2C62020C294003B4526 /* MPAdConfiguration.m in Sources */,
+				4654A2C72020C294003B4526 /* MPInterstitialCustomEvent.m in Sources */,
+				4654A2C82020C294003B4526 /* MPTableViewAdPlacer.m in Sources */,
+				4654A2C92020C294003B4526 /* MoPub.m in Sources */,
+				4654A2CA2020C294003B4526 /* MPAdPlacerInvocation.m in Sources */,
+				4654A2CB2020C294003B4526 /* MPBaseInterstitialAdapter.m in Sources */,
+				4654A2CC2020C294003B4526 /* MFTestAdapter.m in Sources */,
+				4654A2CD2020C294003B4526 /* MPInstanceProvider.m in Sources */,
+				4654A2CE2020C294003B4526 /* MPVASTManager.m in Sources */,
+				4654A2CF2020C294003B4526 /* MoPubNativeAdapterMobFox.m in Sources */,
+				4654A2D02020C294003B4526 /* MPInternalUtils.m in Sources */,
+				4654A2D12020C294003B4526 /* MPStoreKitProvider.m in Sources */,
+				4654A2D22020C294003B4526 /* MPNativeAdRequest.m in Sources */,
+				4654A2D32020C294003B4526 /* MoPubAdapterMobFox.m in Sources */,
+				4654A2D42020C294003B4526 /* MRConstants.m in Sources */,
+				4654A2D52020C294003B4526 /* MPXMLParser.m in Sources */,
+				4654A2D62020C294003B4526 /* MPRetryingHTTPOperation.m in Sources */,
+				4654A2D72020C294003B4526 /* MPInterstitialViewController.m in Sources */,
+				4654A2D82020C294003B4526 /* MPLastResortDelegate.m in Sources */,
+				4654A2D92020C294003B4526 /* MPActivityViewControllerHelper.m in Sources */,
+				4654A2DA2020C294003B4526 /* MPStreamAdPlacer.m in Sources */,
+				4654A2DB2020C294003B4526 /* MPNativeAdSource.m in Sources */,
+				4654A2DC2020C294003B4526 /* NativeAdViewController.m in Sources */,
+				4654A2DD2020C294003B4526 /* MPBannerAdManager.m in Sources */,
+				4654A2DE2020C294003B4526 /* MPVASTModel.m in Sources */,
+				4654A2DF2020C294003B4526 /* MPUserInteractionGestureRecognizer.m in Sources */,
+				4654A2E02020C294003B4526 /* MPVASTResource.m in Sources */,
+				4654A2E12020C294003B4526 /* MPNativeAdError.m in Sources */,
+				4654A2E22020C294003B4526 /* MPHTMLBannerCustomEvent.m in Sources */,
+				4654A2E32020C294003B4526 /* MPLogging.m in Sources */,
+				4654A2E42020C294003B4526 /* MPVASTIndustryIcon.m in Sources */,
+				4654A2E52020C294003B4526 /* MPNativePositionResponseDeserializer.m in Sources */,
+				4654A2E62020C294003B4526 /* SmaatoAdapterMobFox.m in Sources */,
+				4654A2E72020C294003B4526 /* MPAdServerCommunicator.m in Sources */,
+				4654A2E82020C294003B4526 /* MPAPIEndpoints.m in Sources */,
+				4654A2E92020C294003B4526 /* main.m in Sources */,
+				4654A2EA2020C294003B4526 /* MPMRAIDInterstitialCustomEvent.m in Sources */,
+				4654A2EB2020C294003B4526 /* NSURL+MPAdditions.m in Sources */,
+				4654A2EC2020C294003B4526 /* MPVASTTracking.m in Sources */,
+				4654A2ED2020C294003B4526 /* MPDiskLRUCache.m in Sources */,
+				4654A2EE2020C294003B4526 /* AdsViewController.m in Sources */,
+				4654A2EF2020C294003B4526 /* MPRewardedVideoReward.m in Sources */,
+				4654A2F02020C294003B4526 /* MOPUBNativeVideoImpressionAgent.m in Sources */,
+				4654A2F12020C294003B4526 /* AdaptersViewController.m in Sources */,
+				4654A2F22020C294003B4526 /* MoPubNativeAdRendererMobFox.m in Sources */,
+				4654A2F32020C294003B4526 /* MPInterstitialAdController.m in Sources */,
+				4654A2F42020C294003B4526 /* MOPUBNativeVideoAdAdapter.m in Sources */,
+				4654A2F52020C294003B4526 /* MPLogEventRecorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86891E0A1C5FA8250098C602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2078,6 +2659,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4654A3462020C294003B4526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = AV662668AP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DemoAppDynamicTarget=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}";
+				INFOPLIST_FILE = "DemoApp copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobfox.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4654A3472020C294003B4526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = AV662668AP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DemoAppDynamicTarget=1";
+				HEADER_SEARCH_PATHS = "${SRCROOT}";
+				INFOPLIST_FILE = "DemoApp copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobfox.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		86891E391C5FA8250098C602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2348,6 +2991,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4654A3452020C294003B4526 /* Build configuration list for PBXNativeTarget "DemoAppDynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4654A3462020C294003B4526 /* Debug */,
+				4654A3472020C294003B4526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86891E091C5FA8250098C602 /* Build configuration list for PBXProject "DemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
