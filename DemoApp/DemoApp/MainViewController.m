@@ -118,7 +118,11 @@ static bool perform_segue_enabled;
     
     _navigationItem.rightBarButtonItem = settingsButton;
 
-    
+#ifdef  DemoAppDynamicTarget
+    self.title =[NSString stringWithFormat:@"D-%@",SDK_VERSION];
+#else
+    self.title =[NSString stringWithFormat:@"S-%@",SDK_VERSION];
+#endif
     self.cellID = @"cellID";
     self.invhInput.delegate = self;
     self.nativeAdView.hidden = true;
