@@ -15,6 +15,8 @@
 		4635E91620275E7A00CD6521 /* ScanHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E91120275E7A00CD6521 /* ScanHashViewController.m */; };
 		4635E9192027608000CD6521 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E9172027607F00CD6521 /* SettingsViewController.m */; };
 		4635E91A2027608000CD6521 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E9172027607F00CD6521 /* SettingsViewController.m */; };
+		4635E91B20276C8F00CD6521 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D51E6C5A0D003F4967 /* iSoma.framework */; };
+		4635E91C20276C9100CD6521 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865148D51E6C5A0D003F4967 /* iSoma.framework */; };
 		4654A2462020C294003B4526 /* MPURLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651490F1E6C5A0D003F4967 /* MPURLResolver.m */; };
 		4654A2472020C294003B4526 /* MPVASTCreative.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149911E6C5A0D003F4967 /* MPVASTCreative.m */; };
 		4654A2482020C294003B4526 /* MPNativeAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149F01E6C5A0D003F4967 /* MPNativeAdData.m */; };
@@ -1203,6 +1205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4635E91B20276C8F00CD6521 /* iSoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,6 +1213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4635E91C20276C9100CD6521 /* iSoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3017,6 +3021,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFoxSDKCoreDynamic.embeddedframework",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+					"$(PROJECT_DIR)/othernetworks",
 				);
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3046,6 +3051,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFoxSDKCoreDynamic.embeddedframework",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+					"$(PROJECT_DIR)/othernetworks",
 				);
 				INFOPLIST_FILE = DemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3072,6 +3078,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFoxSDKCoreDynamic.embeddedframework",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+					"$(PROJECT_DIR)/othernetworks",
 				);
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3098,6 +3105,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFoxSDKCoreDynamic.embeddedframework",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+					"$(PROJECT_DIR)/othernetworks",
 				);
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
