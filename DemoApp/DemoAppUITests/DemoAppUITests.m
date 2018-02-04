@@ -51,8 +51,8 @@
     [webView_2 loadRequest:request];
     webView_2.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
     
-    NSLog(@"webView.request.URL: %@", webView.request.URL);
-    NSLog(@"webView_2.request.URL: %@", webView_2.request.URL);
+    //NSLog(@"webView.request.URL: %@", webView.request.URL);
+    //NSLog(@"webView_2.request.URL: %@", webView_2.request.URL);
     
     NSString *currentURL = [webView stringByEvaluatingJavaScriptFromString:@"window.location"];
     

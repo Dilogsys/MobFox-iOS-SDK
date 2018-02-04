@@ -10,6 +10,11 @@
 
 @implementation MFTestAdapterBase
 
+
+- (void)requestTagAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info {
+    
+}
+
 - (void)requestAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info {
     
 }

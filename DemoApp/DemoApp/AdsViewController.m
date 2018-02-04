@@ -57,8 +57,8 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (strong, nonatomic) MPNativeAd *mpNativeAd;
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
-@property (weak, nonatomic) UIView *mpNativeAdView;
 
+@property (weak, nonatomic) UIView *mpNativeAdView;
 
 @end
 
@@ -117,13 +117,15 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     
     if([sdk isEqualToString:@"AdMob"] ) {
         
-        self.gadBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0, 430, 300, 250)];
+        self.gadBannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-50, 320, 50)];
+        //self.gadBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
         //self.gadBannerView.adUnitID = @"ca-app-pub-6224828323195096/5677489566";
         self.gadBannerView.adUnitID = ADMOB_HASH_GAD_BANNER;
         self.gadBannerView.rootViewController = self;
         self.gadBannerView.delegate = self;
         [self.view addSubview: self.gadBannerView];
         GADRequest *request = [[GADRequest alloc] init];
+        //request.testDevices = @[ kGADSimulatorID ];
         //request.testDevices = @[ @"b94fb34e17824e61ad7e612ebc278a31" ];
         [self.gadBannerView loadRequest:request];
         
@@ -148,6 +150,8 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
         
     } else if([sdk isEqualToString:@"MoPub"] ) {
         
+        NSLog(@"-- MoPub Banner --");
+        
         self.mpAdView = [[MPAdView alloc] initWithAdUnitId:MOPUB_HASH_BANNER
                                                       size:MOPUB_BANNER_SIZE];
         self.mpAdView.delegate = self;
@@ -168,13 +172,18 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     
     if([sdk isEqualToString:@"AdMob"] ) {
         
-        self.gadInterstitial = [[GADInterstitial alloc] initWithAdUnitID:ADMOB_HASH_GAD_INTER];
-        GADRequest *request_interstitial = [GADRequest request];
+        [GADRewardBasedVideoAd sharedInstance].delegate = self;
+        
+        [[GADRewardBasedVideoAd sharedInstance] loadRequest:[GADRequest request]
+                                               withAdUnitID:ADMOB_HASH_GAD_INTER];
+        
+        //self.gadInterstitial = [[GADInterstitial alloc] initWithAdUnitID:ADMOB_HASH_GAD_INTER];
+        //GADRequest *request_interstitial = [GADRequest request];
         // Requests test ads on test devices.
         // request_interstitial.testDevices = @[ @"e79e2caa57cdab4fc709cf33c631dca3" ];
-        self.gadInterstitial.delegate = self;
-        [self.gadInterstitial loadRequest:request_interstitial];
-        NSLog(@"%s", GoogleMobileAdsVersionString);
+        //self.gadInterstitial.delegate = self;
+        //[self.gadInterstitial loadRequest:request_interstitial];
+        //NSLog(@"%s", GoogleMobileAdsVersionString);
         /*
         // DFP Interstitial.
         self.dfpInterstitial = [[DFPInterstitial alloc] initWithAdUnitID:@"ca-app-pub-6224828323195096/7876284361"];
@@ -219,7 +228,9 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
                                                       options:nil];
         self.adLoader.delegate = self;
         GADRequest *request = [GADRequest request];
-        request.testDevices = @[ @"3bcc6b954745bc58d2c80a114c847835" ];
+        
+        
+        //request.testDevices = @[ @"3bcc6b954745bc58d2c80a114c847835" ];
         //request.testDevices = @[ kGADSimulatorID ];
         
         [self.adLoader loadRequest:request];
@@ -236,6 +247,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     } else if([sdk isEqualToString:@"MoPub"] ) {
         
         MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
+        settings.renderingViewClass = [_innerNativeAdView class];
         MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
         MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
         
@@ -255,7 +267,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             } else {
                 
                 //NSLog(@"mopub native reponse: %@", response);
-                
+
                 _nativeAdView.hidden = false;
                 
                 NSDictionary *propertiesDict = response.properties;
@@ -278,7 +290,6 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
                 [_nativeAdView addSubview:_mpNativeAdView];
                 
 
-             
             }
         }];
         
@@ -391,6 +402,16 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             
             case MFAdTypeNative:
             
+            [self hideBanner:_sdkName];
+            
+            break;
+            
+            case MFAdTypeVideoBanner:
+            
+            break;
+            
+            case MFAdTypeVideoInterstitial:
+            
             break;
             
             
@@ -399,10 +420,28 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     }
 }
 
+- (void)hideBanner:(NSString *)sdk {
+    
+    if([sdk isEqualToString:@"AdMob"] ) {
+        
+        self.gadBannerView.hidden = true;
+        
+    } else if([sdk isEqualToString:@"Smaato"] ) {
+        
+        self.somaBanner.hidden = true;
+        
+    } else if([sdk isEqualToString:@"MoPub"] ) {
+        
+        self.mpAdView.hidden = true;
+    }
+}
+
 
 - (NSString *)adTitle:(NSIndexPath *)indexPath {
     
     switch (indexPath.item) {
+            
+            // TODO: add verificaton of which SDK type has been selected in the previous view controller.
             
             case MFAdTypeBanner:
             return @"Banner";
@@ -413,6 +452,13 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             case MFAdTypeNative:
             return @"Native";
             break;
+            /*
+            case MFAdTypeVideoBanner:
+            return @"Video(Bnr)";
+            break;
+            case MFAdTypeVideoInterstitial:
+            return @"Video(Inl)";
+            break; */
             
             
         default:
@@ -433,6 +479,13 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             case MFAdTypeNative:
             return [UIImage imageNamed:@"test_banner.png"];
             break;
+            /*
+            case MFAdTypeVideoBanner:
+            return [UIImage imageNamed:@"test_banner.png"];
+            break;
+            case MFAdTypeVideoInterstitial:
+            return [UIImage imageNamed:@"test_banner.png"];
+            break;*/
             
             
         default:
@@ -544,7 +597,56 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 didReceiveNativeContentAd:(GADNativeContentAd *)nativeContentAd {
     
     NSLog(@"adLoader:didReceiveNativeContentAd:");
+    
+}
 
+#pragma mark AdMob GADAdLoader Delegate
+
+- (void)adLoader:(nonnull GADAdLoader *)adLoader didFailToReceiveAdWithError:(nonnull GADRequestError *)error {
+    
+}
+
+- (void)encodeWithCoder:(nonnull NSCoder *)aCoder {
+    
+}
+
+- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
+    
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    
+}
+
+- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
+    return CGSizeZero;
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+}
+
+- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+}
+
+- (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
+    
+}
+
+- (void)setNeedsFocusUpdate {
+    
+}
+
+- (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
+    return NO;
+}
+
+- (void)updateFocusIfNeeded {
     
 }
 
@@ -619,6 +721,10 @@ didReceiveNativeContentAd:(GADNativeContentAd *)nativeContentAd {
     NSLog(@"Mopub -- adViewDidLoadAd");
 }
 
+- (void)willLeaveApplicationFromAd:(MPAdView *)view{
+    NSLog(@"Mopub -- click!");
+}
+
 #pragma mark Mopub Interstitial Delegate
 
 - (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial {
@@ -639,6 +745,12 @@ didReceiveNativeContentAd:(GADNativeContentAd *)nativeContentAd {
     
 }
 
+- (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial{
+    NSLog(@"Mopub -- disappeared!");
+}
+
+
+
 #pragma mark Mopub Native Delegate
 
 - (void)willPresentModalForNativeAd:(MPNativeAd *)nativeAd {
@@ -651,6 +763,7 @@ didReceiveNativeContentAd:(GADNativeContentAd *)nativeContentAd {
     
     return self;
 }
+
 
 #pragma mark Mopub Nativew Ad Delegate
 
@@ -665,6 +778,48 @@ didReceiveNativeContentAd:(GADNativeContentAd *)nativeContentAd {
 -(void)nativeAdWillLeaveApplicationFromCollectionViewAdPlacer:(MPCollectionViewAdPlacer *)placer{
     NSLog(@">> third");
 }
+
+///////////rewarded delegate/////////
+
+- (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
+   didRewardUserWithReward:(GADAdReward *)reward {
+    NSString *rewardMessage =
+    [NSString stringWithFormat:@"Reward received with currency %@ , amount %lf",
+     reward.type,
+     [reward.amount doubleValue]];
+    NSLog(@"%@",rewardMessage);
+}
+
+- (void)rewardBasedVideoAdDidReceiveAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    NSLog(@"Reward based video ad is received.");
+    
+    if ([[GADRewardBasedVideoAd sharedInstance] isReady]) {
+        [[GADRewardBasedVideoAd sharedInstance] presentFromRootViewController:self];
+    }
+}
+
+- (void)rewardBasedVideoAdDidOpen:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    NSLog(@"Opened reward based video ad.");
+}
+
+- (void)rewardBasedVideoAdDidStartPlaying:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    NSLog(@"Reward based video ad started playing.");
+}
+
+- (void)rewardBasedVideoAdDidClose:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    NSLog(@"Reward based video ad is closed.");
+}
+
+- (void)rewardBasedVideoAdWillLeaveApplication:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    NSLog(@"Reward based video ad will leave application.");
+}
+
+- (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
+    didFailToLoadWithError:(NSError *)error {
+    NSLog(@"Reward based video ad failed to load.");
+}
+
+
 
 
 @end

@@ -8,15 +8,17 @@
 
 #import "MainViewController.h"
 #import "CollectionViewCell.h"
-#import "SettingsViewController.h"
+#import "ScanHashViewController.h"
 #import "NativeAdViewController.h"
 #import "AppDelegate.h"
 #import "MPMobFoxNativeAdRenderer.h"
 #import "GenericAdapterViewController.h"
 #import "MFDemoConstants.h"
 
-#define ADS_TYPE_NUM 9
-#define AD_REFRESH 0
+
+
+#define ADS_TYPE_NUM 11
+#define AD_REFRESH   0
 
 
 
@@ -29,7 +31,9 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     MFTestWaterfall,
     MFTestScrolView,
     MFTestGenericAdapter,
-    MFTestAdapters
+    MFTestAdapters,
+    MFTagBanner,
+    MFTagInterstitial
 };
 
 
@@ -42,10 +46,15 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (strong, nonatomic) MobFoxNativeAd* mobfoxNativeAd;
 @property (strong, nonatomic) MobFoxAd *mobfoxVideoAd;
 @property (strong, nonatomic) MobFoxInterstitialAd *mobfoxVideoInterstitial;
+@property (strong, nonatomic) MobFoxTagAd *mobFoxTagAd;
+@property (strong, nonatomic) MobFoxTagInterstitialAd *mobFoxTagInterstitialAd;
+
 
 @property (strong, nonatomic) NSURL *clickURL;
 @property (strong, nonatomic) NSString *cellID;
 @property (strong, nonatomic) UIViewController *vc;
+
+@property (weak, nonatomic) IBOutlet UITextField *invhInput;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *nativeAdView;
@@ -54,7 +63,6 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (weak, nonatomic) IBOutlet UIImageView *nativeAdIcon;
 @property (weak, nonatomic) IBOutlet UILabel *nativeAdTitle;
 @property (weak, nonatomic) IBOutlet UILabel *nativeAdDescription;
-@property (weak, nonatomic) IBOutlet UITextField *invhInput;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationItem;
 
 
@@ -72,7 +80,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (nonatomic, strong) GADInterstitial *gadInterstitial;
 @property (nonatomic, strong) DFPInterstitial *dfpInterstitial;
 @property (nonatomic, strong) GADNativeAd *gadNative;
-@property (nonatomic, strong) GADAdLoader *adLoader;
+//@property (nonatomic, strong) GADAdLoader *adLoader;
 
 
 /*** Smaato ***/
@@ -98,33 +106,45 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 
 static bool perform_segue_enabled;
 
-- (void)setBtnSelected {
+- (void)settingsBtnSelected:(id)sender {
     
-    NSLog(@"setBtnSelected");
+    NSLog(@"settingsBtnSelected");
     
     [self performSegueWithIdentifier:@"MainToSettings" sender:self];
+}
+
+- (void)scanHashBtnSelected {
+    
+    NSLog(@"scanHashBtnSelected");
+    
+    [self performSegueWithIdentifier:@"MainToScanHash" sender:self];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view, typically from a nib.
+    //NSLog(@"-- viewDidLoad --");
     
-    ////////////////////////////////////////////////////////////////////////
-    
-    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Set Inv" style:UIBarButtonItemStylePlain
-                                                                     target:self action:@selector(setBtnSelected)];
-    
-    _navigationItem.rightBarButtonItem = settingsButton;
 
-#ifdef  DemoAppDynamicTarget
-    self.title =[NSString stringWithFormat:@"D-%@",SDK_VERSION];
-#else
-    self.title =[NSString stringWithFormat:@"S-%@",SDK_VERSION];
-#endif
+    // Hides back button from current view.
+    self.navigationItem.hidesBackButton = YES;
+
+    
+    
+    UIBarButtonItem *scanHashButton = [[UIBarButtonItem alloc] initWithTitle:@"Set Inv" style:UIBarButtonItemStylePlain
+                                                                     target:self action:@selector(scanHashBtnSelected)];
+    
+    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain
+                                                                      target:self action:@selector(settingsBtnSelected:)];
+    
+    _navigationItem.rightBarButtonItem = scanHashButton;
+    _navigationItem.leftBarButtonItem = settingsButton;
+
+
+    
     self.cellID = @"cellID";
-    self.invhInput.delegate = self;
+    //self.invhInput.delegate = self;
     self.nativeAdView.hidden = true;
     self.invhInput.hidden = true;
 
@@ -136,69 +156,71 @@ static bool perform_segue_enabled;
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     [self.innerNativeAdView addGestureRecognizer:recognizer];
     
-    // Oreintation dependent in iOS 8 and later.
-    float screenWidth = [UIScreen mainScreen].bounds.size.width;
-    //float screenHeight = [UIScreen mainScreen].bounds.size.height;
+
     float bannerWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
     float videoHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 450.0 : 250.0;
     
     
-    /*** Banner ***/
-
-    self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
-    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
-    self.mobfoxAd.delegate = self;
-    self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
-    //self.mobfoxAd.adspace_strict = false;
-    [self.view addSubview:self.mobfoxAd];
-    
-
-    /*** Interstitial ***/
-    
-    
     MainViewController *rootController =(MainViewController*)[[(AppDelegate*)
                                                                [[UIApplication sharedApplication]delegate] window] rootViewController];
     
-    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER_TEST withRootViewController:rootController];
+
+    
+    /*** Banner ***/
+    self.bannerAdRect = CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT- bannerHeight, bannerWidth, bannerHeight);
+    self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
+    self.mobfoxAd.delegate = self;
+    self.mobfoxAd.refresh = self.refresh;
+    self.mobfoxAd.adspace_strict = false;
+    [rootController.view addSubview:self.mobfoxAd];
+    
+    
+    /*** Interstitial ***/
+    self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
     self.mobfoxInterAd.delegate = self;
     
     
     /*** Native ***/
-    
-    
-    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE_TEST];
+    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
     self.mobfoxNativeAd.delegate = self;
     
     
     /*** Video (Banner) ***/
-    
-
     float videoTopMargin = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 200.0 : 80.0;
-    self.videoAdRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
-    self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO_TEST withFrame:self.videoAdRect];
+    self.videoAdRect = CGRectMake((SCREEN_WIDTH - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
+    self.mobfoxVideoAd = [[MobFoxAd alloc] init:MOBFOX_HASH_VIDEO withFrame:self.videoAdRect];
     
     self.mobfoxVideoAd.delegate = self;
-    self.mobfoxVideoAd.type = @"video";
-    self.mobfoxVideoAd.skip = YES;
+  
     [self.view addSubview:self.mobfoxVideoAd];
     
     
     /*** Video (Inter) ***/
-
-    
-    self.mobfoxVideoInterstitial = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_VIDEO_TEST withRootViewController:self];
+    self.mobfoxVideoInterstitial = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_VIDEO withRootViewController:self];
     self.mobfoxVideoInterstitial.delegate = self;
-
+    
+    
+    /*** Tag Banner ***/
+    self.mobFoxTagAd = [[MobFoxTagAd alloc] init:MOBFOX_HASH_BANNER withFrame:CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT-50, 320, 50)];
+    self.mobFoxTagAd.delegate = self;
+    [self.view addSubview:self.mobFoxTagAd];
+    
+    
+    /*** Tag Interstitial ***/
+    self.mobFoxTagInterstitialAd = [[MobFoxTagInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
+    self.mobFoxTagInterstitialAd.delegate = self;
+    
+    
     
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    NSLog(@"-- viewDidAppear: --");
+    //NSLog(@"-- viewDidAppear: --");
     [super viewDidAppear:true];
-    NSLog(@"invh: %@", self.invh);
+    //NSLog(@"invh: %@", self.invh);
     
 }
 
@@ -206,7 +228,6 @@ static bool perform_segue_enabled;
     
     //NSLog(@"viewWillDisappear");
     [super viewWillDisappear:animated];
-    [self.mobfoxVideoAd pause];
     //self.mobfoxVideoAd = nil;
     
 }
@@ -220,7 +241,11 @@ static bool perform_segue_enabled;
     
     if ([identifier isEqualToString:@"MainToGenericAdapter"] || [identifier isEqualToString:@"MainToAdapters"]) {
         
-        NSLog(@"_lastIndexSelected.item: %ld", (long)_lastIndexSelected.item);
+        if ([identifier isEqualToString:@"MainToGenericAdapter"]) {
+            [self hideAds:_lastIndexSelected];
+        }
+        
+        //NSLog(@"_lastIndexSelected.item: %ld", (long)_lastIndexSelected.item);
         
         if(perform_segue_enabled == true) {
             
@@ -268,19 +293,20 @@ static bool perform_segue_enabled;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell* cell = [collectionView  cellForItemAtIndexPath:indexPath];
+    UICollectionViewCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor lightGrayColor];
     
     _lastIndexSelected = indexPath;
-    
     
     switch (indexPath.item) {
             
         case MFAdTypeBanner:
 
             [self hideAds:indexPath];
-            [self.mobfoxVideoAd pause];
-            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_TEST;
+            
+            self.mobfoxAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
+            self.mobfoxAd.refresh = self.refresh;
+            //NSLog(@"FINAL REFRESH: %@", self.refresh);
             [self.mobfoxAd loadAd];
             
             break;
@@ -288,8 +314,8 @@ static bool perform_segue_enabled;
         case MFAdTypeInterstitial:
 
             [self hideAds:indexPath];
-            [self.mobfoxVideoAd pause];
-            self.mobfoxInterAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER_TEST;
+          
+            self.mobfoxInterAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_INTER;
             [self.mobfoxInterAd loadAd];
 
             break;
@@ -297,8 +323,8 @@ static bool perform_segue_enabled;
         case MFAdTypeNative:
             
             [self hideAds:indexPath];
-            [self.mobfoxVideoAd pause];
-            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE_TEST;
+           
+            self.mobfoxNativeAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_NATIVE;
             [self.mobfoxNativeAd loadAd];
             
             break;
@@ -306,25 +332,26 @@ static bool perform_segue_enabled;
         case MFAdTypeVideoBanner:
             
             [self hideAds:indexPath];
-            self.mobfoxVideoAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO_TEST;
+            self.mobfoxVideoAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO;
             [self.mobfoxVideoAd loadAd];
             break;
             
         case MFAdTypeVideoInterstitial:
             
             [self hideAds:indexPath];
-            [self.mobfoxVideoAd pause];
-            self.mobfoxVideoInterstitial.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO_TEST;
+          
+            self.mobfoxVideoInterstitial.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_VIDEO;
             [self.mobfoxVideoInterstitial loadAd];
             break;
             
         case MFTestWaterfall:
+            
             // waterfall
             [self hideAds:indexPath];
-            [self.mobfoxVideoAd pause];
+            
 
-            self.mobfoxAdWaterfall = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
-            self.mobfoxAdWaterfall.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER_TEST;
+            self.mobfoxAdWaterfall = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
+            self.mobfoxAdWaterfall.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
             self.mobfoxAdWaterfall.delegate = self;
             [self.view addSubview:self.mobfoxAdWaterfall];
             [self.mobfoxAdWaterfall loadAd];
@@ -338,9 +365,9 @@ static bool perform_segue_enabled;
             float bannerWidth_ = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
             float bannerHeight_ = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
             self.bannerAdRect = CGRectMake((SCREEN_WIDTH-bannerWidth_)/2, 1350.0 /*screenHeight-bannerHeight*/, bannerWidth_, bannerHeight_);
-            self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER_TEST withFrame:self.bannerAdRect];
+            self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
             self.mobfoxAd.delegate = self;
-            self.mobfoxAd.refresh = [NSNumber numberWithInt:AD_REFRESH];
+            self.mobfoxAd.refresh = self.refresh;
             self.mobfoxAd.hidden = NO;
 
             // close button.
@@ -427,8 +454,24 @@ static bool perform_segue_enabled;
             
             break;
             
-       
-        
+        case MFTagBanner:
+            
+            [self hideAds:indexPath];
+            
+            self.mobFoxTagAd.invh = self.invh.length > 0 ? self.invh: MOBFOX_HASH_BANNER;
+            [self.mobFoxTagAd loadAd];
+            
+            break;
+            
+        case MFTagInterstitial:
+            
+            [self hideAds:indexPath];
+            
+            self.mobFoxTagInterstitialAd.invh = self.invh.length > 0 ? self.invh:MOBFOX_HASH_INTER;
+            [self.mobFoxTagInterstitialAd loadAd];
+            
+            break;
+                    
 
     }
   
@@ -454,6 +497,56 @@ static bool perform_segue_enabled;
     cell.backgroundColor = [UIColor whiteColor];
 }
 
+#pragma mark Tag Ad Delegate
+
+- (void)MobFoxTagAdDidLoad:(MobFoxTagAd *)banner {
+    
+    NSLog(@"MobFoxTagAdDidLoad:");
+
+}
+
+- (void)MobFoxTagAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+    NSLog(@"MobFoxTagAdDidFailToReceiveAdWithError: %@", [error description]);
+    
+}
+
+- (void)MobFoxTagAdClicked {
+    
+    NSLog(@"MobFoxTagAdClicked:");
+    
+}
+
+#pragma mark Tag Interstitial Ad Delegate
+
+- (void)MobFoxTagInterstitialAdDidLoad:(MobFoxTagInterstitialAd *)interstitial {
+    
+    NSLog(@"MobFoxTagInterstitialAdDidLoad:");
+    if(interstitial.ready) {
+        [self.mobFoxTagInterstitialAd show];
+    }
+    
+    
+}
+
+- (void)MobFoxTagInterstitialAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+    NSLog(@"MobFoxTagInterstitialAdDidFailToReceiveAdWithError: %@", error);
+    
+}
+
+- (void)MobFoxTagInterstitialAdClicked {
+    
+    NSLog(@"MobFoxTagInterstitialAdClicked");
+    
+}
+
+- (void)MobFoxTagInterstitialAdClose {
+    
+    NSLog(@"MobFoxTagInterstitialAdClose");
+    
+}
+
 #pragma mark MobFox Ad Delegate
 
 //called when ad is displayed
@@ -466,6 +559,9 @@ static bool perform_segue_enabled;
 - (void)MobFoxAdDidFailToReceiveAdWithError:(NSError *)error {
     
     NSLog(@"MobFoxAdDidFailToReceiveAdWithError: %@", [error description]);
+    
+    [self popUpWithTitle:@"Error" message:[error description]];
+
 }
 
 //called when ad is closed/skipped
@@ -493,14 +589,21 @@ static bool perform_segue_enabled;
     
     NSLog(@"MobFoxInterstitialAdDidLoad:");
         
-    if(self.mobfoxInterAd.ready){
-        [self.mobfoxInterAd show];
+    if(interstitial.ready){
+        
+        if (self.mobfoxInterAd.ready) {
+            [self.mobfoxInterAd show];
+
+        }
+        
+        else if (self.mobfoxVideoInterstitial.ready) {
+            [self.mobfoxVideoInterstitial show];
+
+        }
+        
         
     }
-    
-    if(self.mobfoxVideoInterstitial.ready){
-        [self.mobfoxVideoInterstitial show];
-    }
+
 }
 
 - (void)dismissIntAd {
@@ -511,6 +614,9 @@ static bool perform_segue_enabled;
 - (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error {
     
     NSLog(@"MobFoxInterstitialAdDidFailToReceiveAdWithError: %@", [error description]);
+    
+    [self popUpWithTitle:@"Error" message:[error description]];
+
     
 }
 
@@ -582,18 +688,33 @@ static bool perform_segue_enabled;
     
     NSLog(@"MobFoxNativeAdDidFailToReceiveAdWithError: %@", [error description]);
     
+    [self popUpWithTitle:@"Error" message:[error description]];
+    
 }
 
 
 #pragma mark Private Methods
 
+- (void)popUpWithTitle:(NSString *)title message:(NSString *)message {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
+}
+
 - (void)hideAds:(NSIndexPath *)indexPath {
     
     switch (indexPath.item) {
+            
         case MFAdTypeBanner:
             self.mobfoxAd.hidden= NO;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
 
             break;
             
@@ -601,6 +722,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -608,6 +731,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = NO;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -616,6 +741,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = NO;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -623,6 +750,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -630,6 +759,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -637,6 +768,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -644,6 +777,8 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
@@ -651,10 +786,24 @@ static bool perform_segue_enabled;
             self.mobfoxAd.hidden= YES;
             self.nativeAdView.hidden = YES;
             self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
+
             
             break;
             
-   
+        case MFTagBanner:
+            self.mobfoxAd.hidden= YES;
+            self.nativeAdView.hidden = YES;
+            self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = NO;
+            
+            break;
+            
+        case MFTagInterstitial:
+            self.mobfoxAd.hidden= YES;
+            self.nativeAdView.hidden = YES;
+            self.mobfoxVideoAd.hidden = YES;
+            self.mobFoxTagAd.hidden = YES;
 
             
         default:
@@ -693,6 +842,12 @@ static bool perform_segue_enabled;
         case MFTestAdapters:
             return @"Adapters";
             break;
+        case MFTagBanner:
+            return @"TagBanner";
+            break;
+        case MFTagInterstitial:
+            return @"TagInterstitial";
+            break;
             
             
         default:
@@ -730,6 +885,12 @@ static bool perform_segue_enabled;
             break;
         case MFTestAdapters:
             return [UIImage imageNamed:@"test_banner.png"];
+            break;
+        case MFTagBanner:
+            return [UIImage imageNamed:@"test_banner.png"];
+            break;
+        case MFTagInterstitial:
+            return [UIImage imageNamed:@"test_interstitial.png"];
             break;
 
             
@@ -959,15 +1120,41 @@ static bool perform_segue_enabled;
 
 #pragma mark MFTestAdapterBase Delegate
 
+// banner
 - (void)MFTestAdapterBaseAdDidLoad:(UIView *)ad {
     NSLog(@"MFTestAdapterBaseAdDidLoad");
     ad.frame = CGRectMake( (SCREEN_WIDTH - ad.frame.size.width)/2, SCREEN_HEIGHT - ad.frame.size.height, ad.frame.size.width, ad.frame.size.height ); // set new
-    [self.view addSubview:ad];
+   [self.view addSubview:ad];
  
 }
 
 - (void)MFTestAdapterBaseAdDidFailToReceiveAdWithError:(NSError *)error {
     NSLog(@"MFTestAdapterBaseAdDidFailToReceiveAdWithError");
+    
+}
+
+// tag banner
+- (void)MFTestAdapterBaseTagAdDidLoad:(UIView *)ad {
+    
+}
+- (void)MFTestAdapterBaseTagAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+}
+
+
+// Interstital
+- (void)MFTestAdapterInterstitialAdapterBaseAdDidLoad:(UIView *)ad {
+    
+}
+- (void)MFTestAdapterInterstitialAdapterBaseAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+}
+
+// native
+- (void)MFTestAdapterNativeAdapterBaseAdDidLoad:(MobFoxNativeData *)adData {
+    
+}
+- (void)MFTestAdapterNativeAdapterBaseAdDidFailToReceiveAdWithError:(NSError *)error {
     
 }
 

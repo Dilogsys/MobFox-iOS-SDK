@@ -35,27 +35,45 @@
     NSLog(@"MFTestAdapter >> init");
     
     
-    //_bannerWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
-    //_bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
-    
     self = [super init];
     if (self)
     {}
     return self;
 }
 
+/*** tag banner request ***/
+- (void)requestTagAdWithFrame:(CGRect)rect networkID:(NSString*)nid customEventInfo:(NSDictionary *)info {
+    
+    NSLog(@"MFTestAdapter >> requestTagAdWithSize:");
+
+    
+    if(self.bannerTagAd){
+        [self.bannerTagAd removeFromSuperview];
+        self.bannerTagAd.delegate = nil;
+    }
+    self.bannerTagAd = [[MobFoxTagAd alloc] init:nid withFrame:rect];
+    self.bannerTagAd.delegate = self;
+        
+    
+    [self.bannerTagAd loadAd];
+    
+}
+
 /*** banner request ***/
 - (void)requestAdWithFrame:(CGRect)rect networkID:(NSString*)nid customEventInfo:(NSDictionary *)info {
     
     NSLog(@"MFTestAdapter >> requestAdWithSize:");
-
-    //CGRect rect = CGRectMake((SCREEN_WIDTH - _bannerWidth)/2, SCREEN_HEIGHT - _bannerHeight, size.width, size.height);
+    
+    
+    if(self.bannerAd){
+        [self.bannerAd removeFromSuperview];
+    }
     self.bannerAd = [[MobFoxAd alloc] init:nid withFrame:rect];
     self.bannerAd.delegate = self;
-        
-    UIView *parentVC = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
-    [parentVC addSubview:self.bannerAd];
+    
+    
     [self.bannerAd loadAd];
+    
 }
 
 /*** interstitial request ***/
@@ -63,9 +81,10 @@
     
     NSLog(@"MFTestAdapter >> requestInterstitialAdWithSize:");
     
+    //[MobFoxTagInterstitialAd locationServicesDisabled:false];
     UIViewController *rootController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 
-    self.interstitialAd = [[MobFoxInterstitialAd alloc] init:nid withRootViewController:rootController];
+    self.interstitialAd = [[MobFoxTagInterstitialAd alloc] init:nid withRootViewController:rootController];
     self.interstitialAd.delegate = self;
                            
     [self.interstitialAd loadAd];
@@ -82,6 +101,35 @@
     [self.nativeAd loadAd];
 }
 
+#pragma mark Tag Ad Delegate
+
+- (void)MobFoxTagAdDidLoad:(MobFoxTagAd *)banner {
+    
+    NSLog(@"MobFoxTagAdDidLoad:");
+    
+    UIView *parentVC = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
+    [parentVC addSubview:banner];
+    [self.delegate MFTestAdapterBaseTagAdDidLoad:banner];
+    
+}
+
+- (void)MobFoxTagAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+    NSLog(@"MobFoxTagAdDidFailToReceiveAdWithError: %@", [error description]);
+    
+    [self.delegate MFTestAdapterBaseAdDidFailToReceiveAdWithError:error];
+
+    
+}
+
+- (void)MobFoxTagAdClicked {
+    
+    NSLog(@"MobFoxTagAdClicked:");
+    
+    //[self.delegate MFTestAdapterBaseAdClosed];
+
+}
+
 
 #pragma mark MobFox Ad Delegate
 
@@ -89,6 +137,8 @@
 - (void)MobFoxAdDidLoad:(MobFoxAd *)banner{
     NSLog(@"MFTestAdapter >> MobFoxAdDidLoad:");
     
+    UIView *parentVC = [[[[UIApplication sharedApplication] keyWindow] subviews] lastObject];
+    [parentVC addSubview:banner];
     [self.delegate MFTestAdapterBaseAdDidLoad:banner];
 
 }
@@ -111,7 +161,7 @@
 #pragma mark MobFox Interstitial Ad Delegate
 
 //best to show after delegate informs an ad was loaded
-- (void)MobFoxInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial {
+- (void)MobFoxTagInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial {
     
     NSLog(@"MFTestAdapter >> MobFoxInterstitialAdDidLoad:");
     
@@ -124,7 +174,7 @@
   
 }
 
-- (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error {
+- (void)MobFoxTagInterstitialAdDidFailToReceiveAdWithError:(NSError *)error {
     
     NSLog(@"MFTestAdapter >> MobFoxInterstitialAdDidFailToReceiveAdWithError: %@", [error description]);
     

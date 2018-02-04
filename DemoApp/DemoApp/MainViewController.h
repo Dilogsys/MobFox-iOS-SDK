@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#ifdef  DemoAppDynamicTarget
-#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
-#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-#endif
 #import <iSoma/iSoma.h>
 #import "MoPub.h"
 #import "MPNativeAdConstants.h"
@@ -19,18 +15,16 @@
 #import "MPCollectionViewAdPlacer.h"
 #import "MFTestAdapter.h"
 
-
 @import FBAudienceNetwork;
 @import GoogleMobileAds;
 
 
 
-@interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate, MPAdViewDelegate, MPInterstitialAdControllerDelegate, MPNativeAdDelegate, MPCollectionViewAdPlacerDelegate, GADInterstitialDelegate, GADBannerViewDelegate, SOMAAdViewDelegate, SOMANativeAdDelegate, MFTestAdapterBaseDelegate, GADAdLoaderDelegate>
+@interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate, FBAdViewDelegate, MPAdViewDelegate, MPInterstitialAdControllerDelegate, MPNativeAdDelegate, MPCollectionViewAdPlacerDelegate, GADInterstitialDelegate, GADBannerViewDelegate, SOMAAdViewDelegate, SOMANativeAdDelegate, MFTestAdapterBaseDelegate, MobFoxAdTagDelegate,MobFoxTagInterstitialAdDelegate, MobFoxInterstitialAdDelegate>
 
 
 @property (strong, nonatomic) NSString *invh;
-
-
+@property (strong, nonatomic) NSNumber *refresh;
 
 
 

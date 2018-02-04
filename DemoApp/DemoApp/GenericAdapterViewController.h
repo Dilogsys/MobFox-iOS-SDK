@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MFTestAdapter.h"
 
-@interface GenericAdapterViewController : UIViewController <MFTestAdapterBaseDelegate, UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate, MobFoxInterstitialAdDelegate, MobFoxNativeAdDelegate>
+@interface GenericAdapterViewController : UIViewController <MFTestAdapterBaseDelegate, UICollectionViewDelegate, UICollectionViewDataSource, MobFoxAdDelegate>
 
 
 

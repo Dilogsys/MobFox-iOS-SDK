@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @interface GenericAdapterViewController()
     
 @property (nonatomic, strong) NSString *cellID;
-@property (nonatomic, strong) MFTestAdapter *bannerAdapter;
+@property (nonatomic, strong) MFTestAdapter *bannerTagAdapter;
 @property (nonatomic, strong) MFTestAdapter *interstitialAdapter;
 @property (nonatomic, strong) MFTestAdapter *nativeAdapter;
 
@@ -60,7 +60,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     float screenWidth = [UIScreen mainScreen].bounds.size.width;
     float bannerWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
-    self.bannerAdRect = CGRectMake((screenWidth-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
+    self.bannerAdRect = CGRectMake((screenWidth - bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
     
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
     float videoHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 450.0 : 250.0;
@@ -69,7 +69,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     self.videoBannerAdRect = CGRectMake((screenWidth - videoWidth)/2, self.collectionView.frame.size.height + videoTopMargin, videoWidth, videoHeight);
     
     // ads allocation.
-    self.bannerAdapter = [[MFTestAdapter alloc] init];
+    self.bannerTagAdapter = [[MFTestAdapter alloc] init];
     self.interstitialAdapter = [[MFTestAdapter alloc] init];
     self.nativeAdapter = [[MFTestAdapter alloc] init];
     self.bannerVideoAdapter = [[MFTestAdapter alloc] init];
@@ -132,8 +132,8 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
         case MFGenericAdapterBanner:
             
             
-            self.bannerAdapter.delegate = self;
-            [self.bannerAdapter requestAdWithFrame:self.bannerAdRect networkID:MOBFOX_HASH_BANNER_TEST customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:self, @"viewcontroller_parent", nil]];
+            self.bannerTagAdapter.delegate = self;
+            [self.bannerTagAdapter requestTagAdWithFrame:self.bannerAdRect networkID:MOBFOX_HASH_BANNER customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:self, @"viewcontroller_parent", nil]];
             
             [self hideAds:indexPath];
 
@@ -144,7 +144,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             
             
             self.interstitialAdapter.delegate = self;
-            [self.interstitialAdapter requestInterstitialAdWithFrame:CGRectZero networkID:MOBFOX_HASH_INTER_TEST customEventInfo:nil];
+            [self.interstitialAdapter requestInterstitialAdWithFrame:CGRectZero networkID:MOBFOX_HASH_INTER customEventInfo:nil];
             
             [self hideAds:indexPath];
 
@@ -155,7 +155,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             
             
             self.nativeAdapter.delegate = self;
-            [self.nativeAdapter requestNativeAdWithFrame:CGRectZero networkID:MOBFOX_HASH_NATIVE_TEST customEventInfo:nil];
+            [self.nativeAdapter requestNativeAdWithFrame:CGRectZero networkID:MOBFOX_HASH_NATIVE customEventInfo:nil];
             
             [self hideAds:indexPath];
 
@@ -167,7 +167,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             
             
             self.bannerVideoAdapter.delegate = self;
-            [self.bannerVideoAdapter requestAdWithFrame:self.videoBannerAdRect networkID:MOBFOX_HASH_VIDEO_TEST customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:self, @"viewcontroller_parent", @"true", @"is_video_ad", nil]];
+            [self.bannerVideoAdapter requestAdWithFrame:self.videoBannerAdRect networkID:MOBFOX_HASH_VIDEO customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:self, @"viewcontroller_parent", @"true", @"is_video_ad", nil]];
             
             [self hideAds:indexPath];
 
@@ -179,7 +179,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
             
             
             self.interstitialVideoAdapter.delegate = self;
-            [self.interstitialVideoAdapter requestInterstitialAdWithFrame:CGRectZero networkID:MOBFOX_HASH_VIDEO_TEST customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:@"true", @"is_video_ad", nil] ];
+            [self.interstitialVideoAdapter requestInterstitialAdWithFrame:CGRectZero networkID:MOBFOX_HASH_VIDEO customEventInfo:[[NSDictionary alloc] initWithObjectsAndKeys:@"true", @"is_video_ad", nil] ];
             
             [self hideAds:indexPath];
 
@@ -197,15 +197,13 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 
 - (void)hideAll {
     
-    [self.bannerVideoAdapter.bannerAd pause];
+  //  [self.bannerVideoAdapter.bannerAd pause];
 
-    self.bannerAdapter.bannerAd.hidden = YES;
+    self.bannerTagAdapter.bannerTagAd.hidden = YES;
     self.bannerVideoAdapter.bannerAd.hidden = YES;
-    [self.bannerAdapter.bannerAd removeFromSuperview];
     [self.bannerVideoAdapter.bannerAd removeFromSuperview];
     self.nativeAdView.hidden = YES;
     
-    self.bannerAdapter.bannerAd = nil;
     self.bannerVideoAdapter.bannerAd = nil;
     
 }
@@ -215,44 +213,47 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
         switch (indexPath.item) {
                 
             case MFGenericAdapterBanner:
-                self.bannerAdapter.bannerAd.hidden = NO;
+                self.bannerTagAdapter.bannerTagAd.hidden = NO;
                 self.bannerVideoAdapter.bannerAd.hidden = YES;
+                //[self.bannerVideoAdapter.bannerAd pause];
+
                 [self.bannerVideoAdapter.bannerAd removeFromSuperview];
                 self.nativeAdView.hidden = YES;
                 
                 break;
                 
             case MFGenericAdapterInterstitial:
-                self.bannerAdapter.bannerAd.hidden = YES;
+                self.bannerTagAdapter.bannerTagAd.hidden = YES;
                 self.bannerVideoAdapter.bannerAd.hidden = YES;
-                [self.bannerAdapter.bannerAd removeFromSuperview];
+                //[self.bannerVideoAdapter.bannerAd pause];
+
                 [self.bannerVideoAdapter.bannerAd removeFromSuperview];
                 self.nativeAdView.hidden = YES;
 
                 break;
                 
             case MFGenericAdapterNative:
-                self.bannerAdapter.bannerAd.hidden = YES;
+                self.bannerTagAdapter.bannerAd.hidden = YES;
                 self.bannerVideoAdapter.bannerAd.hidden = YES;
-                [self.bannerAdapter.bannerAd removeFromSuperview];
+                //[self.bannerVideoAdapter.bannerAd pause];
+
                 [self.bannerVideoAdapter.bannerAd removeFromSuperview];
                 self.nativeAdView.hidden = NO;
                 
                 break;
            
             case MFGenericAdapterVideoBanner:
-                self.bannerAdapter.bannerAd.hidden = YES;
-                [self.bannerAdapter.bannerAd removeFromSuperview];
+                self.bannerTagAdapter.bannerTagAd.hidden = YES;
                 self.bannerVideoAdapter.bannerAd.hidden = NO;
                 self.nativeAdView.hidden = YES;
-                self.bannerVideoAdapter.bannerAd.skip = true;
 
                 break;
                 
             case MFGenericAdapterVideoInterstitial:
-                self.bannerAdapter.bannerAd.hidden = YES;
+                self.bannerTagAdapter.bannerTagAd.hidden = YES;
                 self.bannerVideoAdapter.bannerAd.hidden = YES;
-                [self.bannerAdapter.bannerAd removeFromSuperview];
+               // [self.bannerVideoAdapter.bannerAd pause];
+
                 [self.bannerVideoAdapter.bannerAd removeFromSuperview];
                 self.nativeAdView.hidden = YES;
                 
@@ -269,7 +270,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     
     switch (indexPath.item) {
         case MFGenericAdapterBanner:
-            return @"Banner";
+            return @"TagBanner";
             break;
         case MFGenericAdapterInterstitial:
             return @"Interstitial";
@@ -319,6 +320,18 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 
 #pragma mark MFTestAdapterBase Delegate
 
+// tag banner
+- (void)MFTestAdapterBaseTagAdDidLoad:(UIView *)ad {
+    
+    NSLog(@"InnerViewController >> MFTestAdapterBaseTagAdDidLoad");
+    
+}
+- (void)MFTestAdapterBaseTagAdDidFailToReceiveAdWithError:(NSError *)error {
+    
+    NSLog(@"InnerViewController >> MFTestAdapterBaseTagAdDidFailToReceiveAdWithError");
+    
+}
+
 // banner
 - (void)MFTestAdapterBaseAdDidLoad:(UIView *)ad {
     
@@ -361,6 +374,5 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 
     
 }
-
 
 @end

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4635E907202752F800CD6521 /* URLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E906202752F800CD6521 /* URLProtocol.m */; };
+		4635E91020275AFB00CD6521 /* TestsDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E90E20275AFB00CD6521 /* TestsDefines.m */; };
+		4635E91320275E7A00CD6521 /* ScanHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E91120275E7A00CD6521 /* ScanHashViewController.m */; };
+		4635E91420275E7A00CD6521 /* ScanHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E91120275E7A00CD6521 /* ScanHashViewController.m */; };
+		4635E91520275E7A00CD6521 /* ScanHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E91120275E7A00CD6521 /* ScanHashViewController.m */; };
+		4635E91620275E7A00CD6521 /* ScanHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E91120275E7A00CD6521 /* ScanHashViewController.m */; };
+		4635E9192027608000CD6521 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E9172027607F00CD6521 /* SettingsViewController.m */; };
+		4635E91A2027608000CD6521 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E9172027607F00CD6521 /* SettingsViewController.m */; };
 		4654A2462020C294003B4526 /* MPURLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651490F1E6C5A0D003F4967 /* MPURLResolver.m */; };
 		4654A2472020C294003B4526 /* MPVASTCreative.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149911E6C5A0D003F4967 /* MPVASTCreative.m */; };
 		4654A2482020C294003B4526 /* MPNativeAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149F01E6C5A0D003F4967 /* MPNativeAdData.m */; };
@@ -110,7 +118,6 @@
 		4654A2AA2020C294003B4526 /* MPGeolocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149761E6C5A0D003F4967 /* MPGeolocationProvider.m */; };
 		4654A2AB2020C294003B4526 /* MPCollectionViewAdPlacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E91E6C5A0D003F4967 /* MPCollectionViewAdPlacer.m */; };
 		4654A2AC2020C294003B4526 /* MPCollectionViewAdPlacerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149C41E6C5A0D003F4967 /* MPCollectionViewAdPlacerCell.m */; };
-		4654A2AD2020C294003B4526 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891EA91C62646C0098C602 /* SettingsViewController.m */; };
 		4654A2AE2020C294003B4526 /* MPGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149781E6C5A0D003F4967 /* MPGlobal.m */; };
 		4654A2AF2020C294003B4526 /* MPRewardedVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A511E6C5A0D003F4967 /* MPRewardedVideo.m */; };
 		4654A2B02020C294003B4526 /* MPNativeAd+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149CE1E6C5A0D003F4967 /* MPNativeAd+Internal.m */; };
@@ -526,9 +533,6 @@
 		86891EA51C6106970098C602 /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EA11C6106970098C602 /* test_bg.png */; };
 		86891EA61C6106970098C602 /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EA11C6106970098C602 /* test_bg.png */; };
 		86891EA71C6106970098C602 /* test_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EA11C6106970098C602 /* test_bg.png */; };
-		86891EAA1C62646C0098C602 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891EA91C62646C0098C602 /* SettingsViewController.m */; };
-		86891EAB1C62646C0098C602 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891EA91C62646C0098C602 /* SettingsViewController.m */; };
-		86891EAC1C62646C0098C602 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86891EA91C62646C0098C602 /* SettingsViewController.m */; };
 		86891EC91C63998D0098C602 /* img_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EC81C63998D0098C602 /* img_01.png */; };
 		86891ECA1C63998D0098C602 /* img_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EC81C63998D0098C602 /* img_01.png */; };
 		86891ECB1C63998D0098C602 /* img_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86891EC81C63998D0098C602 /* img_01.png */; };
@@ -619,6 +623,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4635E905202752F800CD6521 /* URLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLProtocol.h; sourceTree = "<group>"; };
+		4635E906202752F800CD6521 /* URLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLProtocol.m; sourceTree = "<group>"; };
+		4635E90E20275AFB00CD6521 /* TestsDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestsDefines.m; path = DemoAppTests/TestsDefines.m; sourceTree = SOURCE_ROOT; };
+		4635E90F20275AFB00CD6521 /* TestsDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestsDefines.h; path = DemoAppTests/TestsDefines.h; sourceTree = SOURCE_ROOT; };
+		4635E91120275E7A00CD6521 /* ScanHashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanHashViewController.m; sourceTree = SOURCE_ROOT; };
+		4635E91220275E7A00CD6521 /* ScanHashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanHashViewController.h; sourceTree = SOURCE_ROOT; };
+		4635E9172027607F00CD6521 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		4635E9182027607F00CD6521 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		4654A3482020C294003B4526 /* DemoAppDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A3492020C294003B4526 /* DemoApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoApp copy-Info.plist"; path = "/Users/moshe/Desktop/iOSSDK_dynamic/MobFox-iOS-SDK/DemoApp/DemoApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCoreDynamic.framework; sourceTree = "<group>"; };
@@ -1054,8 +1066,6 @@
 		86891E931C6106870098C602 /* title_mobfox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_mobfox.png; sourceTree = "<group>"; };
 		86891EA01C6106970098C602 /* mobfox_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobfox_icon.png; sourceTree = "<group>"; };
 		86891EA11C6106970098C602 /* test_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_bg.png; sourceTree = "<group>"; };
-		86891EA81C62646C0098C602 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
-		86891EA91C62646C0098C602 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
 		86891EC81C63998D0098C602 /* img_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_01.png; sourceTree = "<group>"; };
 		86891ECC1C639A450098C602 /* img_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_02.png; sourceTree = "<group>"; };
 		86891ED01C639C190098C602 /* img_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_03.png; sourceTree = "<group>"; };
@@ -1206,6 +1216,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4635E904202752C500CD6521 /* URLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				4635E905202752F800CD6521 /* URLProtocol.h */,
+				4635E906202752F800CD6521 /* URLProtocol.m */,
+			);
+			name = URLProtocol;
+			sourceTree = "<group>";
+		};
+		4635E908202753B400CD6521 /* TestDefines */ = {
+			isa = PBXGroup;
+			children = (
+				4635E90F20275AFB00CD6521 /* TestsDefines.h */,
+				4635E90E20275AFB00CD6521 /* TestsDefines.m */,
+			);
+			path = TestDefines;
+			sourceTree = "<group>";
+		};
 		4654A34A2020CA37003B4526 /* MobFoxSDKCoreDynamic.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1873,6 +1901,7 @@
 		86891E101C5FA8250098C602 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4635E904202752C500CD6521 /* URLProtocol */,
 				E7AF81191E2679DF00BD4296 /* MFDemoConstants.h */,
 				866ECF991E0936C10069E209 /* MFTestAdapter */,
 				86891E541C5FC0260098C602 /* CollectionViewCell */,
@@ -1887,8 +1916,10 @@
 				861695E91E27DB66007FBC3A /* AdaptersViewController.m */,
 				8684D60C1E1D59B800B82223 /* GenericAdapterViewController.h */,
 				8684D60D1E1D59B800B82223 /* GenericAdapterViewController.m */,
-				86891EA81C62646C0098C602 /* SettingsViewController.h */,
-				86891EA91C62646C0098C602 /* SettingsViewController.m */,
+				4635E91220275E7A00CD6521 /* ScanHashViewController.h */,
+				4635E91120275E7A00CD6521 /* ScanHashViewController.m */,
+				4635E9182027607F00CD6521 /* SettingsViewController.h */,
+				4635E9172027607F00CD6521 /* SettingsViewController.m */,
 				865BD14D1C6CED9C00F180D8 /* NativeAdViewController.h */,
 				865BD14E1C6CED9C00F180D8 /* NativeAdViewController.m */,
 				865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */,
@@ -1915,6 +1946,7 @@
 		86891E2A1C5FA8250098C602 /* DemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4635E908202753B400CD6521 /* TestDefines */,
 				86891E2B1C5FA8250098C602 /* DemoAppTests.m */,
 				86891E2D1C5FA8250098C602 /* Info.plist */,
 			);
@@ -2358,6 +2390,7 @@
 				4654A25B2020C294003B4526 /* MPTableViewAdPlacerCell.m in Sources */,
 				4654A25C2020C294003B4526 /* MPServerAdPositioning.m in Sources */,
 				4654A25D2020C294003B4526 /* MPNetworkManager.m in Sources */,
+				4635E91A2027608000CD6521 /* SettingsViewController.m in Sources */,
 				4654A25E2020C294003B4526 /* MPInterstitialAdManager.m in Sources */,
 				4654A25F2020C294003B4526 /* MOPUBFullscreenPlayerViewController.m in Sources */,
 				4654A2602020C294003B4526 /* MainViewController.m in Sources */,
@@ -2437,7 +2470,6 @@
 				4654A2AA2020C294003B4526 /* MPGeolocationProvider.m in Sources */,
 				4654A2AB2020C294003B4526 /* MPCollectionViewAdPlacer.m in Sources */,
 				4654A2AC2020C294003B4526 /* MPCollectionViewAdPlacerCell.m in Sources */,
-				4654A2AD2020C294003B4526 /* SettingsViewController.m in Sources */,
 				4654A2AE2020C294003B4526 /* MPGlobal.m in Sources */,
 				4654A2AF2020C294003B4526 /* MPRewardedVideo.m in Sources */,
 				4654A2B02020C294003B4526 /* MPNativeAd+Internal.m in Sources */,
@@ -2500,6 +2532,7 @@
 				4654A2E92020C294003B4526 /* main.m in Sources */,
 				4654A2EA2020C294003B4526 /* MPMRAIDInterstitialCustomEvent.m in Sources */,
 				4654A2EB2020C294003B4526 /* NSURL+MPAdditions.m in Sources */,
+				4635E91420275E7A00CD6521 /* ScanHashViewController.m in Sources */,
 				4654A2EC2020C294003B4526 /* MPVASTTracking.m in Sources */,
 				4654A2ED2020C294003B4526 /* MPDiskLRUCache.m in Sources */,
 				4654A2EE2020C294003B4526 /* AdsViewController.m in Sources */,
@@ -2541,6 +2574,7 @@
 				86514AD51E6C5A0E003F4967 /* MPTableViewAdPlacerCell.m in Sources */,
 				86514AE41E6C5A0E003F4967 /* MPServerAdPositioning.m in Sources */,
 				86514A7E1E6C5A0E003F4967 /* MPNetworkManager.m in Sources */,
+				4635E9192027608000CD6521 /* SettingsViewController.m in Sources */,
 				86514A871E6C5A0E003F4967 /* MPInterstitialAdManager.m in Sources */,
 				86514AED1E6C5A0E003F4967 /* MOPUBFullscreenPlayerViewController.m in Sources */,
 				86891E191C5FA8250098C602 /* MainViewController.m in Sources */,
@@ -2620,7 +2654,6 @@
 				86514AA41E6C5A0E003F4967 /* MPGeolocationProvider.m in Sources */,
 				86514AD91E6C5A0E003F4967 /* MPCollectionViewAdPlacer.m in Sources */,
 				86514AC71E6C5A0E003F4967 /* MPCollectionViewAdPlacerCell.m in Sources */,
-				86891EAA1C62646C0098C602 /* SettingsViewController.m in Sources */,
 				86514AA51E6C5A0E003F4967 /* MPGlobal.m in Sources */,
 				86514B0F1E6C5A0F003F4967 /* MPRewardedVideo.m in Sources */,
 				86514ACC1E6C5A0E003F4967 /* MPNativeAd+Internal.m in Sources */,
@@ -2683,6 +2716,7 @@
 				86891E131C5FA8250098C602 /* main.m in Sources */,
 				86514A8F1E6C5A0E003F4967 /* MPMRAIDInterstitialCustomEvent.m in Sources */,
 				86514A9D1E6C5A0E003F4967 /* NSURL+MPAdditions.m in Sources */,
+				4635E91320275E7A00CD6521 /* ScanHashViewController.m in Sources */,
 				86514A8C1E6C5A0E003F4967 /* MPVASTTracking.m in Sources */,
 				86514AC81E6C5A0E003F4967 /* MPDiskLRUCache.m in Sources */,
 				861695ED1E2B75AC007FBC3A /* AdsViewController.m in Sources */,
@@ -2700,9 +2734,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86891EAB1C62646C0098C602 /* SettingsViewController.m in Sources */,
+				4635E91020275AFB00CD6521 /* TestsDefines.m in Sources */,
+				4635E907202752F800CD6521 /* URLProtocol.m in Sources */,
 				86891E471C5FB1140098C602 /* CollectionViewCell.m in Sources */,
 				865BD1511C6CED9C00F180D8 /* NativeAdViewController.m in Sources */,
+				4635E91520275E7A00CD6521 /* ScanHashViewController.m in Sources */,
 				86891E2C1C5FA8250098C602 /* DemoAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2711,7 +2747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86891EAC1C62646C0098C602 /* SettingsViewController.m in Sources */,
+				4635E91620275E7A00CD6521 /* ScanHashViewController.m in Sources */,
 				86891E481C5FB1140098C602 /* CollectionViewCell.m in Sources */,
 				865BD1521C6CED9C00F180D8 /* NativeAdViewController.m in Sources */,
 				86891E371C5FA8250098C602 /* DemoAppUITests.m in Sources */,

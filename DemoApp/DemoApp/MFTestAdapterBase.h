@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#ifdef  DemoAppDynamicTarget
-#import <MobFoxSDKCoreDynamic/MobFoxSDKCoreDynamic.h>
-#else
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
-#endif
 
 
 #ifndef MFTestAdapterBase_h
@@ -22,6 +18,11 @@
 @class MFTestAdapterBase;
 
 @protocol MFTestAdapterBaseDelegate <NSObject>
+
+
+// tag banner
+- (void)MFTestAdapterBaseTagAdDidLoad:(UIView *)ad;
+- (void)MFTestAdapterBaseTagAdDidFailToReceiveAdWithError:(NSError *)error;
 
 // banner
 - (void)MFTestAdapterBaseAdDidLoad:(UIView *)ad;
@@ -48,6 +49,7 @@
 
 @interface MFTestAdapterBase : NSObject
 
+- (void)requestTagAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
 - (void)requestAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
 - (void)requestInterstitialAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
 - (void)requestNativeAdWithSize:(CGSize)size networkID:(NSString*)nid customEventInfo:(NSDictionary *)info;
