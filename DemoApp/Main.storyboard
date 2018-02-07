@@ -41,7 +41,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="fD0-Mt-jKW" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -162,6 +162,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="collectionView" destination="xae-nP-EVn" id="Ydu-zF-bIg"/>
                         <outlet property="nativeAdView" destination="i6e-xu-7b4" id="Qee-Nk-URN"/>
                         <outlet property="nativeDescription" destination="qJf-EC-IXo" id="f8d-vx-ce6"/>
                         <outlet property="nativeImage" destination="MC4-o0-sO0" id="e7Z-E1-QGL"/>
@@ -274,7 +275,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="gD6-nS-rzN" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -453,7 +454,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="Qiu-vQ-Zbt" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -572,6 +573,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ads" id="vFD-S2-hAf" userLabel="Ads"/>
                     <connections>
+                        <outlet property="collectionView" destination="Xpl-4u-3px" id="xIA-1e-73e"/>
                         <outlet property="innerNativeAdView" destination="D22-cM-wLR" id="mLm-n4-mSf"/>
                         <outlet property="nativeAdDescription" destination="JIT-Ch-dpE" id="ZaR-0S-hIS"/>
                         <outlet property="nativeAdImage" destination="n9i-HD-feW" id="o5f-8P-BZY"/>
@@ -650,6 +652,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="collectionView" destination="QZL-gI-twX" id="B0c-b9-Xuh"/>
                         <segue destination="qKb-7n-S5F" kind="push" identifier="AdaptersToAds" id="19Z-LW-rcu"/>
                     </connections>
                 </viewController>

@@ -271,6 +271,10 @@
 		4654A34C2020CA38003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; };
 		4654A3502020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; };
 		4654A3512020CCDB003B4526 /* MobFoxSDKCoreDynamic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		467638C62029C99B00F2A9C7 /* DeviceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 467638C52029C99B00F2A9C7 /* DeviceExtension.m */; };
+		467638C72029C99B00F2A9C7 /* DeviceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 467638C52029C99B00F2A9C7 /* DeviceExtension.m */; };
+		467638C82029C99B00F2A9C7 /* DeviceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 467638C52029C99B00F2A9C7 /* DeviceExtension.m */; };
+		467638C92029C99B00F2A9C7 /* DeviceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 467638C52029C99B00F2A9C7 /* DeviceExtension.m */; };
 		469AEBCE2021F9080074B14E /* app76px.png in Resources */ = {isa = PBXBuildFile; fileRef = 469AEBC22021F9080074B14E /* app76px.png */; };
 		469AEBCF2021F9080074B14E /* app152px.png in Resources */ = {isa = PBXBuildFile; fileRef = 469AEBC32021F9080074B14E /* app152px.png */; };
 		469AEBD02021F9080074B14E /* app29px.png in Resources */ = {isa = PBXBuildFile; fileRef = 469AEBC42021F9080074B14E /* app29px.png */; };
@@ -636,6 +640,8 @@
 		4654A3482020C294003B4526 /* DemoAppDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654A3492020C294003B4526 /* DemoApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoApp copy-Info.plist"; path = "/Users/moshe/Desktop/iOSSDK_dynamic/MobFox-iOS-SDK/DemoApp/DemoApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		4654A34B2020CA37003B4526 /* MobFoxSDKCoreDynamic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFoxSDKCoreDynamic.framework; sourceTree = "<group>"; };
+		467638C42029C99B00F2A9C7 /* DeviceExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceExtension.h; sourceTree = "<group>"; };
+		467638C52029C99B00F2A9C7 /* DeviceExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceExtension.m; sourceTree = "<group>"; };
 		469AEBC22021F9080074B14E /* app76px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app76px.png; sourceTree = "<group>"; };
 		469AEBC32021F9080074B14E /* app152px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app152px.png; sourceTree = "<group>"; };
 		469AEBC42021F9080074B14E /* app29px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app29px.png; sourceTree = "<group>"; };
@@ -1911,6 +1917,8 @@
 				86891E541C5FC0260098C602 /* CollectionViewCell */,
 				86891E141C5FA8250098C602 /* AppDelegate.h */,
 				86891E151C5FA8250098C602 /* AppDelegate.m */,
+				467638C42029C99B00F2A9C7 /* DeviceExtension.h */,
+				467638C52029C99B00F2A9C7 /* DeviceExtension.m */,
 				86891E171C5FA8250098C602 /* MainViewController.h */,
 				86891E181C5FA8250098C602 /* MainViewController.m */,
 				8625DED71E30CB9E00827965 /* Main.storyboard */,
@@ -2518,6 +2526,7 @@
 				4654A2D72020C294003B4526 /* MPInterstitialViewController.m in Sources */,
 				4654A2D82020C294003B4526 /* MPLastResortDelegate.m in Sources */,
 				4654A2D92020C294003B4526 /* MPActivityViewControllerHelper.m in Sources */,
+				467638C72029C99B00F2A9C7 /* DeviceExtension.m in Sources */,
 				4654A2DA2020C294003B4526 /* MPStreamAdPlacer.m in Sources */,
 				4654A2DB2020C294003B4526 /* MPNativeAdSource.m in Sources */,
 				4654A2DC2020C294003B4526 /* NativeAdViewController.m in Sources */,
@@ -2702,6 +2711,7 @@
 				86514A891E6C5A0E003F4967 /* MPInterstitialViewController.m in Sources */,
 				86514A741E6C5A0E003F4967 /* MPLastResortDelegate.m in Sources */,
 				86514A691E6C5A0E003F4967 /* MPActivityViewControllerHelper.m in Sources */,
+				467638C62029C99B00F2A9C7 /* DeviceExtension.m in Sources */,
 				86514AE81E6C5A0E003F4967 /* MPStreamAdPlacer.m in Sources */,
 				86514AE21E6C5A0E003F4967 /* MPNativeAdSource.m in Sources */,
 				865BD1501C6CED9C00F180D8 /* NativeAdViewController.m in Sources */,
@@ -2741,6 +2751,7 @@
 				4635E91020275AFB00CD6521 /* TestsDefines.m in Sources */,
 				4635E907202752F800CD6521 /* URLProtocol.m in Sources */,
 				86891E471C5FB1140098C602 /* CollectionViewCell.m in Sources */,
+				467638C82029C99B00F2A9C7 /* DeviceExtension.m in Sources */,
 				865BD1511C6CED9C00F180D8 /* NativeAdViewController.m in Sources */,
 				4635E91520275E7A00CD6521 /* ScanHashViewController.m in Sources */,
 				86891E2C1C5FA8250098C602 /* DemoAppTests.m in Sources */,
@@ -2752,6 +2763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4635E91620275E7A00CD6521 /* ScanHashViewController.m in Sources */,
+				467638C92029C99B00F2A9C7 /* DeviceExtension.m in Sources */,
 				86891E481C5FB1140098C602 /* CollectionViewCell.m in Sources */,
 				865BD1521C6CED9C00F180D8 /* NativeAdViewController.m in Sources */,
 				86891E371C5FA8250098C602 /* DemoAppUITests.m in Sources */,

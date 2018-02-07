@@ -14,7 +14,7 @@
 #import "MPMobFoxNativeAdRenderer.h"
 #import "GenericAdapterViewController.h"
 #import "MFDemoConstants.h"
-
+#import "DeviceExtension.h"
 
 
 #define ADS_TYPE_NUM 11
@@ -125,7 +125,6 @@ static bool perform_segue_enabled;
     [super viewDidLoad];
     
     //NSLog(@"-- viewDidLoad --");
-    
 
     // Hides back button from current view.
     self.navigationItem.hidesBackButton = YES;
@@ -167,7 +166,7 @@ static bool perform_segue_enabled;
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
     float videoHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 450.0 : 250.0;
-    
+    float iPhoneXHeightFix = [DeviceExtension isIphoneX] ? 34:0;
     
     MainViewController *rootController =(MainViewController*)[[(AppDelegate*)
                                                                [[UIApplication sharedApplication]delegate] window] rootViewController];
@@ -175,7 +174,7 @@ static bool perform_segue_enabled;
 
     
     /*** Banner ***/
-    self.bannerAdRect = CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT- bannerHeight, bannerWidth, bannerHeight);
+    self.bannerAdRect = CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT- bannerHeight -iPhoneXHeightFix, bannerWidth, bannerHeight);
     self.mobfoxAd = [[MobFoxAd alloc] init:MOBFOX_HASH_BANNER withFrame:self.bannerAdRect];
     self.mobfoxAd.delegate = self;
     self.mobfoxAd.refresh = self.refresh;
@@ -209,7 +208,7 @@ static bool perform_segue_enabled;
     
     
     /*** Tag Banner ***/
-    self.mobFoxTagAd = [[MobFoxTagAd alloc] init:MOBFOX_HASH_BANNER withFrame:CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT-50, 320, 50)];
+    self.mobFoxTagAd = [[MobFoxTagAd alloc] init:MOBFOX_HASH_BANNER withFrame:CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT-bannerHeight-iPhoneXHeightFix, 320, 50)];
     self.mobFoxTagAd.delegate = self;
     [self.view addSubview:self.mobFoxTagAd];
     
@@ -218,7 +217,11 @@ static bool perform_segue_enabled;
     self.mobFoxTagInterstitialAd = [[MobFoxTagInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
     self.mobFoxTagInterstitialAd.delegate = self;
     
-    
+    if ([DeviceExtension isIphoneX]) {
+        CGRect frame = self.collectionView.frame;
+        frame.origin.y += 32;
+        self.collectionView.frame = frame;
+    }
     
 }
 

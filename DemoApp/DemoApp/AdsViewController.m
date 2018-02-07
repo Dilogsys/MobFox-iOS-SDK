@@ -9,7 +9,7 @@
 #import "AdsViewController.h"
 #import "CollectionViewCell.h"
 #import "MFDemoConstants.h"
-
+#import "DeviceExtension.h"
 
 typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     MFAdTypeBanner = 0,
@@ -57,6 +57,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (strong, nonatomic) MPNativeAd *mpNativeAd;
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (weak, nonatomic) UIView *mpNativeAdView;
 
@@ -79,6 +80,12 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     
     _bannerAdRect = CGRectMake((SCREEN_WIDTH-bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
 
+    if ([DeviceExtension isIphoneX]) {
+        CGRect frame = self.collectionView.frame;
+        
+        frame.origin.y += 32;
+        self.collectionView.frame = frame;
+    }
 
 }
 

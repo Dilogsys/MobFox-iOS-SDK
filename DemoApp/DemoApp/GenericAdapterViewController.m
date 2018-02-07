@@ -10,7 +10,7 @@
 #import "CollectionViewCell.h"
 #import "MFTestAdapter.h"
 #import "MFDemoConstants.h"
-
+#import "DeviceExtension.h"
 
 #define ADS_TYPE_NUM 5
 
@@ -60,7 +60,8 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     float screenWidth = [UIScreen mainScreen].bounds.size.width;
     float bannerWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
-    self.bannerAdRect = CGRectMake((screenWidth - bannerWidth)/2, SCREEN_HEIGHT - bannerHeight , bannerWidth, bannerHeight);
+    float iPhoneXHeightFix = [DeviceExtension isIphoneX] ? 34:0;
+    self.bannerAdRect = CGRectMake((screenWidth - bannerWidth)/2, SCREEN_HEIGHT - bannerHeight-iPhoneXHeightFix , bannerWidth, bannerHeight);
     
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
     float videoHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 450.0 : 250.0;
@@ -75,6 +76,17 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     self.bannerVideoAdapter = [[MFTestAdapter alloc] init];
     self.interstitialVideoAdapter = [[MFTestAdapter alloc] init];
 
+    if ([DeviceExtension isIphoneX]) {
+        CGRect frame = self.collectionView.frame;
+        
+        frame.origin.y += 26;
+        self.collectionView.frame = frame;
+    }  else {
+        CGRect frame = self.collectionView.frame;
+        
+        frame.origin.y -= 4;
+        self.collectionView.frame = frame;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

@@ -10,6 +10,7 @@
 #import "CollectionViewCell.h"
 #import "MFTestAdapter.h"
 #import "AdsViewController.h"
+#import "DeviceExtension.h"
 
 
 #define ADAPTERS_NUM 3
@@ -25,8 +26,7 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
     
 @property (nonatomic, strong) NSString *cellID;
 @property (nonatomic, strong) NSString *sdk_name_selected;
-
-
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -37,6 +37,17 @@ static bool perform_segue_enabled;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if ([DeviceExtension isIphoneX]) {
+        CGRect frame = self.collectionView.frame;
+        
+        frame.origin.y += 26;
+        self.collectionView.frame = frame;
+    } else {
+        CGRect frame = self.collectionView.frame;
+        
+        frame.origin.y -= 4;
+        self.collectionView.frame = frame;
+    }
     self.cellID = @"cellID";
 
 }
