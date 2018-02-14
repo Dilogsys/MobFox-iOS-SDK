@@ -95,7 +95,7 @@
     
     NSLog(@"MFTestAdapter >> requestNativeAdWithSize:");
     
-    self.nativeAd = [[MobFoxNativeAd alloc] init:nid];
+    self.nativeAd = [[MobFoxNativeAd alloc] init];
     self.nativeAd.delegate = self;
     
     [self.nativeAd loadAd];

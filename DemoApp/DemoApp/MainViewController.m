@@ -188,7 +188,7 @@ static bool perform_segue_enabled;
     
     
     /*** Native ***/
-    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE];
+      self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
     self.mobfoxNativeAd.delegate = self;
     
     
