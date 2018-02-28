@@ -23,7 +23,9 @@
 @required
 
 - (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd*)ad withAdData:(MobFoxNativeData *)adData;
-- (void)MobFoxNativeGeusture;
+//- (void)MobFoxNativeGeusture;
+
+
 
 
 @optional
@@ -32,7 +34,7 @@
 
 @end
 
-@interface MobFoxNativeAd : NSObject <MobFoxNativeCustomEventDelegate>
+@interface MobFoxNativeAd : NSObject
 
     @property (nonatomic, weak) id <MobFoxNativeAdDelegate> delegate;
     
@@ -59,8 +61,7 @@
 
     - (id) init:(NSString*)invh nativeView:(UIView *) view;
     - (void) loadAd;
-    - (void) registerViewWithInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
-
+    -(void) fireTrackers;
 
 @end
 

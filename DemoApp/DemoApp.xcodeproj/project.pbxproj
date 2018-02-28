@@ -87,12 +87,10 @@
 		4654A2892020C294003B4526 /* MOPUBPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A241E6C5A0D003F4967 /* MOPUBPlayerManager.m */; };
 		4654A28A2020C294003B4526 /* MPAdServerURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148FE1E6C5A0D003F4967 /* MPAdServerURLBuilder.m */; };
 		4654A28B2020C294003B4526 /* MRExpandModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651495A1E6C5A0D003F4967 /* MRExpandModalViewController.m */; };
-		4654A28C2020C294003B4526 /* MPMobFoxNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD71E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m */; };
 		4654A28D2020C294003B4526 /* MPNativeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149D71E6C5A0D003F4967 /* MPNativeCache.m */; };
 		4654A28E2020C294003B4526 /* MPStaticNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A081E6C5A0D003F4967 /* MPStaticNativeAdRenderer.m */; };
 		4654A28F2020C294003B4526 /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CC41E263EDF00BD4296 /* GADMAdapterMobFox.m */; };
 		4654A2902020C294003B4526 /* MPLogEvent+NativeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149161E6C5A0D003F4967 /* MPLogEvent+NativeVideo.m */; };
-		4654A2912020C294003B4526 /* MPMobFoxNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD51E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m */; };
 		4654A2922020C294003B4526 /* MPQRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149201E6C5A0D003F4967 /* MPQRunLoopOperation.m */; };
 		4654A2932020C294003B4526 /* MPVASTTrackingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149A91E6C5A0D003F4967 /* MPVASTTrackingEvent.m */; };
 		4654A2942020C294003B4526 /* MPNativeAdRenderingImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149FA1E6C5A0D003F4967 /* MPNativeAdRenderingImageLoader.m */; };
@@ -108,7 +106,6 @@
 		4654A29E2020C294003B4526 /* MPAdPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149E51E6C5A0D003F4967 /* MPAdPositioning.m */; };
 		4654A29F2020C294003B4526 /* MPVASTCompanionAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651498F1E6C5A0D003F4967 /* MPVASTCompanionAd.m */; };
 		4654A2A02020C294003B4526 /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 865148E81E6C5A0D003F4967 /* MPBaseBannerAdapter.m */; };
-		4654A2A12020C294003B4526 /* MoPubNative.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCF1E263EDF00BD4296 /* MoPubNative.m */; };
 		4654A2A22020C294003B4526 /* MPLogEventCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651491A1E6C5A0D003F4967 /* MPLogEventCommunicator.m */; };
 		4654A2A32020C294003B4526 /* MRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149561E6C5A0D003F4967 /* MRController.m */; };
 		4654A2A42020C294003B4526 /* UIColor+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651496C1E6C5A0D003F4967 /* UIColor+MPAdditions.m */; };
@@ -153,7 +150,6 @@
 		4654A2CC2020C294003B4526 /* MFTestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 866ECF9E1E093BA40069E209 /* MFTestAdapter.m */; };
 		4654A2CD2020C294003B4526 /* MPInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149411E6C5A0D003F4967 /* MPInstanceProvider.m */; };
 		4654A2CE2020C294003B4526 /* MPVASTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651499D1E6C5A0D003F4967 /* MPVASTManager.m */; };
-		4654A2CF2020C294003B4526 /* MoPubNativeAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD11E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m */; };
 		4654A2D02020C294003B4526 /* MPInternalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651497C1E6C5A0D003F4967 /* MPInternalUtils.m */; };
 		4654A2D12020C294003B4526 /* MPStoreKitProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149861E6C5A0D003F4967 /* MPStoreKitProvider.m */; };
 		4654A2D22020C294003B4526 /* MPNativeAdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149FC1E6C5A0D003F4967 /* MPNativeAdRequest.m */; };
@@ -188,7 +184,6 @@
 		4654A2EF2020C294003B4526 /* MPRewardedVideoReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A571E6C5A0D003F4967 /* MPRewardedVideoReward.m */; };
 		4654A2F02020C294003B4526 /* MOPUBNativeVideoImpressionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A221E6C5A0D003F4967 /* MOPUBNativeVideoImpressionAgent.m */; };
 		4654A2F12020C294003B4526 /* AdaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861695E91E27DB66007FBC3A /* AdaptersViewController.m */; };
-		4654A2F22020C294003B4526 /* MoPubNativeAdRendererMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD31E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m */; };
 		4654A2F32020C294003B4526 /* MPInterstitialAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865149B91E6C5A0D003F4967 /* MPInterstitialAdController.m */; };
 		4654A2F42020C294003B4526 /* MOPUBNativeVideoAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86514A1C1E6C5A0D003F4967 /* MOPUBNativeVideoAdAdapter.m */; };
 		4654A2F52020C294003B4526 /* MPLogEventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651491C1E6C5A0D003F4967 /* MPLogEventRecorder.m */; };
@@ -588,11 +583,6 @@
 		E7AF7D161E263EDF00BD4296 /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CC41E263EDF00BD4296 /* GADMAdapterMobFox.m */; };
 		E7AF7D191E263EDF00BD4296 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCB1E263EDF00BD4296 /* MoPubAdapterMobFox.m */; };
 		E7AF7D1A1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCD1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m */; };
-		E7AF7D1B1E263EDF00BD4296 /* MoPubNative.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCF1E263EDF00BD4296 /* MoPubNative.m */; };
-		E7AF7D1C1E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD11E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m */; };
-		E7AF7D1D1E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD31E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m */; };
-		E7AF7D1E1E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD51E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m */; };
-		E7AF7D1F1E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CD71E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m */; };
 		E7AF7D201E263EDF00BD4296 /* SmaatoAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CDA1E263EDF00BD4296 /* SmaatoAdapterMobFox.m */; };
 		E7AF7D211E263EDF00BD4296 /* SmaatoNativeAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CDC1E263EDF00BD4296 /* SmaatoNativeAdapterMobFox.m */; };
 /* End PBXBuildFile section */
@@ -1108,16 +1098,6 @@
 		E7AF7CCB1E263EDF00BD4296 /* MoPubAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubAdapterMobFox.m; sourceTree = "<group>"; };
 		E7AF7CCC1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubInterstitialAdapterMobFox.h; sourceTree = "<group>"; };
 		E7AF7CCD1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubInterstitialAdapterMobFox.m; sourceTree = "<group>"; };
-		E7AF7CCE1E263EDF00BD4296 /* MoPubNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubNative.h; sourceTree = "<group>"; };
-		E7AF7CCF1E263EDF00BD4296 /* MoPubNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubNative.m; sourceTree = "<group>"; };
-		E7AF7CD01E263EDF00BD4296 /* MoPubNativeAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubNativeAdapterMobFox.h; sourceTree = "<group>"; };
-		E7AF7CD11E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubNativeAdapterMobFox.m; sourceTree = "<group>"; };
-		E7AF7CD21E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubNativeAdRendererMobFox.h; sourceTree = "<group>"; };
-		E7AF7CD31E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubNativeAdRendererMobFox.m; sourceTree = "<group>"; };
-		E7AF7CD41E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMobFoxNativeAdAdapter.h; sourceTree = "<group>"; };
-		E7AF7CD51E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMobFoxNativeAdAdapter.m; sourceTree = "<group>"; };
-		E7AF7CD61E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMobFoxNativeAdRenderer.h; sourceTree = "<group>"; };
-		E7AF7CD71E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMobFoxNativeAdRenderer.m; sourceTree = "<group>"; };
 		E7AF7CD91E263EDF00BD4296 /* SmaatoAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmaatoAdapterMobFox.h; sourceTree = "<group>"; };
 		E7AF7CDA1E263EDF00BD4296 /* SmaatoAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmaatoAdapterMobFox.m; sourceTree = "<group>"; };
 		E7AF7CDB1E263EDF00BD4296 /* SmaatoNativeAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmaatoNativeAdapterMobFox.h; sourceTree = "<group>"; };
@@ -2032,16 +2012,6 @@
 				E7AF7CCB1E263EDF00BD4296 /* MoPubAdapterMobFox.m */,
 				E7AF7CCC1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.h */,
 				E7AF7CCD1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m */,
-				E7AF7CCE1E263EDF00BD4296 /* MoPubNative.h */,
-				E7AF7CCF1E263EDF00BD4296 /* MoPubNative.m */,
-				E7AF7CD01E263EDF00BD4296 /* MoPubNativeAdapterMobFox.h */,
-				E7AF7CD11E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m */,
-				E7AF7CD21E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.h */,
-				E7AF7CD31E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m */,
-				E7AF7CD41E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.h */,
-				E7AF7CD51E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m */,
-				E7AF7CD61E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.h */,
-				E7AF7CD71E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m */,
 			);
 			path = MoPub;
 			sourceTree = "<group>";
@@ -2449,12 +2419,10 @@
 				4654A2892020C294003B4526 /* MOPUBPlayerManager.m in Sources */,
 				4654A28A2020C294003B4526 /* MPAdServerURLBuilder.m in Sources */,
 				4654A28B2020C294003B4526 /* MRExpandModalViewController.m in Sources */,
-				4654A28C2020C294003B4526 /* MPMobFoxNativeAdRenderer.m in Sources */,
 				4654A28D2020C294003B4526 /* MPNativeCache.m in Sources */,
 				4654A28E2020C294003B4526 /* MPStaticNativeAdRenderer.m in Sources */,
 				4654A28F2020C294003B4526 /* GADMAdapterMobFox.m in Sources */,
 				4654A2902020C294003B4526 /* MPLogEvent+NativeVideo.m in Sources */,
-				4654A2912020C294003B4526 /* MPMobFoxNativeAdAdapter.m in Sources */,
 				4654A2922020C294003B4526 /* MPQRunLoopOperation.m in Sources */,
 				4654A2932020C294003B4526 /* MPVASTTrackingEvent.m in Sources */,
 				4654A2942020C294003B4526 /* MPNativeAdRenderingImageLoader.m in Sources */,
@@ -2470,7 +2438,6 @@
 				4654A29E2020C294003B4526 /* MPAdPositioning.m in Sources */,
 				4654A29F2020C294003B4526 /* MPVASTCompanionAd.m in Sources */,
 				4654A2A02020C294003B4526 /* MPBaseBannerAdapter.m in Sources */,
-				4654A2A12020C294003B4526 /* MoPubNative.m in Sources */,
 				4654A2A22020C294003B4526 /* MPLogEventCommunicator.m in Sources */,
 				4654A2A32020C294003B4526 /* MRController.m in Sources */,
 				4654A2A42020C294003B4526 /* UIColor+MPAdditions.m in Sources */,
@@ -2515,7 +2482,6 @@
 				4654A2CC2020C294003B4526 /* MFTestAdapter.m in Sources */,
 				4654A2CD2020C294003B4526 /* MPInstanceProvider.m in Sources */,
 				4654A2CE2020C294003B4526 /* MPVASTManager.m in Sources */,
-				4654A2CF2020C294003B4526 /* MoPubNativeAdapterMobFox.m in Sources */,
 				4654A2D02020C294003B4526 /* MPInternalUtils.m in Sources */,
 				4654A2D12020C294003B4526 /* MPStoreKitProvider.m in Sources */,
 				4654A2D22020C294003B4526 /* MPNativeAdRequest.m in Sources */,
@@ -2552,7 +2518,6 @@
 				4654A2EF2020C294003B4526 /* MPRewardedVideoReward.m in Sources */,
 				4654A2F02020C294003B4526 /* MOPUBNativeVideoImpressionAgent.m in Sources */,
 				4654A2F12020C294003B4526 /* AdaptersViewController.m in Sources */,
-				4654A2F22020C294003B4526 /* MoPubNativeAdRendererMobFox.m in Sources */,
 				4654A2F32020C294003B4526 /* MPInterstitialAdController.m in Sources */,
 				4654A2F42020C294003B4526 /* MOPUBNativeVideoAdAdapter.m in Sources */,
 				4654A2F52020C294003B4526 /* MPLogEventRecorder.m in Sources */,
@@ -2634,12 +2599,10 @@
 				86514AF21E6C5A0E003F4967 /* MOPUBPlayerManager.m in Sources */,
 				86514A6F1E6C5A0E003F4967 /* MPAdServerURLBuilder.m in Sources */,
 				86514A971E6C5A0E003F4967 /* MRExpandModalViewController.m in Sources */,
-				E7AF7D1F1E263EDF00BD4296 /* MPMobFoxNativeAdRenderer.m in Sources */,
 				86514AD01E6C5A0E003F4967 /* MPNativeCache.m in Sources */,
 				86514AE51E6C5A0E003F4967 /* MPStaticNativeAdRenderer.m in Sources */,
 				E7AF7D161E263EDF00BD4296 /* GADMAdapterMobFox.m in Sources */,
 				86514A7A1E6C5A0E003F4967 /* MPLogEvent+NativeVideo.m in Sources */,
-				E7AF7D1E1E263EDF00BD4296 /* MPMobFoxNativeAdAdapter.m in Sources */,
 				86514A7F1E6C5A0E003F4967 /* MPQRunLoopOperation.m in Sources */,
 				86514ABD1E6C5A0E003F4967 /* MPVASTTrackingEvent.m in Sources */,
 				86514ADF1E6C5A0E003F4967 /* MPNativeAdRenderingImageLoader.m in Sources */,
@@ -2655,7 +2618,6 @@
 				86514AD71E6C5A0E003F4967 /* MPAdPositioning.m in Sources */,
 				86514AB01E6C5A0E003F4967 /* MPVASTCompanionAd.m in Sources */,
 				86514A651E6C5A0E003F4967 /* MPBaseBannerAdapter.m in Sources */,
-				E7AF7D1B1E263EDF00BD4296 /* MoPubNative.m in Sources */,
 				86514A7C1E6C5A0E003F4967 /* MPLogEventCommunicator.m in Sources */,
 				86514A951E6C5A0E003F4967 /* MRController.m in Sources */,
 				86514A9F1E6C5A0E003F4967 /* UIColor+MPAdditions.m in Sources */,
@@ -2700,7 +2662,6 @@
 				866ECF9F1E093BA40069E209 /* MFTestAdapter.m in Sources */,
 				86514A8B1E6C5A0E003F4967 /* MPInstanceProvider.m in Sources */,
 				86514AB71E6C5A0E003F4967 /* MPVASTManager.m in Sources */,
-				E7AF7D1C1E263EDF00BD4296 /* MoPubNativeAdapterMobFox.m in Sources */,
 				86514AA71E6C5A0E003F4967 /* MPInternalUtils.m in Sources */,
 				86514AAC1E6C5A0E003F4967 /* MPStoreKitProvider.m in Sources */,
 				86514AE01E6C5A0E003F4967 /* MPNativeAdRequest.m in Sources */,
@@ -2737,7 +2698,6 @@
 				86514B121E6C5A0F003F4967 /* MPRewardedVideoReward.m in Sources */,
 				86514AF11E6C5A0E003F4967 /* MOPUBNativeVideoImpressionAgent.m in Sources */,
 				861695EA1E27DB66007FBC3A /* AdaptersViewController.m in Sources */,
-				E7AF7D1D1E263EDF00BD4296 /* MoPubNativeAdRendererMobFox.m in Sources */,
 				86514AC41E6C5A0E003F4967 /* MPInterstitialAdController.m in Sources */,
 				86514AEE1E6C5A0E003F4967 /* MOPUBNativeVideoAdAdapter.m in Sources */,
 				86514A7D1E6C5A0E003F4967 /* MPLogEventRecorder.m in Sources */,

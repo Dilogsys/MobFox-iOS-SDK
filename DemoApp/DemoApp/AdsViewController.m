@@ -252,54 +252,54 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 
         
     } else if([sdk isEqualToString:@"MoPub"] ) {
-        
-        MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
-        settings.renderingViewClass = [_innerNativeAdView class];
-        MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
-        MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
-        
-        MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
-        targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil];
-        
-        targeting.keywords = @"marital:single,age:27";
-        targeting.location = [[CLLocation alloc] initWithLatitude:34.1212 longitude:32.1212];
-        adRequest.targeting = targeting;
-        
-        
-        [adRequest startWithCompletionHandler:^(MPNativeAdRequest *request, MPNativeAd *response, NSError *error) {
-            if (error) {
-                // Handle error.
-                NSLog(@"mopub native error: %@", error);
-                
-            } else {
-                
-                //NSLog(@"mopub native reponse: %@", response);
-
-                _nativeAdView.hidden = false;
-                
-                NSDictionary *propertiesDict = response.properties;
-                
-                _nativeAdTitle.text = [propertiesDict objectForKey:kAdTitleKey];
-                _nativeAdDescription.text = [propertiesDict objectForKey:kAdTextKey];
-                _nativeAdImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[propertiesDict objectForKey:kAdIconImageKey]]]];
-                
-                self.mpNativeAd = response;
-                self.mpNativeAd.delegate = self;
-                
-                _mpNativeAdView = [response retrieveAdViewWithError:nil];
-                _mpNativeAdView.backgroundColor = [UIColor whiteColor];
-                _mpNativeAdView.frame = _innerNativeAdView.frame; //CGRectMake(0, 0, 400, 500);
-                
-                [_mpNativeAdView addSubview:_nativeAdTitle];
-                [_mpNativeAdView addSubview:_nativeAdDescription];
-                [_mpNativeAdView addSubview:_nativeAdImage];
-                
-                [_nativeAdView addSubview:_mpNativeAdView];
-                
-
-            }
-        }];
-        
+//
+//        MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
+//        settings.renderingViewClass = [_innerNativeAdView class];
+//        MPNativeAdRendererConfiguration *config = [MPMobFoxNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
+//        MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:MOPUB_HASH_NATIVE rendererConfigurations:@[config]];
+//
+//        MPNativeAdRequestTargeting *targeting = [MPNativeAdRequestTargeting targeting];
+//        targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdTextKey, kAdCTATextKey, kAdIconImageKey, kAdMainImageKey, kAdStarRatingKey, nil];
+//
+//        targeting.keywords = @"marital:single,age:27";
+//        targeting.location = [[CLLocation alloc] initWithLatitude:34.1212 longitude:32.1212];
+//        adRequest.targeting = targeting;
+//
+//
+//        [adRequest startWithCompletionHandler:^(MPNativeAdRequest *request, MPNativeAd *response, NSError *error) {
+//            if (error) {
+//                // Handle error.
+//                NSLog(@"mopub native error: %@", error);
+//
+//            } else {
+//
+//                //NSLog(@"mopub native reponse: %@", response);
+//
+//                _nativeAdView.hidden = false;
+//
+//                NSDictionary *propertiesDict = response.properties;
+//
+//                _nativeAdTitle.text = [propertiesDict objectForKey:kAdTitleKey];
+//                _nativeAdDescription.text = [propertiesDict objectForKey:kAdTextKey];
+//                _nativeAdImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[propertiesDict objectForKey:kAdIconImageKey]]]];
+//
+//                self.mpNativeAd = response;
+//                self.mpNativeAd.delegate = self;
+//
+//                _mpNativeAdView = [response retrieveAdViewWithError:nil];
+//                _mpNativeAdView.backgroundColor = [UIColor whiteColor];
+//                _mpNativeAdView.frame = _innerNativeAdView.frame; //CGRectMake(0, 0, 400, 500);
+//
+//                [_mpNativeAdView addSubview:_nativeAdTitle];
+//                [_mpNativeAdView addSubview:_nativeAdDescription];
+//                [_mpNativeAdView addSubview:_nativeAdImage];
+//
+//                [_nativeAdView addSubview:_mpNativeAdView];
+//
+//
+//            }
+//        }];
+//
     }
     
     

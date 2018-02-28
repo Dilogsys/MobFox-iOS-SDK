@@ -10,7 +10,6 @@
 @import GoogleMobileAds;
 #import <iSoma/iSoma.h>
 #import "MoPub.h"
-#import "MPMobFoxNativeAdRenderer.h"
 #import <MobFoxSDKCore/MobFoxSDKCore.h>
 
 

@@ -11,7 +11,6 @@
 #import "ScanHashViewController.h"
 #import "NativeAdViewController.h"
 #import "AppDelegate.h"
-#import "MPMobFoxNativeAdRenderer.h"
 #import "GenericAdapterViewController.h"
 #import "MFDemoConstants.h"
 #import "DeviceExtension.h"
@@ -48,7 +47,8 @@ typedef NS_ENUM(NSInteger, MFRandomStringPart) {
 @property (strong, nonatomic) MobFoxInterstitialAd *mobfoxVideoInterstitial;
 @property (strong, nonatomic) MobFoxTagAd *mobFoxTagAd;
 @property (strong, nonatomic) MobFoxTagInterstitialAd *mobFoxTagInterstitialAd;
-
+@property (strong, nonatomic) MobFoxNativeClickTracker *clickTracker;
+@property (strong, nonatomic) MobFoxNativeData *mobFoxNativeData;
 
 @property (strong, nonatomic) NSURL *clickURL;
 @property (strong, nonatomic) NSString *cellID;
@@ -153,15 +153,6 @@ static bool perform_segue_enabled;
     self.nativeAdView.hidden = true;
     self.invhInput.hidden = true;
 
-    /*
-    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
-    [self.view addGestureRecognizer:gestureRecognizer];
-     */
-    
-    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    [self.innerNativeAdView addGestureRecognizer:recognizer];
-    
-
     float bannerWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 728.0 : 320.0;
     float bannerHeight = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 90.0 : 50.0;
     float videoWidth = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? 500.0 : 300.0;
@@ -188,7 +179,7 @@ static bool perform_segue_enabled;
     
     
     /*** Native ***/
-      self.mobfoxInterAd = [[MobFoxInterstitialAd alloc] init:MOBFOX_HASH_INTER withRootViewController:rootController];
+    self.mobfoxNativeAd = [[MobFoxNativeAd alloc] init:MOBFOX_HASH_NATIVE nativeView:self.innerNativeAdView];
     self.mobfoxNativeAd.delegate = self;
     
     
@@ -652,43 +643,18 @@ static bool perform_segue_enabled;
 //called when ad response is returned
 - (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd *)ad withAdData:(MobFoxNativeData *)adData {
     
-    self.nativeAdIcon.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.icon.url]];
+    self.nativeAdIcon.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.main.url]];
     self.nativeAdTitle.text = adData.assetHeadline;
     self.nativeAdDescription.text = adData.assetDescription;
     self.clickURL = [adData.clickURL absoluteURL];
+    self.mobFoxNativeData = adData;
     
     //adData.callToActionText
     NSLog(@"adData.assetHeadline: %@", adData.assetHeadline);
     NSLog(@"adData.assetDescription: %@", adData.assetDescription);
     NSLog(@"adData.callToActionText: %@", adData.callToActionText);
     
-    for (MobFoxNativeTracker *tracker in adData.trackersArray) {
-        
-        //NSLog(@"tracker: %@", tracker);
-        //NSLog(@"tracker.url: %@", tracker.url);
-
-        if ([tracker.url absoluteString].length > 0)
-        {
-            
-            // Fire tracking pixel
-            UIWebView* wv = [[UIWebView alloc] initWithFrame:CGRectZero];
-            NSString* userAgent = [wv stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
-            NSURLSessionConfiguration* conf = [NSURLSessionConfiguration defaultSessionConfiguration];
-            conf.HTTPAdditionalHeaders = @{ @"User-Agent" : userAgent };
-            NSURLSession* session = [NSURLSession sessionWithConfiguration:conf];
-            NSURLSessionDataTask* task = [session dataTaskWithURL:tracker.url completionHandler:
-                                          ^(NSData *data,NSURLResponse *response, NSError *error){
-                                          
-                                              if(error) NSLog(@"err %@",[error description]);
-
-                                          }];
-            [task resume];
-            
-        }
-        
-    }
-    [ad registerViewWithInteraction:self.nativeAdView withViewController:self];
-
+    [ad fireTrackers];
     
 }
 
@@ -907,12 +873,6 @@ static bool perform_segue_enabled;
             return nil;
             break;
     }
-}
-
-- (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer {
-    
-    [[UIApplication sharedApplication] openURL:self.clickURL];
-    
 }
 
 - (void)presentViewController {
