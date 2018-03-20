@@ -13,6 +13,7 @@
 #import "MobFoxTagAd.h"
 #import "MobFoxInterstitialAd.h"
 #import "MobFoxTagInterstitialAd.h"
+#import "MobFoxInterstitialAd.h"
 #import "MobFoxNativeAd.h"
 #import "MobFoxCustomEvent.h"
 #import "MobFoxInterstitialCustomEvent.h"

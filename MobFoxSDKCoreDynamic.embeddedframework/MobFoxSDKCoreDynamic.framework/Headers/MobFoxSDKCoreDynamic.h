@@ -20,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char MobFoxSDKCoreVersionString[];
 #import "MobFoxTagAd.h"
 #import "MobFoxInterstitialAd.h"
 #import "MobFoxTagInterstitialAd.h"
+#import "MobFoxInterstitialAd.h"
 #import "MobFoxNativeAd.h"
 #import "MobFoxCustomEvent.h"
 #import "MobFoxInterstitialCustomEvent.h"
@@ -28,6 +29,4 @@ FOUNDATION_EXPORT const unsigned char MobFoxSDKCoreVersionString[];
 #import "MFEventsHandler.h"
 #import "MobFoxScriptHandler.h"
 
-#import "MFWebViewJavascriptBridge.h"
-#import "MFWebViewJavascriptBridge_JS.h"
 #import "MobFoxSDKCoreDynamic-Bridging-Header.h"
