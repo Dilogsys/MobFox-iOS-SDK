@@ -672,12 +672,21 @@ static bool perform_segue_enabled;
 
 - (void)popUpWithTitle:(NSString *)title message:(NSString *)message {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                    message:message
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:title
+                                 message:message
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   // Handle your OK button action here
+                               }];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    [alert addAction:okButton];
     
 }
 
