@@ -31,6 +31,7 @@
 @optional
 
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error;
+- (void)MobFoxNativeAdClicked ;
 
 @end
 

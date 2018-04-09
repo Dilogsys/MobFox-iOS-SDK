@@ -658,6 +658,10 @@ static bool perform_segue_enabled;
     
 }
 
+- (void)MobFoxNativeAdClicked {
+    
+}
+
 //called when ad response cannot be returned
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error {
     

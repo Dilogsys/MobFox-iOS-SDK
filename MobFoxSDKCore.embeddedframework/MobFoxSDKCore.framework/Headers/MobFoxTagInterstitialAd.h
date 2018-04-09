@@ -72,7 +72,8 @@
 @property (nonatomic, assign) BOOL imp_secure;
 @property (nonatomic, assign) BOOL ready;
 
-
+-(id) initWithAdMobAdaper:(NSString*)invh;
+-(id) initWithMoPubAdaper:(NSString*)invh;
 - (id) init:(NSString*)invh;
 - (id) init:(NSString*)invh withRootViewController:(UIViewController*)root;
 - (void) loadAd;
